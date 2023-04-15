@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:cobbled_calcite_trapdoor"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:mossy_cobbled_calcite_trapdoor"
+    }
+  ]
+}

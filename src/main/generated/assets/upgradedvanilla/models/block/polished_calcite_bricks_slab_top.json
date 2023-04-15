@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "upgradedvanilla:block/polished_calcite_bricks",
+    "side": "upgradedvanilla:block/polished_calcite_bricks",
+    "top": "upgradedvanilla:block/polished_calcite_bricks"
+  }
+}

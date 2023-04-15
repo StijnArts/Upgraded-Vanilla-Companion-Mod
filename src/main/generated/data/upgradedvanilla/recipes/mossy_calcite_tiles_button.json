@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "upgradedvanilla:mossy_calcite_tiles"
+    }
+  ],
+  "result": {
+    "item": "upgradedvanilla:mossy_calcite_tiles_button"
+  }
+}

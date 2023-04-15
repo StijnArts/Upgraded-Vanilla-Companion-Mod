@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:cobbled_calcite",
+    "upgradedvanilla:mossy_cobbled_calcite",
+    "upgradedvanilla:smooth_calcite_slab"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "drai.dev.upgradedvanilla.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BetterEndBlocksMixin",
+    "BlockEntityTypeMixin",
+    "DynamicBlockEntityTypeMixin",
+    "WrittenBookItemMixin",
+    "AbstractMinecartMixin",
+    "PoweredRailBlockMixin",
+    "PoiTypesAccessor",
+    "PoiManagerMixin",
+    "CommonPoiTagsMixin",
+    "GrindstoneMenuMixin",
+    "CartographyTableMenuMixin",
+    "TripwireBlockMixin",
+    "TripwireHookBlockMixin",
+    "StonecutterMenuMixin",
+    "SmithingTableMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

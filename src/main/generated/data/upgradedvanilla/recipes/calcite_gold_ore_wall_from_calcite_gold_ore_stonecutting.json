@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:calcite_gold_ore"
+  },
+  "result": "upgradedvanilla:calcite_gold_ore_wall"
+}

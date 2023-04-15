@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:mossy_calcite_tiles"
+    }
+  },
+  "pattern": [
+    "PP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:mossy_calcite_tiles_pressure_plate"
+  }
+}

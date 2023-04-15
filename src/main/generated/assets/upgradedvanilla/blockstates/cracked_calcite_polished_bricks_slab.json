@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/cracked_calcite_polished_bricks_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/cracked_calcite_polished_bricks"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/cracked_calcite_polished_bricks_slab_top"
+    }
+  }
+}

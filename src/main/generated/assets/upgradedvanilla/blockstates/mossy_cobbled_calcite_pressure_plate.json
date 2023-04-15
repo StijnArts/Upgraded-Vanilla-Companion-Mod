@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "upgradedvanilla:block/mossy_cobbled_calcite_pressure_plate"
+    },
+    "powered=true": {
+      "model": "upgradedvanilla:block/mossy_cobbled_calcite_pressure_plate_down"
+    }
+  }
+}

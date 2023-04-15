@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "upgradedvanilla:cracked_polished_calcite_bricks"
+    }
+  ],
+  "result": {
+    "item": "upgradedvanilla:cracked_calcite_polished_bricks_button"
+  }
+}

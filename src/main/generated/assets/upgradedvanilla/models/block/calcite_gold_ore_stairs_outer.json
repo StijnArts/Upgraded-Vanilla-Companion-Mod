@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "upgradedvanilla:block/calcite_gold_ore",
+    "side": "upgradedvanilla:block/calcite_gold_ore",
+    "top": "upgradedvanilla:block/calcite_gold_ore"
+  }
+}

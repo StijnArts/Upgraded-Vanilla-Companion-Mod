@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:polished_calcite_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:polished_calcite_slabs"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "upgradedvanilla:polished_calcite_fence"
+  }
+}

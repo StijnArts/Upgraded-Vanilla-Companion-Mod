@@ -1,0 +1,145 @@
+[15:38:15] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.19.2 with Fabric Loader 0.14.11
+[15:38:15] [ForkJoinPool-1-worker-15/WARN] (FabricLoader/Metadata) Mod create uses the version 0.5.0.i-946+1.19.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'i'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[15:38:15] [ForkJoinPool-1-worker-4/WARN] (FabricLoader/Metadata) Mod flywheel uses the version 0.6.8.a-4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'a'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[15:38:15] [main/INFO] (FabricLoader) Dependencies overridden for forgeconfigapiport
+[15:38:15] [main/INFO] (FabricLoader) Loading 103 mods:
+	- architectury 6.5.69
+	- autoconfig1u 3.4.0
+	- bclib 2.1.6
+	- betterend 2.1.4
+	- betternether 7.1.3
+	- byg 2.0.0.13
+	- cardinal-components-base 5.0.1 via polymorph
+	- cardinal-components-block 5.0.1 via polymorph
+	- cardinal-components-entity 5.0.1 via polymorph
+	- cardinal-components-item 5.0.1 via polymorph
+	- cinderscapes 3.0.3
+	- cloth-basic-math 0.6.1
+	- cloth-config 8.2.88
+	- com_electronwill_night-config_core 3.6.5 via spectrelib
+	- com_electronwill_night-config_toml 3.6.5 via spectrelib
+	- create 0.5.0.i-946+1.19.2
+	- culturaldelights 0.14.9+1.19.2
+	- dripstone_fluid_lib 2.0.1
+	- ecologics 2.1.10
+	- edenring 0.6.4
+	- enderscape 0.4.1-1.19.2
+	- error_notifier 1.0.9 via roughlyenoughitems
+	- fabric-api 0.73.2+1.19.2
+	- fabric-api-base 0.4.15+8f4e8eb390
+	- fabric-api-lookup-api-v1 1.6.14+93d8cb8290
+	- fabric-biome-api-v1 9.1.0+82db024a90
+	- fabric-block-api-v1 1.0.2+e415d50e90
+	- fabric-blockrenderlayer-v1 1.1.24+c6af733c90
+	- fabric-client-tags-api-v1 1.0.5+b35fea8390
+	- fabric-command-api-v2 2.2.1+413cbbc790
+	- fabric-content-registries-v0 3.5.1+7c6cd14d90
+	- fabric-convention-tags-v1 1.2.2+27265b3490
+	- fabric-crash-report-info-v1 0.2.8+aeb40ebe90
+	- fabric-data-generation-api-v1 5.3.7+413cbbc790
+	- fabric-dimensions-v1 2.1.35+0d0f210290
+	- fabric-entity-events-v1 1.5.4+9244241690
+	- fabric-events-interaction-v0 0.4.34+562bff6e90
+	- fabric-game-rule-api-v1 1.0.24+b6b6abb490
+	- fabric-gametest-api-v1 1.1.7+4d0d570390
+	- fabric-item-api-v1 1.6.5+dce4603e90
+	- fabric-item-groups-v0 0.3.38+9244241690
+	- fabric-key-binding-api-v1 1.0.25+5c4fce2890
+	- fabric-lifecycle-events-v1 2.2.4+1b46dc7890
+	- fabric-loot-api-v2 1.1.12+83a8659290
+	- fabric-message-api-v1 5.0.7+93d8cb8290
+	- fabric-mining-level-api-v1 2.1.23+33fbc73890
+	- fabric-models-v0 0.3.21+c6af733c90
+	- fabric-networking-api-v1 1.2.11+10eb22f490
+	- fabric-object-builder-api-v1 4.2.1+d8ef690890
+	- fabric-particles-v1 1.0.14+4d0d570390
+	- fabric-recipe-api-v1 1.0.1+413cbbc790
+	- fabric-registry-sync-v0 0.9.32+9244241690
+	- fabric-renderer-api-v1 1.2.1+2e5408b590
+	- fabric-renderer-indigo 0.7.1+2e5408b590
+	- fabric-rendering-data-attachment-v1 0.3.19+6e0787e690
+	- fabric-rendering-fluids-v1 3.0.11+4d0d570390
+	- fabric-rendering-v1 1.12.1+d8ef690890
+	- fabric-resource-conditions-api-v1 2.1.2+aae9039d90
+	- fabric-resource-loader-v0 0.8.3+251d254a90
+	- fabric-screen-api-v1 1.0.32+4d0d570390
+	- fabric-screen-handler-api-v1 1.3.7+1cc24b1b90
+	- fabric-sound-api-v1 1.0.2+c4f28df590
+	- fabric-textures-v0 1.0.24+aeb40ebe90
+	- fabric-transfer-api-v1 2.1.6+413cbbc790
+	- fabric-transitive-access-wideners-v1 1.3.3+08b73de490
+	- fabricloader 0.14.11
+	- farmersdelight 1.19.2-1.3.9
+	- flywheel 0.6.8.a-4
+	- forge_tags 3.0
+	- forgeconfigapiport 4.2.11
+	- java 17
+	- lazydfu 0.1.3
+	- milk 1.0.51
+	- minecraft 1.19.2
+	- mm 2.3
+	- modmenu 4.1.2
+	- more_slabs_stairs_and_walls 2.4.0+1.19.2
+	- polymorph 0.46.1+1.19.2
+	- porting_lib 2.1.766+1.19.2
+	- porting_lib_accessors 2.1.766+1.19.2
+	- porting_lib_attributes 2.1.766+1.19.2
+	- porting_lib_base 2.1.766+1.19.2
+	- porting_lib_common 2.1.766+1.19.2
+	- porting_lib_constants 2.1.766+1.19.2
+	- porting_lib_entity 2.1.766+1.19.2
+	- porting_lib_extensions 2.1.766+1.19.2
+	- porting_lib_fake_players 2.1.766+1.19.2
+	- porting_lib_lazy_registration 2.1.766+1.19.2
+	- porting_lib_model_generators 2.1.766+1.19.2
+	- porting_lib_model_loader 2.1.766+1.19.2
+	- porting_lib_models 2.1.766+1.19.2
+	- porting_lib_networking 2.1.766+1.19.2
+	- porting_lib_obj_loader 2.1.766+1.19.2
+	- porting_lib_transfer 2.1.766+1.19.2
+	- reach-entity-attributes 2.3.0
+	- registrate-fabric 1.1.50-MC1.19.2
+	- roughlyenoughitems 9.1.595
+	- serialization_hooks 0.3.26
+	- spectrelib 0.11.0+1.19 via polymorph
+	- terrablender 2.0.1.136
+	- upgradedvanilla 0.0.1+1.19.2
+	- worldedit 7.2.12+6240-87f4ae1
+	- wunderreich 3.0.18
+[15:38:19] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/Stijn/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/c1dc27696aa4006e492c2485c9ccbcb26045a971/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[15:38:19] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:38:19] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[15:38:20] [main/WARN] (FabricLoader/Mixin) Error loading class: me/jellysquid/mods/sodium/client/render/chunk/data/ChunkRenderData$Builder (java.lang.ClassNotFoundException: me/jellysquid/mods/sodium/client/render/chunk/data/ChunkRenderData$Builder)
+[15:38:20] [main/WARN] (FabricLoader/Mixin) @Mixin target me/jellysquid/mods/sodium/client/render/chunk/data/ChunkRenderData$Builder was not found flywheel.mixins.json:instancemanage.SodiumChunkRenderDataMixin from mod flywheel
+[15:38:20] [main/ERROR] (FabricLoader/Mixin) bclib.mixins.client.json:AnvilScreenMixin from mod bclib: method_25402 does not exist in target interface net.minecraft.client.gui.components.events.ContainerEventHandler
+org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: method_25402 does not exist in target interface net.minecraft.client.gui.components.events.ContainerEventHandler
+	at org.spongepowered.asm.mixin.transformer.InterfaceInfo.renameMethod(InterfaceInfo.java:188) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.prepareSoftImplements(MixinPreProcessorStandard.java:234) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.prepareMethod(MixinPreProcessorStandard.java:215) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.prepare(MixinPreProcessorStandard.java:184) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo$State.validateChanges(MixinInfo.java:443) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo$State.validate(MixinInfo.java:343) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.validate(MixinInfo.java:914) ~[sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinConfig.postInitialise(MixinConfig.java:803) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.prepareConfigs(MixinProcessor.java:568) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.select(MixinProcessor.java:462) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.checkSelect(MixinProcessor.java:438) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:290) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) [sponge-mixin-0.11.4+mixin.0.8.5.jar:0.11.4+mixin.0.8.5]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:145) [fabric-loader-0.14.11.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) [?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) [?:?]
+	at net.fabricmc.loader.impl.util.DefaultLanguageAdapter.create(DefaultLanguageAdapter.java:50) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointStorage$NewEntry.getOrCreate(EntrypointStorage.java:117) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:53) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke0(EntrypointUtils.java:47) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke(EntrypointUtils.java:35) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:162) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]

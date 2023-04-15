@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "upgradedvanilla:deepslate_furnace"
+    },
+    "I": {
+      "tag": "c:iron_ingots"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_deepslate_blocks"
+    }
+  },
+  "pattern": [
+    "III",
+    "IFI",
+    "SSS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:deepslate_blast_furnace"
+  }
+}

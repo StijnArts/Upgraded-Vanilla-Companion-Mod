@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/grindstone",
+  "textures": {
+    "leg": "betterend:block/amaranita_hyphae_side",
+    "particle": "upgradedvanilla:block/deepslate_grindstone_side",
+    "pivot": "upgradedvanilla:block/amaranita_grindstone_pivot",
+    "round": "upgradedvanilla:block/deepslate_grindstone_round",
+    "side": "upgradedvanilla:block/deepslate_grindstone_side"
+  }
+}

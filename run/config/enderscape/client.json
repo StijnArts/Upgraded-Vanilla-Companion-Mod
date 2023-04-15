@@ -1,0 +1,24 @@
+{
+  "debug": {
+    "display_debug_hud [default: false]": false,
+    "client_info [default: true]": true,
+    "music_info [default: true]": true,
+    "player_info [default: true]": true
+  },
+  "client": {
+    "modify_lightmap [default: true]": true,
+    "modify_skybox [default: true]": true,
+    "override_vanilla_sky_texture [default: true]": true,
+    "display_mirror_tooltip [default: true]": true,
+    "display_mirror_tooltip.coordinates [default: false]": false,
+    "display_mirror_tooltip.dimension [default: true]": true,
+    "display_mirror_tooltip.distance [default: true]": true,
+    "display_mirror_tooltip.shift_only [default: true]": true,
+    "mirror_overlay.display [default: true]": true,
+    "mirror_overlay.intensity [default: 50]": 50,
+    "mirror_overlay.vignette_intensity [default: 50]": 50,
+    "charged_hud.display [default: true]": true,
+    "charged_hud.y_offset [default: 0]": 0,
+    "charged_hud.opacity [default: 100]": 100
+  }
+}

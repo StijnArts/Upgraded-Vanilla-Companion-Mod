@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": {
+      "tag": "c:redstone_dusts"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_calcite_blocks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "SRS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:calcite_dropper"
+  }
+}

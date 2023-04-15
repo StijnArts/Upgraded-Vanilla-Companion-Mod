@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "c:iron_ingots"
+    },
+    "P": {
+      "tag": "upgradedvanilla:stone_pressure_plates"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    },
+    "T": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "ITI",
+    "IPI"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:amaranita_detector_rail"
+  }
+}

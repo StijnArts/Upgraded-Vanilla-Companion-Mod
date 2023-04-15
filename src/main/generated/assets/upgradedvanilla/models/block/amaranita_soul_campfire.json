@@ -1,0 +1,7 @@
+{
+  "parent": "upgradedvanilla:block/amaranita_campfire_template",
+  "textures": {
+    "fire": "minecraft:block/soul_campfire_fire",
+    "lit_log": "upgradedvanilla:block/amaranita_soul_campfire_log_lit"
+  }
+}

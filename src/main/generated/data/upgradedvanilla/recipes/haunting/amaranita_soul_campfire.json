@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:amaranita_campfire"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:amaranita_soul_campfire"
+    }
+  ]
+}

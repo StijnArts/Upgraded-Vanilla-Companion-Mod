@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_item_frame",
+  "textures": {
+    "back": "minecraft:item_frame",
+    "particle": "upgradedvanilla:block/amaranita_planks",
+    "wood": "upgradedvanilla:block/amaranita_planks"
+  }
+}

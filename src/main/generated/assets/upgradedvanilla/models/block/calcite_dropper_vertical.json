@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/orientable_vertical",
+  "textures": {
+    "front": "upgradedvanilla:block/calcite_dropper_front_vertical",
+    "side": "upgradedvanilla:block/calcite_furnace_side"
+  }
+}

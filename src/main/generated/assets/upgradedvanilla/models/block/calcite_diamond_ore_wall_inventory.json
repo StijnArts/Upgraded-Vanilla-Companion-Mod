@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "upgradedvanilla:block/calcite_diamond_ore"
+  }
+}

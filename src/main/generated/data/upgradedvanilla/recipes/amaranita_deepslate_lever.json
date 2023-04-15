@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": {
+      "tag": "upgradedvanilla:deepslate_blocks"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "S",
+    "R"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_deepslate_lever"
+  }
+}

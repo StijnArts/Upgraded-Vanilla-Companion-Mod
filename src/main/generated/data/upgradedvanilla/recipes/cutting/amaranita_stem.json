@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "betterend:amaranita_stem"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "item": "upgradedvanilla:stripped_amaranita_stem"
+    }
+  ]
+}

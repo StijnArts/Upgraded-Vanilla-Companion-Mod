@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "upgradedvanilla:block/amaranita_barrel_bottom",
+    "side": "upgradedvanilla:block/amaranita_barrel_side",
+    "top": "upgradedvanilla:block/amaranita_barrel_top"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:calcite_fence",
+    "upgradedvanilla:cobbled_calcite_fence",
+    "upgradedvanilla:mossy_cobbled_calcite_fence",
+    "upgradedvanilla:calcite_bricks_fence",
+    "upgradedvanilla:cracked_calcite_bricks_fence",
+    "upgradedvanilla:mossy_calcite_bricks_fence",
+    "upgradedvanilla:smooth_calcite_fence",
+    "upgradedvanilla:polished_calcite_fence",
+    "upgradedvanilla:polished_calcite_bricks_fence",
+    "upgradedvanilla:cracked_calcite_polished_bricks_fence",
+    "upgradedvanilla:mossy_calcite_polished_bricks_fence",
+    "upgradedvanilla:calcite_tiles_fence",
+    "upgradedvanilla:cracked_calcite_tiles_fence",
+    "upgradedvanilla:mossy_calcite_tiles_fence"
+  ]
+}

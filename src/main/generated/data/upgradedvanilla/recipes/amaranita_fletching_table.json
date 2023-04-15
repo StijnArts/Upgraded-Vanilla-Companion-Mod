@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_slabs"
+    },
+    "S": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "SS",
+    "PP",
+    "PP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_fletching_table"
+  }
+}

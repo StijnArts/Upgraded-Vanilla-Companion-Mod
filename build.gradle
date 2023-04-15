@@ -1,0 +1,186 @@
+//file:noinspection GroovyAssignabilityCheck
+//file:noinspection GroovyAccessibility
+//file:noinspection GradlePackageVersionRange
+plugins {
+	id "fabric-loom" version "1.0.+"
+	//id "io.github.juuxel.loom-quiltflower" version "1.+" // Quiltflower, a better decompiler
+	id "io.github.p03w.machete" version "1.+" // automatic jar compressing on build
+	id "maven-publish"
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+archivesBaseName = project.archives_base_name
+group = project.maven_group
+
+// Formats the mod version to include the Minecraft version and build number (if present)
+// example: 1.0.0+1.18.2-100
+String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
+version = "${mod_version}+${minecraft_version}" + (buildNumber != null ? "-${buildNumber}" : "")
+
+repositories {
+	maven { url = "https://maven.shedaniel.me/" } // Cloth Config, REI
+	maven { url = "https://dvs1.progwml6.com/files/maven/" } // JEI
+	maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
+	maven { url = "https://maven.quiltmc.org/repository/release" } // Quilt Mappings
+	maven { url = "https://api.modrinth.com/maven" } // LazyDFU
+	maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
+	maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
+	maven { url = "https://cursemaven.com" } // Forge Config API Port
+	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
+	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
+	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = 'https://maven.minecraftforge.net/' }// Terrablender
+	maven { url = "https://ladysnake.jfrog.io/artifactory/mods"}
+	maven { url = uri("https://maven.kyrptonaught.dev/")}
+	maven {
+		name = "Fuzs Mod Resources"
+		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+	}
+}
+
+dependencies {
+	// Setup
+	minecraft("com.mojang:minecraft:${minecraft_version}")
+	mappings(loom.layered {
+		it.mappings("org.quiltmc:quilt-mappings:${minecraft_version}+build.${qm_version}:intermediary-v2")
+		it.parchment("org.parchmentmc.data:parchment-${minecraft_version}:${parchment_version}@zip")
+		it.officialMojangMappings { nameSyntheticMembers = false }
+	})
+	modImplementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
+
+	// dependencies
+	modImplementation("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
+
+	// Create - dependencies are added transitively
+	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
+	modApi "net.minecraftforge:forgeconfigapiport-fabric:4.2.11"
+	// Development QOL
+	modImplementation("maven.modrinth:lazydfu:${lazydfu_version}")
+	modImplementation("com.terraformersmc:modmenu:${modmenu_version}")
+
+	// Recipe Viewers - Create Fabric supports JEI, REI, and EMI.
+	// See root gradle.properties to choose which to use at runtime.
+	switch (recipe_viewer.toLowerCase(Locale.ROOT)) {
+		case "jei": modLocalRuntime("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}"); break
+		case "rei": modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"); break
+		case "emi": modLocalRuntime("dev.emi:emi:${emi_version}"); break
+		case "disabled": break
+		default: println("Unknown recipe viewer specified: ${recipe_viewer}. Must be JEI, REI, EMI, or disabled.")
+	}
+
+
+	//Block type providing mods
+	modImplementation "curse.maven:betternether-311377:4393102"
+	modImplementation "curse.maven:betterend-413596:4393109"
+	modImplementation "curse.maven:edenring-546590:3946862"
+	modImplementation "curse.maven:byg-391378:4027262"
+	modImplementation "curse.maven:farmersdelight-482834:4111426"
+	modImplementation "curse.maven:culturaldelight-807107:4329691"
+	modImplementation "curse.maven:ecologics-570463:3987879"
+	modImplementation "curse.maven:enderscape-536638:4104666"
+	modImplementation "curse.maven:cinderscapes-391429:4033440"
+	modImplementation "curse.maven:moreslabsmorestairs-644005:4455641"
+	// Library mods
+	modImplementation "curse.maven:bclib-495191:4393099"
+	//modImplementation "com.github.quiqueck:BCLib:2.1.7"
+	modImplementation("me.shedaniel.cloth:cloth-config-fabric:8.2.88") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	modImplementation "com.github.glitchfiend:TerraBlender-fabric:1.19.2-2.0.1.136"
+	//Paradise Lost
+//    modImplementation "curse.maven:paradiselost-418680:4379294"
+//    modImplementation "io.github.ladysnake:satin:1.8.0"
+//    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.0.1"
+//    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.0.1"
+//    modImplementation "net.kyrptonaught:customportalapi:0.0.1-beta54-1.19"
+//    modImplementation "com.github.devs-immortal:incubus-core:1.9.4"
+	// if you would like to add integration with them, uncomment them here.
+//    modCompileOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_fabric_version}")
+//    modCompileOnly("mezz.jei:jei-${minecraft_version}-common:${jei_fabric_version}")
+//    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}")
+//    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rei_version}")
+//    modCompileOnly("dev.emi:emi:${emi_version}")
+}
+
+processResources {
+	// require dependencies to be the version compiled against or newer
+	Map<String, String> properties = new HashMap<>()
+	properties.put("version", version)
+	properties.put("fabric_loader_version", fabric_loader_version)
+	properties.put("fabric_api_version", fabric_api_version)
+	properties.put("create_version", create_version)
+	properties.put("minecraft_version", minecraft_version)
+
+	properties.forEach((k, v) -> inputs.property(k, v))
+
+	filesMatching("fabric.mod.json") {
+		expand properties
+	}
+}
+
+machete {
+	// disable machete locally for faster builds
+	enabled = buildNumber != null
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = Integer.parseInt(sourceCompatibility)
+}
+
+java {
+	withSourcesJar()
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.archivesBaseName}" }
+	}
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
+	}
+}
+
+loom {
+	runs {
+		//
+		// This adds a new gradle task that runs the datagen API: "gradlew runDatagenClient"
+		//
+		datagenClient {
+			inherit client
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=${modid}"
+
+			runDir "build/datagen"
+		}
+	}
+}
+
+//
+// Adds the generated files into the jar you distribute to players.
+//
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
+		}
+	}
+}

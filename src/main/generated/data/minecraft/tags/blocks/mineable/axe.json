@@ -1,0 +1,74 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:amaranita_beehive",
+    "upgradedvanilla:amaranita_composter",
+    "upgradedvanilla:amaranita_cartography_table",
+    "upgradedvanilla:amaranita_fletching_table",
+    "upgradedvanilla:amaranita_smithing_table",
+    {
+      "id": "#upgradedvanilla:amaranita_stems",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_planks",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_stairs",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_slabs",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_fences",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_fence_gates",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_buttons",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_pressure_plates",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_doors",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_trapdoors",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_walls",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_ladders",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_barrels",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_workbenches",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_bookshelves",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_lecterns",
+      "required": false
+    }
+  ]
+}

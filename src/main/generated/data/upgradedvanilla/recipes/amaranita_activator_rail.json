@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "c:iron_ingots"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    },
+    "T": {
+      "tag": "upgradedvanilla:redstone_torches"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "ITI",
+    "ISI"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:amaranita_activator_rail"
+  }
+}

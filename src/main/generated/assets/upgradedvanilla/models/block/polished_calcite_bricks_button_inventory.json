@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "upgradedvanilla:block/polished_calcite_bricks_flipped"
+  }
+}

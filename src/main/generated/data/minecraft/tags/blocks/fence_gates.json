@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:calcite_fence_gate",
+    "upgradedvanilla:cobbled_calcite_fence_gate",
+    "upgradedvanilla:mossy_cobbled_calcite_fence_gate",
+    "upgradedvanilla:calcite_bricks_fence_gate",
+    "upgradedvanilla:cracked_calcite_bricks_fence_gate",
+    "upgradedvanilla:mossy_calcite_bricks_fence_gate",
+    "upgradedvanilla:smooth_calcite_fence_gate",
+    "upgradedvanilla:polished_calcite_fence_gate",
+    "upgradedvanilla:polished_calcite_bricks_fence_gate",
+    "upgradedvanilla:cracked_calcite_polished_bricks_fence_gate",
+    "upgradedvanilla:mossy_calcite_polished_bricks_fence_gate",
+    "upgradedvanilla:calcite_tiles_fence_gate",
+    "upgradedvanilla:cracked_calcite_tiles_fence_gate",
+    "upgradedvanilla:mossy_calcite_tiles_fence_gate",
+    {
+      "id": "#upgradedvanilla:amaranita_fence_gates",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:calcite_iron_ore"
+  },
+  "result": "upgradedvanilla:calcite_iron_ore_stairs"
+}

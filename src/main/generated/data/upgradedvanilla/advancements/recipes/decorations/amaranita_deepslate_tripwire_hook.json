@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_TagKey[minecraft:item / upgradedvanilla:deepslate_blocks]_stone": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:deepslate_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:amaranita_deepslate_tripwire_hook"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_TagKey[minecraft:item / upgradedvanilla:deepslate_blocks]_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:amaranita_deepslate_tripwire_hook"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:mossy_calcite_polished_bricks"
+  },
+  "result": "upgradedvanilla:mossy_calcite_polished_bricks_stairs"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "upgradedvanilla:calcite_bricks_stairs"
+  },
+  "result": "upgradedvanilla:cracked_calcite_bricks_stairs"
+}

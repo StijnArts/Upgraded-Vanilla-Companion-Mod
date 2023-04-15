@@ -1,0 +1,39 @@
+{
+  "ambience": {
+    "modify_default_music [default: true]": true,
+    "modify_default_ambience [default: true]": true,
+    "modify_default_additions [default: true]": true,
+    "modify_default_mood [default: true]": true,
+    "modify_default_particles [default: true]": true,
+    "modify_default_sky_color [default: true]": true,
+    "modify_default_fog_color [default: true]": true,
+    "chorus_flower_humming [default: true]": true,
+    "chorus_flower_pollen [default: true]": true
+  },
+  "block_sounds": {
+    "use_chorus_sounds [default: true]": true,
+    "use_purpur_sounds [default: true]": true,
+    "use_end_rod_sounds [default: true]": true,
+    "use_end_stone_sounds [default: true]": true,
+    "use_end_stone_brick_sounds [default: true]": true,
+    "use_shulker_sounds [default: true]": true
+  },
+  "loot": {
+    "end_city_tools [default: true]": true,
+    "end_city_food [default: true]": true,
+    "end_city_enchantments [default: true]": true,
+    "end_city_music_discs [default: true]": true,
+    "nether_fortress_accommodations [default: true]": true
+  },
+  "qol": {
+    "play_elytra_open_sound [default: true]": true,
+    "ender_pearls_stack_to_64 [default: true]": true,
+    "trident_returns_in_void [default: true]": true
+  },
+  "world": {
+    "use_subsurface_biomes [default: true]": true,
+    "use_sky_biomes [default: true]": true,
+    "subsurface_biome_height [default: 20]": 20,
+    "sky_biome_height [default: 128]": 128
+  }
+}

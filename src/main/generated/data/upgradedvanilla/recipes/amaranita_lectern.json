@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "tag": "upgradedvanilla:bookshelves"
+    },
+    "S": {
+      "tag": "upgradedvanilla:amaranita_slabs"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_lectern"
+  }
+}

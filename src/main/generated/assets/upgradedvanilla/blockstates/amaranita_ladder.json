@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "upgradedvanilla:block/amaranita_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "upgradedvanilla:block/amaranita_ladder"
+    },
+    "facing=south": {
+      "model": "upgradedvanilla:block/amaranita_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "upgradedvanilla:block/amaranita_ladder",
+      "y": 270
+    }
+  }
+}

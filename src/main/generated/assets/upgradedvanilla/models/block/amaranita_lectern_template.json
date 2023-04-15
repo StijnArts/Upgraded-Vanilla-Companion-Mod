@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/lectern",
+  "textures": {
+    "base": "upgradedvanilla:block/amaranita_lectern_base",
+    "bottom": "upgradedvanilla:block/amaranita_planks",
+    "front": "upgradedvanilla:block/amaranita_lectern_front",
+    "particle": "upgradedvanilla:block/amaranita_lectern_sides",
+    "sides": "upgradedvanilla:block/amaranita_lectern_sides",
+    "top": "upgradedvanilla:block/amaranita_lectern_top"
+  }
+}

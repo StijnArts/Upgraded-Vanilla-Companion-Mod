@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "upgradedvanilla:block/mossy_calcite_polished_bricks_pressure_plate"
+    },
+    "powered=true": {
+      "model": "upgradedvanilla:block/mossy_calcite_polished_bricks_pressure_plate_down"
+    }
+  }
+}

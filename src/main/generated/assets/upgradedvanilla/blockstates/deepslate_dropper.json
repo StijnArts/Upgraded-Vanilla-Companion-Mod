@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "upgradedvanilla:block/deepslate_dropper_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "upgradedvanilla:block/deepslate_dropper",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "upgradedvanilla:block/deepslate_dropper"
+    },
+    "facing=south": {
+      "model": "upgradedvanilla:block/deepslate_dropper",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "upgradedvanilla:block/deepslate_dropper_vertical"
+    },
+    "facing=west": {
+      "model": "upgradedvanilla:block/deepslate_dropper",
+      "y": 270
+    }
+  }
+}

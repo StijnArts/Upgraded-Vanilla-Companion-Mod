@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "upgradedvanilla:block/amaranita_planks",
+    "side": "upgradedvanilla:block/amaranita_bookshelf"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:calcite_wall",
+    "upgradedvanilla:cobbled_calcite_wall",
+    "upgradedvanilla:mossy_cobbled_calcite_wall",
+    "upgradedvanilla:calcite_bricks_wall",
+    "upgradedvanilla:cracked_calcite_bricks_wall",
+    "upgradedvanilla:mossy_calcite_bricks_wall",
+    "upgradedvanilla:smooth_calcite_wall",
+    "upgradedvanilla:polished_calcite_wall",
+    "upgradedvanilla:polished_calcite_bricks_wall",
+    "upgradedvanilla:cracked_calcite_polished_bricks_wall",
+    "upgradedvanilla:mossy_calcite_polished_bricks_wall",
+    "upgradedvanilla:calcite_tiles_wall",
+    "upgradedvanilla:cracked_calcite_tiles_wall",
+    "upgradedvanilla:mossy_calcite_tiles_wall",
+    "upgradedvanilla:chiseled_calcite_bricks_wall",
+    {
+      "id": "#upgradedvanilla:amaranita_walls",
+      "required": false
+    }
+  ]
+}

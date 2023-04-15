@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:polished_calcite_bricks"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:mossy_calcite_polished_bricks"
+    }
+  ]
+}

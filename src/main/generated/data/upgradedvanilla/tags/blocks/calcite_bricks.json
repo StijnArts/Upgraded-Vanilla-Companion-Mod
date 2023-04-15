@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:calcite_bricks",
+    "upgradedvanilla:cracked_calcite_bricks",
+    "upgradedvanilla:mossy_calcite_bricks",
+    "upgradedvanilla:polished_calcite_bricks"
+  ]
+}

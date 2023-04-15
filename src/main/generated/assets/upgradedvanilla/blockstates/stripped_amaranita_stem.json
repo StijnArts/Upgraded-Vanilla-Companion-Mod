@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem"
+    },
+    "axis=z": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem_horizontal",
+      "x": 90
+    }
+  }
+}

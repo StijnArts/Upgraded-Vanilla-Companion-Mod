@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/smoker_on",
+  "textures": {
+    "bottom": "upgradedvanilla:block/amaranita_deepslate_smoker_bottom",
+    "front": "upgradedvanilla:block/amaranita_deepslate_smoker_front_on",
+    "side": "upgradedvanilla:block/amaranita_deepslate_smoker_side",
+    "top": "upgradedvanilla:block/amaranita_deepslate_smoker_top"
+  }
+}

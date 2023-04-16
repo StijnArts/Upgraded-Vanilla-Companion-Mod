@@ -18,7 +18,10 @@
     "TripwireBlockMixin",
     "TripwireHookBlockMixin",
     "StonecutterMenuMixin",
-    "SmithingTableMixin"
+    "SmithingTableMixin",
+    "SpreadableBlockMixin",
+    "PlantBlockMixin",
+    "TreeDecoratorGeneratorMixin"
   ],
   "client": [
   ],

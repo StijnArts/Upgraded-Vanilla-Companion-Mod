@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/wall_inventory_side_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "particle": "minecraft:block/dirt",
+    "side": "minecraft:block/podzol_side",
+    "top": "minecraft:block/podzol_top"
+  }
+}

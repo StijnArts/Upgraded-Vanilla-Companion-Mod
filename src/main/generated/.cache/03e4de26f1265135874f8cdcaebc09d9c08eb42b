@@ -1,4 +1,4 @@
-// 1.19.2	2023-04-15T15:00:21.4029238	Tags for minecraft:item
+// 1.19.2	2023-04-16T14:48:02.1959332	Tags for minecraft:item
 cfaba49c864088752ba7e99212d73c90cef5214c data\upgradedvanilla\tags\items\campfires.json
 a5bcfde5152639968e5656f454d5eb95b59649d8 data\upgradedvanilla\tags\items\amaranita_fences.json
 1316581d21cf0ee7f9eb2035fe39c71664bad4e2 data\upgradedvanilla\tags\items\amaranita_doors.json
@@ -8,6 +8,7 @@ a5bcfde5152639968e5656f454d5eb95b59649d8 data\upgradedvanilla\tags\items\amarani
 f787c87d25d463457c7c392a42126d76c129ed43 data\upgradedvanilla\tags\items\calcite_tile_blocks.json
 b13b4bcca5d7772ec0efb212a214a41dbb5a2362 data\upgradedvanilla\tags\items\amaranita_barrels.json
 67f8d289adfd26472964c15528a536358260b36e data\upgradedvanilla\tags\items\black_wool_blocks.json
+8176fb75311c863b1f1af3abf6f6328aa6effc70 data\upgradedvanilla\tags\items\dirt_blocks.json
 52e9a38744a04b6fdf4256891ad3270762519da0 data\upgradedvanilla\tags\items\amaranita_trapdoors.json
 a4b59981d496fe0fc08b07d0d871440bb036f621 data\minecraft\tags\items\wooden_trapdoors.json
 ea86dda1c04ce7be7f1027396f8f4a5eb603e6d7 data\upgradedvanilla\tags\items\cobbled_calcite_slabs.json
@@ -40,6 +41,7 @@ d826e17e1590ed35d64f76b37a120dea60010ba0 data\upgradedvanilla\tags\items\green_w
 b982a2be5707c4c46456a0a5635470358da2fcaf data\upgradedvanilla\tags\items\cracked_polished_calcite_brick_slabs.json
 212f0cabb296a978d50a85beabbe081fcfbc74a7 data\upgradedvanilla\tags\items\amaranita_stairs.json
 b9f0ac3a1603987c2d0d83532a8f915e2b927ff6 data\upgradedvanilla\tags\items\orange_wool_blocks.json
+358848fd614cfcb6bd59f556071a8b2cc9f84d25 data\upgradedvanilla\tags\items\podzol_blocks.json
 d169500a39d6343f581ae2c8f7f7bc7ec915a13b data\minecraft\tags\items\wooden_doors.json
 e669ccff82029c6468002367e7651758b2b5b0ab data\upgradedvanilla\tags\items\polished_calcite_brick_blocks.json
 e4b01ae49b337c1d9934d30a8698caf282beb416 data\c\tags\items\furnaces.json
@@ -71,6 +73,7 @@ c3b4c073031aa88f9349d38c2aeed90a007bf9b8 data\c\tags\items\diamond_ores.json
 305f2fe063a28a193f6dc10ffaf1f301ef12c10d data\upgradedvanilla\tags\items\cracked_calcite_tile_slabs.json
 5769e8a6d5ab56bb51218dc904a5d9c05150a6a5 data\upgradedvanilla\tags\items\mossy_calcite_tiles.json
 83501e4dd4307a14ae4057f133ea7de824a9cbab data\upgradedvanilla\tags\items\calcite_blocks.json
+11de684396a7d02cd389ee9c9161b0fd65dad6cf data\upgradedvanilla\tags\items\grass_blocks.json
 3c29ac8b94b0298f735906562a554cab64954901 data\minecraft\tags\items\rails.json
 051acca12bd061c558d41b4ad62bd9b2c566bac0 data\upgradedvanilla\tags\items\light_gray_wool_blocks.json
 73faa28a27da4ccfcdf640c95736ae002cdb8fc4 data\minecraft\tags\items\walls.json

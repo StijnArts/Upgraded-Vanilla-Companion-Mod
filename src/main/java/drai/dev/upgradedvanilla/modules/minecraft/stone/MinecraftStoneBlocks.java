@@ -89,6 +89,7 @@ public class MinecraftStoneBlocks {
 				UpgradedVanilla.ID, new Block(FabricBlockSettings.copy(stone)), CreativeModeTab.TAB_BUILDING_BLOCKS,
 				(blockModelGenerators,block)->{blockModelGenerators.createTrivialCube((Block) block);},
 				((finishedRecipeConsumer, item) -> {
+					//TODO only made cutting recipe for origin block
 					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,stone);
 					ShapedRecipeBuilder.shaped(item, 4).define('P', stoneTag)
 							.pattern("PP")
@@ -917,7 +918,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,
@@ -1149,7 +1150,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,
@@ -1389,7 +1390,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,
@@ -1622,7 +1623,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,
@@ -1862,7 +1863,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,
@@ -2103,7 +2104,7 @@ public class MinecraftStoneBlocks {
 					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
 							.pattern("PPP")
 							.pattern("PPP")
-							.unlockedBy("has_"+material+"_stones_slabs", FabricRecipeProvider.has(blockTag))
+							.unlockedBy("has_"+material+"_stone_slabs", FabricRecipeProvider.has(blockTag))
 							.save(finishedRecipeConsumer);
 				}),
 				BlockLoot::dropSelf,

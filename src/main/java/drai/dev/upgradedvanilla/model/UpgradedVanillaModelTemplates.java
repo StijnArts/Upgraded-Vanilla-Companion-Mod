@@ -4,6 +4,8 @@ import net.minecraft.data.models.model.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.level.block.state.properties.*;
 
+import org.w3c.dom.*;
+
 import java.util.*;
 
 public class UpgradedVanillaModelTemplates {
@@ -16,15 +18,24 @@ public class UpgradedVanillaModelTemplates {
 	public static TextureSlot ROUND = TextureSlot.create("round");
 	public static TextureSlot LEG = TextureSlot.create("leg");
 	public static TextureSlot HOOK = TextureSlot.create("hook");
+	public static TextureSlot OVERLAY = TextureSlot.create("overlay");
 	public static final BooleanProperty MAP = BooleanProperty.create("map");
-	public static final ModelTemplate LOG_WALL_POST = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/template_log_wall_post")),
-			Optional.of("_post"),TextureSlot.SIDE,TextureSlot.END);
-	public static final ModelTemplate LOG_WALL_SIDE = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/template_log_wall_side")),
-			Optional.of("_side"),TextureSlot.SIDE);
-	public static final ModelTemplate LOG_WALL_SIDE_TALL = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/template_log_wall_side_tall")),
-			Optional.of("_side_tall"),TextureSlot.SIDE);
-	public static final ModelTemplate LOG_WALL_INVENTORY = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/log_wall_inventory")),
-			Optional.of("_inventory"),TextureSlot.SIDE);
+	public static final ModelTemplate WALL_POST_SIDE_BOTTOM_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/wall_post_side_bottom_top")),
+			Optional.of("_post"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate WALL_SIDE_SIDE_BOTTOM_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/wall_side_side_bottom_top")),
+			Optional.of("_side"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate WALL_SIDE_TALL_SIDE_BOTTOM_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/wall_side_tall_side_bottom_top")),
+			Optional.of("_side_tall"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate WALL_INVENTORY_SIDE_BOTTOM_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/wall_inventory_side_bottom_top")),
+			Optional.of("_inventory"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate PATH_WALL_POST = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_wall_post")),
+			Optional.of("_post"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate PATH_WALL_SIDE = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_wall_side")),
+			Optional.of("_side"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate PATH_WALL_SIDE_TALL = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_wall_side_tall")),
+			Optional.of("_side_tall"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
+	public static final ModelTemplate PATH_WALL_INVENTORY = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_wall_inventory")),
+			Optional.of("_inventory"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
 	public static final ModelTemplate LADDER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/ladder")),
 			Optional.of(""),TextureSlot.ALL);
 	public static final ModelTemplate LEVER_ON = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/lever_on")),
@@ -63,4 +74,38 @@ public class UpgradedVanillaModelTemplates {
 			Optional.of(""), TextureSlot.FRONT, TextureSlot.SIDE, TextureSlot.TOP, TextureSlot.BOTTOM, TextureSlot.PARTICLE);
 	public static final ModelTemplate OBSERVER_ON = new ModelTemplate(Optional.of(new ResourceLocation("minecraft","block/observer_on")),
 			Optional.of("_on"), TextureSlot.FRONT, TextureSlot.SIDE, TextureSlot.TOP, TextureSlot.BOTTOM, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_SLAB = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_slab")),
+			Optional.of(""), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_SLAB_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_slab_top")),
+			Optional.of("_top"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs")),
+			Optional.of(""), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS_INNER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs_inner")),
+			Optional.of("_inner"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS_OUTER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs_outer")),
+			Optional.of("_outer"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs_up")),
+			Optional.of("_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS_INNER_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs_inner_up")),
+			Optional.of("_inner_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate PATH_STAIRS_OUTER_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/path_stairs_outer_up")),
+			Optional.of("_outer_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate GRASS_SLAB = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_slab_template")),
+			Optional.of(""), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_SLAB_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_slab_top_template")),
+			Optional.of("_top"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_template")),
+			Optional.of(""), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS_INNER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_inner_template")),
+			Optional.of("_inner"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS_OUTER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_outer_template")),
+			Optional.of("_outer"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_up_template")),
+			Optional.of("_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS_INNER_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_inner_up_template")),
+			Optional.of("_inner_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+	public static final ModelTemplate GRASS_STAIRS_OUTER_UP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/grass_stairs_outer_up_template")),
+			Optional.of("_outer_up"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.PARTICLE, OVERLAY);
+
+
 }

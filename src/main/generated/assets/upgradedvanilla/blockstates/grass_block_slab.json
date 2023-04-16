@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/grass_block_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/grass_block"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/grass_block_slab_top"
+    }
+  }
+}

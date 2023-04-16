@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:podzol_stairs",
+    "upgradedvanilla:podzol_slab",
+    "upgradedvanilla:podzol_wall"
+  ]
+}

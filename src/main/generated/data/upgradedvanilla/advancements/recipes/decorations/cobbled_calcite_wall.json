@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_calcite_stones_slabs": {
+    "has_calcite_stone_slabs": {
       "conditions": {
         "items": [
           {
@@ -20,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_calcite_stones_slabs",
+      "has_calcite_stone_slabs",
       "has_the_recipe"
     ]
   ],

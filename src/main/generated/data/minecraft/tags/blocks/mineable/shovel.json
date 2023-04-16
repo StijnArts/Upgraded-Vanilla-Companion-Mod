@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:dirt_slab",
+    "upgradedvanilla:dirt_stairs",
+    "upgradedvanilla:dirt_wall",
+    "upgradedvanilla:dirt_path_slab",
+    "upgradedvanilla:dirt_path_stairs",
+    "upgradedvanilla:dirt_path_wall",
+    "upgradedvanilla:grass_block_slab",
+    "upgradedvanilla:grass_block_stairs",
+    "upgradedvanilla:grass_block_wall",
+    "upgradedvanilla:podzol_stairs",
+    "upgradedvanilla:podzol_slab",
+    "upgradedvanilla:podzol_wall"
+  ]
+}

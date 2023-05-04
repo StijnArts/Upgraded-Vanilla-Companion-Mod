@@ -1,7 +1,9 @@
 package drai.dev.upgradedvanilla.mixin;
 
+import drai.dev.upgradedvanilla.blocks.dirt.*;
 import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
 import drai.dev.upgradedvanilla.modules.minecraft.soil.grass.*;
+import drai.dev.upgradedvanilla.tag.*;
 import games.twinhead.moreslabsstairsandwalls.block.*;
 import net.minecraft.core.*;
 import net.minecraft.world.level.*;
@@ -31,31 +33,39 @@ public abstract class TreeDecoratorGeneratorMixin {
 	private void replace(TreeDecorator.Context context, BlockPos pos, CallbackInfo ci) {
 		for (int i = 2; i >= -3; --i) {
 			BlockPos blockPos = pos.above(i);
-			if (Feature.isGrassOrDirt(context.level(), blockPos)) {
-				Iterator iterator = MinecraftDirtBlocks.getPodzolReplaceableStairs().iterator();
-
+			if (context.level().isStateAtPosition(blockPos, blockState -> blockState.is(UpgradedVanillaTags.PODZOL_REPLACEABLE))) {
 				BlockState modBlockState;
-				while(iterator.hasNext()) {
-					modBlockState = (BlockState)iterator.next();
-					if (context.level().isStateAtPosition(blockPos, Predicate.isEqual(modBlockState))) {
-						context.setBlock(pos, (BlockState)((BlockState)((BlockState) Podzol.PODZOL_STAIRS.defaultBlockState().setValue(StairBlock.FACING,
-								(Direction)modBlockState.getValue(StairBlock.FACING))).setValue(StairBlock.SHAPE,
-								(StairsShape)modBlockState.getValue(StairBlock.SHAPE))).setValue(StairBlock.HALF,
-								(Half)modBlockState.getValue(StairBlock.HALF)));
-						ci.cancel();
-						break;
-					}
+				ArrayList<BlockState> blockStates = new ArrayList<>();
+				if (context.level().isStateAtPosition(blockPos, (blockState -> {
+						if (blockState.getBlock() instanceof BaseDirtStairs) {
+							blockStates.add(blockState);
+							return true;
+						}
+						return false;
+					}))) {
+					System.out.println("attempting to place a podzol stairs");
+					modBlockState = blockStates.get(0);
+					System.out.println(modBlockState.getBlock());
+					context.setBlock(blockPos, (BlockState) ((BlockState) ((BlockState) Podzol.PODZOL_STAIRS.defaultBlockState().setValue(StairBlock.FACING,
+							(Direction) modBlockState.getValue(StairBlock.FACING))).setValue(StairBlock.SHAPE,
+							(StairsShape) modBlockState.getValue(StairBlock.SHAPE))).setValue(StairBlock.HALF,
+							(Half) modBlockState.getValue(StairBlock.HALF)));
+					ci.cancel();
+					break;
 				}
-				iterator = MinecraftDirtBlocks.getPodzolReplaceableSlabs().iterator();
-
-				while(iterator.hasNext()) {
-					modBlockState = (BlockState)iterator.next();
-					if (context.level().isStateAtPosition(blockPos, Predicate.isEqual(modBlockState))) {
-						context.setBlock(pos, (BlockState)Podzol.PODZOL_SLAB.defaultBlockState().setValue(SlabBlock.TYPE,
-								(SlabType)modBlockState.getValue(SlabBlock.TYPE)));
-						ci.cancel();
-						break;
+				if (context.level().isStateAtPosition(blockPos, (blockState -> {
+					if (blockState.getBlock() instanceof BaseDirtSlab) {
+						blockStates.add(blockState);
+						return true;
 					}
+					return false;
+				}))) {
+					System.out.println("attempting to place a podzol slab");
+					modBlockState = blockStates.get(0);
+					context.setBlock(blockPos, (BlockState) Podzol.PODZOL_SLAB.defaultBlockState().setValue(SlabBlock.TYPE,
+							(SlabType) modBlockState.getValue(SlabBlock.TYPE)));
+					ci.cancel();
+					break;
 				}
 			}
 			if (!context.isAir(blockPos) && i < 0) break;

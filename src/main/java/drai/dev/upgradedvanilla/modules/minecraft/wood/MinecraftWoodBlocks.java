@@ -4,6 +4,7 @@ import java.awt.image.*;
 import java.io.*;
 import java.util.*;
 import java.util.List;
+import java.util.function.*;
 
 import javax.imageio.*;
 
@@ -13,6 +14,8 @@ import com.simibubi.create.foundation.data.recipe.*;
 import drai.dev.upgradedvanilla.*;
 import drai.dev.upgradedvanilla.blockentities.renderers.*;
 import drai.dev.upgradedvanilla.blocks.*;
+import drai.dev.upgradedvanilla.blocks.leaves.*;
+import drai.dev.upgradedvanilla.blocks.logs.*;
 import drai.dev.upgradedvanilla.datageneration.recipes.processing.*;
 import drai.dev.upgradedvanilla.helpers.*;
 import drai.dev.upgradedvanilla.helpers.block.*;
@@ -24,6 +27,7 @@ import drai.dev.upgradedvanilla.modules.minecraft.wool.*;
 import drai.dev.upgradedvanilla.tag.*;
 import net.bunten.enderscape.registry.*;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.*;
+import net.fabricmc.fabric.api.client.rendering.v1.*;
 import net.fabricmc.fabric.api.datagen.v1.provider.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.*;
 import net.fabricmc.fabric.api.registry.*;
@@ -39,6 +43,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.*;
 import net.minecraft.world.level.block.state.properties.*;
@@ -310,6 +315,394 @@ public class MinecraftWoodBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		hyphaeBlocks.forEach((log)->StrippableBlockRegistry.register(log,returnBlock));
+		return returnBlock;
+	}
+
+	public static Block logStairsBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+										List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_stairs", sourceCapitalized.trim() + " Stairs",
+				UpgradedVanilla.ID, new StrippableStairsBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators, block) -> {
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation inner = ModelTemplates.STAIRS_INNER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation straight = ModelTemplates.STAIRS_STRAIGHT.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation outer = ModelTemplates.STAIRS_OUTER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createStairs((Block) block, inner, straight, outer));
+					blockModelGenerators.delegateItemModel((Block) block, straight);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item, 4).define('P', plankTag)
+							.pattern("P  ")
+							.pattern("PP ")
+							.pattern("PPP")
+							.unlockedBy("has_" + material + "_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block endStemStairsBlock(String material, Block logBlock, Block hyphaeBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									   List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_stairs", sourceCapitalized.trim() + " Stairs",
+				UpgradedVanilla.ID, new StrippableStairsBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators, block) -> {
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"));
+					ResourceLocation inner = ModelTemplates.STAIRS_INNER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation straight = ModelTemplates.STAIRS_STRAIGHT.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation outer = ModelTemplates.STAIRS_OUTER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createStairs((Block) block, inner, straight, outer));
+					blockModelGenerators.delegateItemModel((Block) block, straight);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item, 4).define('P', plankTag)
+							.pattern("P  ")
+							.pattern("PP ")
+							.pattern("PPP")
+							.unlockedBy("has_" + material + "_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block endHyphaeStairsBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									   List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_stairs", sourceCapitalized.trim() + " Stairs",
+				UpgradedVanilla.ID, new StrippableStairsBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators, block) -> {
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation inner = ModelTemplates.STAIRS_INNER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation straight = ModelTemplates.STAIRS_STRAIGHT.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation outer = ModelTemplates.STAIRS_OUTER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createStairs((Block) block, inner, straight, outer));
+					blockModelGenerators.delegateItemModel((Block) block, straight);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item, 4).define('P', plankTag)
+							.pattern("P  ")
+							.pattern("PP ")
+							.pattern("PPP")
+							.unlockedBy("has_" + material + "_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block strippedLogStairsBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									   List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(strippedLog).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(strippedLog).getPath() + "_stairs", sourceCapitalized.trim() + " Stairs",
+				UpgradedVanilla.ID,
+				new StairBlock(strippedLog.defaultBlockState(),
+						FabricBlockSettings.copyOf(logBlock)),
+				CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators, block) -> {
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(strippedLog,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(strippedLog,"_side"));
+					ResourceLocation inner = ModelTemplates.STAIRS_INNER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation straight = ModelTemplates.STAIRS_STRAIGHT.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation outer = ModelTemplates.STAIRS_OUTER.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createStairs((Block) block, inner, straight, outer));
+					blockModelGenerators.delegateItemModel((Block) block, straight);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,strippedLog);
+					ShapedRecipeBuilder.shaped(item, 4).define('P', plankTag)
+							.pattern("P  ")
+							.pattern("PP ")
+							.pattern("PPP")
+							.unlockedBy("has_" + material + "_stripped_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block logSlabBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									  List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_slab", sourceCapitalized.trim() + " Slab",
+				UpgradedVanilla.ID, new StrippableSlabBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation bottom = ModelTemplates.SLAB_BOTTOM.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					ResourceLocation top = ModelTemplates.SLAB_TOP.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createSlab((Block) block, bottom, top,
+							ModelLocationUtils.getModelLocation(logBlock)));
+					blockModelGenerators.delegateItemModel((Block) block,bottom);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock,2);
+					ShapedRecipeBuilder.shaped(item,6).define('P',plankTag)
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block endStemSlabBlock(String material, Block logBlock, Block hyphaeBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									 List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_slab", sourceCapitalized.trim() + " Slab",
+				UpgradedVanilla.ID, new StrippableSlabBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"));
+					ResourceLocation bottom = ModelTemplates.SLAB_BOTTOM.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					ResourceLocation top = ModelTemplates.SLAB_TOP.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createSlab((Block) block, bottom, top,
+							ModelLocationUtils.getModelLocation(logBlock)));
+					blockModelGenerators.delegateItemModel((Block) block,bottom);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock,2);
+					ShapedRecipeBuilder.shaped(item,6).define('P',plankTag)
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block endHyphaeSlabBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									 List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_slab", sourceCapitalized.trim() + " Slab",
+				UpgradedVanilla.ID, new StrippableSlabBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation bottom = ModelTemplates.SLAB_BOTTOM.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					ResourceLocation top = ModelTemplates.SLAB_TOP.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createSlab((Block) block, bottom, top,
+							ModelLocationUtils.getModelLocation(logBlock)));
+					blockModelGenerators.delegateItemModel((Block) block,bottom);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock,2);
+					ShapedRecipeBuilder.shaped(item,6).define('P',plankTag)
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block strippedLogSlabBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> plankTag, List<TagKey<Block>> blockTags,
+									 List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(strippedLog).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(strippedLog).getPath() + "_slab", sourceCapitalized.trim() + " Slab",
+				UpgradedVanilla.ID, new SlabBlock(FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(strippedLog,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(strippedLog,"_side"));
+					ResourceLocation bottom = ModelTemplates.SLAB_BOTTOM.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					ResourceLocation top = ModelTemplates.SLAB_TOP.create((Block) block,textureMapping,blockModelGenerators.modelOutput);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createSlab((Block) block, bottom, top,
+							ModelLocationUtils.getModelLocation(strippedLog)));
+					blockModelGenerators.delegateItemModel((Block) block,bottom);
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,strippedLog,2);
+					ShapedRecipeBuilder.shaped(item,6).define('P',plankTag)
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_stripped_logs", FabricRecipeProvider.has(plankTag)).save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		return returnBlock;
+	}
+	public static Block logWallBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> blockTag, List<TagKey<Block>> blockTags,
+									  List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_wall", sourceCapitalized.trim() + " Wall",
+				UpgradedVanilla.ID, new StrippableWallBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation inventory = UpgradedVanillaModelTemplates.LOG_WALL_INVENTORY.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation post = UpgradedVanillaModelTemplates.LOG_WALL_POST.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation tallSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE_TALL.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation lowSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.delegateItemModel((Block) block, inventory);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createWall((Block) block, post, lowSide,tallSide));
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
+							.pattern("PPP")
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(blockTag))
+							.save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
+		return returnBlock;
+	}
+	public static Block endHyphaeWallBlock(String material, Block logBlock, Block strippedLog, TagKey<Item> blockTag, List<TagKey<Block>> blockTags,
+									 List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_wall", sourceCapitalized.trim() + " Wall",
+				UpgradedVanilla.ID, new StrippableWallBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(logBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(logBlock,"_side"));
+					ResourceLocation inventory = UpgradedVanillaModelTemplates.LOG_WALL_INVENTORY.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation post = UpgradedVanillaModelTemplates.LOG_WALL_POST.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation tallSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE_TALL.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation lowSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.delegateItemModel((Block) block, inventory);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createWall((Block) block, post, lowSide,tallSide));
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
+							.pattern("PPP")
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(blockTag))
+							.save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
+		return returnBlock;
+	}
+	public static Block endStemWallBlock(String material, Block logBlock, Block hyphaeBlock, Block strippedLog, TagKey<Item> blockTag, List<TagKey<Block>> blockTags,
+										   List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(logBlock).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(logBlock).getPath() + "_wall", sourceCapitalized.trim() + " Wall",
+				UpgradedVanilla.ID, new StrippableWallBlock(strippedLog, FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(hyphaeBlock,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(hyphaeBlock,"_side"));
+					ResourceLocation inventory = UpgradedVanillaModelTemplates.LOG_WALL_INVENTORY.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation post = UpgradedVanillaModelTemplates.LOG_WALL_POST.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation tallSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE_TALL.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation lowSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.delegateItemModel((Block) block, inventory);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createWall((Block) block, post, lowSide,tallSide));
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,logBlock);
+					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
+							.pattern("PPP")
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_logs", FabricRecipeProvider.has(blockTag))
+							.save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
+		return returnBlock;
+	}
+	public static Block strippedLogWallBlock(String material, Block logBlock,  Block strippedLog, TagKey<Item> blockTag, List<TagKey<Block>> blockTags,
+									 List<TagKey<Item>> itemTags) {
+		String sourceCapitalized = "";
+		for (String segment :Registry.BLOCK.getKey(strippedLog).getPath().split("_")) {
+			sourceCapitalized = sourceCapitalized +" "+StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(Registry.BLOCK.getKey(strippedLog).getPath() + "_wall", sourceCapitalized.trim() + " Wall",
+				UpgradedVanilla.ID, new WallBlock(FabricBlockSettings.copyOf(logBlock)), CreativeModeTab.TAB_BUILDING_BLOCKS,
+				(blockModelGenerators,block)->{
+					TextureMapping textureMapping = new TextureMapping()
+							.put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.TOP, TextureMapping.getBlockTexture(strippedLog,"_top"))
+							.put(TextureSlot.SIDE, TextureMapping.getBlockTexture(strippedLog,"_side"))
+							.put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(strippedLog,"_side"));
+					ResourceLocation inventory = UpgradedVanillaModelTemplates.LOG_WALL_INVENTORY.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation post = UpgradedVanillaModelTemplates.LOG_WALL_POST.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation tallSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE_TALL.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					ResourceLocation lowSide = UpgradedVanillaModelTemplates.LOG_WALL_SIDE.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
+					blockModelGenerators.delegateItemModel((Block) block, inventory);
+					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createWall((Block) block, post, lowSide,tallSide));
+				},
+				((finishedRecipeConsumer, item) -> {
+					FabricRecipeProvider.stonecutterResultFromBase(finishedRecipeConsumer,item,strippedLog);
+					ShapedRecipeBuilder.shaped(item,6).define('P',blockTag)
+							.pattern("PPP")
+							.pattern("PPP")
+							.unlockedBy("has_"+material+"_stripped_logs", FabricRecipeProvider.has(blockTag))
+							.save(finishedRecipeConsumer);
+				}),
+				BlockLoot::dropSelf,
+				blockTags, itemTags);
+		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		return returnBlock;
 	}
 

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:dirt_slab",
+    "upgradedvanilla:dirt_stairs",
+    "upgradedvanilla:coarse_dirt_slab",
+    "upgradedvanilla:coarse_dirt_stairs",
+    "upgradedvanilla:rooted_dirt_slab",
+    "upgradedvanilla:rooted_dirt_stairs",
+    "upgradedvanilla:grass_block_slab",
+    "upgradedvanilla:grass_block_stairs",
+    "upgradedvanilla:mycelium_slab",
+    "upgradedvanilla:mycelium_stairs",
+    "upgradedvanilla:oak_leaf_slab",
+    "upgradedvanilla:oak_leaf_stairs"
+  ]
+}

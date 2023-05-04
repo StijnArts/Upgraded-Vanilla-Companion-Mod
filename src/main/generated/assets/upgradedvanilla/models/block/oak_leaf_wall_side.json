@@ -1,0 +1,6 @@
+{
+  "parent": "upgradedvanilla:block/leaves_template_wall_side",
+  "textures": {
+    "wall": "minecraft:block/oak_leaves"
+  }
+}

@@ -1,8 +1,7 @@
 {
-  "parent": "upgradedvanilla:block/grass_stairs_inner_up_template",
+  "parent": "upgradedvanilla:block/column_stairs_inner_up_template",
   "textures": {
     "bottom": "minecraft:block/dirt",
-    "overlay": "minecraft:block/podzol_side_overlay",
     "particle": "minecraft:block/dirt",
     "side": "minecraft:block/podzol_side",
     "top": "minecraft:block/podzol_top"

@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/log_wall_post",
+  "textures": {
+    "bottom": "minecraft:block/hay_block_top",
+    "particle": "minecraft:block/hay_block_side",
+    "side": "minecraft:block/hay_block_side",
+    "top": "minecraft:block/hay_block_top"
+  }
+}

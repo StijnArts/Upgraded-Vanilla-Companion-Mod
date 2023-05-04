@@ -1,6 +1,6 @@
 package drai.dev.upgradedvanilla.blocks.dirt;
 
-import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
+import drai.dev.upgradedvanilla.modules.minecraft.soil.dirt.*;
 import net.minecraft.core.*;
 import net.minecraft.server.level.*;
 import net.minecraft.util.*;
@@ -8,8 +8,6 @@ import net.minecraft.world.item.context.*;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.*;
-
-import java.util.function.*;
 
 public class PathBlockWall extends WallBlock {
 	public PathBlockWall(BlockBehaviour.Properties settings) {

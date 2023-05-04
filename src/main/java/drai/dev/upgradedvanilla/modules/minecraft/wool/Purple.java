@@ -1,5 +1,6 @@
 package drai.dev.upgradedvanilla.modules.minecraft.wool;
 
+import drai.dev.upgradedvanilla.*;
 import drai.dev.upgradedvanilla.helpers.*;
 import net.minecraft.resources.*;
 import net.minecraft.tags.*;
@@ -10,7 +11,7 @@ import java.util.*;
 public class Purple {
 	public static TagKey<Item> PURPLE_WOOL_BLOCKS_ITEM_TAG;
 	private static void registerTags(){
-		PURPLE_WOOL_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems("purple_wool_blocks", List.of(new ResourceLocation("minecraft", "purple_wool")));
+		PURPLE_WOOL_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"purple_wool_blocks"), List.of(new ResourceLocation("minecraft", "purple_wool")));
 	}
 
 	public  static void register(){

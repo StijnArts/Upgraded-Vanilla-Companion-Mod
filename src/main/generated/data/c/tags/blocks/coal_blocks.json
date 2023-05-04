@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:coal_slab",
+    "upgradedvanilla:coal_stairs",
+    "upgradedvanilla:coal_wall"
+  ]
+}

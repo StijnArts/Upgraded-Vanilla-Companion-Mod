@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+    "upgradedvanilla:stripped_amaranita_stem_stairs",
+    "upgradedvanilla:amaranita_stem_stairs",
+    "upgradedvanilla:stripped_amaranita_stem_slab",
+    "upgradedvanilla:amaranita_stem_slab",
+    "upgradedvanilla:stripped_amaranita_stem_wall",
+    "upgradedvanilla:amaranita_stem_wall",
+    "upgradedvanilla:stripped_amaranita_hyphae_stairs",
+    "upgradedvanilla:amaranita_hyphae_stairs",
+    "upgradedvanilla:stripped_amaranita_hyphae_slab",
+    "upgradedvanilla:amaranita_hyphae_slab",
+    "upgradedvanilla:stripped_amaranita_hyphae_wall",
+    "upgradedvanilla:amaranita_hyphae_wall",
     "upgradedvanilla:amaranita_beehive",
     "upgradedvanilla:amaranita_composter",
     "upgradedvanilla:amaranita_cartography_table",

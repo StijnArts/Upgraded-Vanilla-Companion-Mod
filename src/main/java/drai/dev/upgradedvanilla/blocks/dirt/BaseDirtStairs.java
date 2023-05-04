@@ -1,6 +1,6 @@
 package drai.dev.upgradedvanilla.blocks.dirt;
 
-import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
+import drai.dev.upgradedvanilla.modules.minecraft.soil.grass.*;
 import net.minecraft.core.*;
 import net.minecraft.sounds.*;
 import net.minecraft.world.*;
@@ -20,7 +20,7 @@ public class BaseDirtStairs extends StairBlock {
 			return InteractionResult.PASS;
 		} else {
 			if (!world.isClientSide) {
-				world.setBlockAndUpdate(pos, Path.PATH_STAIRS.withPropertiesOf(state));
+				world.setBlockAndUpdate(pos, Mycelium.Path.PATH_STAIRS.withPropertiesOf(state));
 				player.getMainHandItem().hurtAndBreak(1, player, (p) -> {
 					p.broadcastBreakEvent(hand);
 				});

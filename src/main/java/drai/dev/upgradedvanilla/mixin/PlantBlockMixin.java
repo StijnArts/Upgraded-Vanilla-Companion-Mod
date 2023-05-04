@@ -1,5 +1,7 @@
 package drai.dev.upgradedvanilla.mixin;
 
+import drai.dev.upgradedvanilla.blocks.dirt.*;
+import drai.dev.upgradedvanilla.tag.*;
 import games.twinhead.moreslabsstairsandwalls.registry.*;
 import net.minecraft.core.*;
 import net.minecraft.world.level.*;
@@ -23,12 +25,12 @@ public class PlantBlockMixin extends Block {
 			cancellable = true
 	)
 	private void injected(BlockState floor, BlockGetter world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
-		if (floor.is(ModBlockTags.DIRT)) {
-			if (floor.is(ModBlockTags.SLABS) && floor.getValue(SlabBlock.TYPE) == SlabType.BOTTOM) {
+		if (floor.is(UpgradedVanillaTags.DIRT_BLOCKS)) {
+			if (floor.getBlock() instanceof BaseDirtSlab && floor.getValue(SlabBlock.TYPE) == SlabType.BOTTOM) {
 				cir.setReturnValue(false);
 			}
 
-			if (floor.is(ModBlockTags.STAIRS) && floor.getValue(StairBlock.HALF) == Half.BOTTOM) {
+			if (floor.getBlock() instanceof BaseDirtSlab && floor.getValue(StairBlock.HALF) == Half.BOTTOM) {
 				cir.setReturnValue(false);
 			}
 		}

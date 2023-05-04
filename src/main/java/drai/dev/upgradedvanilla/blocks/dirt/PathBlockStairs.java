@@ -1,6 +1,6 @@
 package drai.dev.upgradedvanilla.blocks.dirt;
 
-import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
+import drai.dev.upgradedvanilla.modules.minecraft.soil.dirt.*;
 import net.minecraft.core.*;
 import net.minecraft.server.level.*;
 import net.minecraft.util.*;
@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.*;
 import net.minecraft.world.phys.shapes.*;
 
-import java.util.function.*;
 import java.util.stream.*;
 
 public class PathBlockStairs extends StairBlock {

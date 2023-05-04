@@ -15,6 +15,7 @@
     "upgradedvanilla:calcite_tiles_fence_gate",
     "upgradedvanilla:cracked_calcite_tiles_fence_gate",
     "upgradedvanilla:mossy_calcite_tiles_fence_gate",
+    "upgradedvanilla:red_concrete_fence_gate",
     {
       "id": "#upgradedvanilla:amaranita_fence_gates",
       "required": false

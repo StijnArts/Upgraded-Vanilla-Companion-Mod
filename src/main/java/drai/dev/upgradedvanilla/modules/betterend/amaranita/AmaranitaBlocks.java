@@ -5,6 +5,7 @@ import drai.dev.upgradedvanilla.helpers.*;
 import drai.dev.upgradedvanilla.modules.minecraft.*;
 import drai.dev.upgradedvanilla.modules.minecraft.wood.*;
 import drai.dev.upgradedvanilla.tag.*;
+import net.fabricmc.fabric.api.client.rendering.v1.*;
 import net.minecraft.resources.*;
 import net.minecraft.tags.*;
 import net.minecraft.world.item.*;
@@ -165,75 +166,87 @@ public class AmaranitaBlocks {
 	public static Block AMARANITA_CARTOGRAPHY_TABLE;
 	public static Block AMARANITA_FLETCHING_TABLE;
 	public static Block AMARANITA_SMITHING_TABLE;
-
+	public static Block AMARANITA_STEM_STAIRS;
+	public static Block AMARANITA_STEM_SLAB;
+	public static Block AMARANITA_STEM_WALL;
+	public static Block AMARANITA_HYPHAE_STAIRS;
+	public static Block AMARANITA_HYPHAE_SLAB;
+	public static Block AMARANITA_HYPHAE_WALL;
+	public static Block STRIPPED_AMARANITA_STEM_STAIRS;
+	public static Block STRIPPED_AMARANITA_STEM_SLAB;
+	public static Block STRIPPED_AMARANITA_STEM_WALL;
+	public static Block STRIPPED_AMARANITA_HYPHAE_STAIRS;
+	public static Block STRIPPED_AMARANITA_HYPHAE_SLAB;
+	public static Block STRIPPED_AMARANITA_HYPHAE_WALL;
 
 	public static void register(){
 		registerStrippableLists();
 		amaranitaPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\AmaranitaPallete.png");
-		AMARANITA_STRIPPED_STEMS_BLOCK_TAG = TagKeyHelper.createBlockTagKey("stripped_"+MATERIAL_NAME+"_stems");
-		AMARANITA_STRIPPED_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKey("stripped_"+MATERIAL_NAME+"_stems");
+		AMARANITA_STRIPPED_STEMS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
+		AMARANITA_STRIPPED_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
 		STRIPPED_AMARANITA_STEM = MinecraftWoodBlocks.strippedStemBlock(MATERIAL_NAME, logBlocks, List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG),
 				List.of(AMARANITA_STRIPPED_STEMS_ITEM_TAG));
-		AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG = TagKeyHelper.createBlockTagKey("stripped_"+MATERIAL_NAME+"_hyphae");
-		AMARANITA_STRIPPED_HYPHAE_ITEM_TAG = TagKeyHelper.createItemTagKey("stripped_"+MATERIAL_NAME+"_hyphae");
-		AMARANITA_HYPHAE_BLOCK_TAG = TagKeyHelper.createBlockTagKeyWithBlocks(MATERIAL_NAME+"_hyphae",
+		AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_hyphae"));
+		AMARANITA_STRIPPED_HYPHAE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID, "stripped_"+MATERIAL_NAME+"_hyphae"));
+		AMARANITA_HYPHAE_BLOCK_TAG = TagKeyHelper.createBlockTagKeyWithBlocks(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_hyphae"),
 				List.of(new ResourceLocation("betterend","amaranita_hyphae")));
-		AMARANITA_HYPHAE_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(MATERIAL_NAME+"_hyphae",
+		AMARANITA_HYPHAE_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_hyphae"),
 				List.of(new ResourceLocation("betterend","amaranita_hyphae")));
 		AMARANITA_STEMS_BLOCK_TAG = TagKeyHelper.createBlockTagKeyWithCompositeTagsAndBlocks(
-				MATERIAL_NAME+"_stems", List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG,AMARANITA_HYPHAE_BLOCK_TAG,AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG),
+				new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_stems"), List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG,AMARANITA_HYPHAE_BLOCK_TAG,AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG),
 				List.of(new ResourceLocation("betterend","amaranita_stem")));
 		AMARANITA_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithCompositeTagsAndItems(
-				MATERIAL_NAME+"_stems", List.of(AMARANITA_STRIPPED_STEMS_ITEM_TAG,AMARANITA_HYPHAE_ITEM_TAG,AMARANITA_STRIPPED_HYPHAE_ITEM_TAG),
+				new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_stems"), List.of(AMARANITA_STRIPPED_STEMS_ITEM_TAG,AMARANITA_HYPHAE_ITEM_TAG,AMARANITA_STRIPPED_HYPHAE_ITEM_TAG),
 				List.of(new ResourceLocation("betterend","amaranita_stem")));
 		STRIPPED_AMARANITA_HYPHAE = MinecraftWoodBlocks.strippedHyphaeBlock(MATERIAL_NAME, woodBlocks, AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG),
 				List.of(AMARANITA_STRIPPED_HYPHAE_ITEM_TAG));
-		AMARANITA_PLANKS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_planks");
-		AMARANITA_PLANKS_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_planks");
+
+		AMARANITA_PLANKS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_planks"));
+		AMARANITA_PLANKS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_planks"));
 		AMARANITA_PLANKS = MinecraftWoodBlocks.endFungusPlankBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, STRIPPED_AMARANITA_STEM,
 				EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE,
 				AMARANITA_STEMS_ITEM_TAG, MaterialColor.COLOR_LIGHT_BLUE,
 				List.of(AMARANITA_PLANKS_BLOCK_TAG),List.of(AMARANITA_PLANKS_ITEM_TAG), amaranitaPalette);
-		AMARANITA_STAIRS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_stairs");
-		AMARANITA_STAIRS_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_stairs");
+		AMARANITA_STAIRS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_stairs"));
+		AMARANITA_STAIRS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_stairs"));
 		AMARANITA_STAIRS = MinecraftWoodBlocks.plankStairsBlock(MATERIAL_NAME,AMARANITA_PLANKS,AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_STAIRS_BLOCK_TAG),List.of(AMARANITA_STAIRS_ITEM_TAG));
-		AMARANITA_SLAB_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_slabs");
-		AMARANITA_SLAB_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_slabs");
+		AMARANITA_SLAB_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_slabs"));
+		AMARANITA_SLAB_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_slabs"));
 		AMARANITA_SLAB = MinecraftWoodBlocks.plankSlabBlock(MATERIAL_NAME,AMARANITA_PLANKS,AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_SLAB_BLOCK_TAG),List.of(AMARANITA_SLAB_ITEM_TAG));
 		AMARANITA_STICK = MinecraftItems.stick(MATERIAL_NAME,AmaranitaBlocks.AMARANITA_PLANKS_ITEM_TAG,
 				List.of(UpgradedVanillaTags.STICKS), amaranitaPalette);
-		AMARANITA_FENCE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_fences");
-		AMARANITA_FENCE_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_fences");
+		AMARANITA_FENCE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_fences"));
+		AMARANITA_FENCE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_fences"));
 		AMARANITA_FENCE = MinecraftWoodBlocks.plankFenceBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_STICK,AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_FENCE_BLOCK_TAG),List.of(AMARANITA_FENCE_ITEM_TAG));
-		AMARANITA_FENCE_GATE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_fence_gates");
-		AMARANITA_FENCE_GATE_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_fence_gates");
+		AMARANITA_FENCE_GATE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_fence_gates"));
+		AMARANITA_FENCE_GATE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_fence_gates"));
 		AMARANITA_FENCE_GATE = MinecraftWoodBlocks.plankFenceGateBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_STICK,AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_FENCE_GATE_BLOCK_TAG),List.of(AMARANITA_FENCE_GATE_ITEM_TAG));
-		AMARANITA_BUTTON_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_buttons");
-		AMARANITA_BUTTON_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_buttons");
+		AMARANITA_BUTTON_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_buttons"));
+		AMARANITA_BUTTON_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_buttons"));
 		AMARANITA_BUTTON = MinecraftWoodBlocks.plankButtonBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_BUTTON_BLOCK_TAG),List.of(AMARANITA_BUTTON_ITEM_TAG));
-		AMARANITA_PRESSURE_PLATE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_pressure_plates");
-		AMARANITA_PRESSURE_PLATE_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_pressure_plates");
+		AMARANITA_PRESSURE_PLATE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_pressure_plates"));
+		AMARANITA_PRESSURE_PLATE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_pressure_plates"));
 		AMARANITA_PRESSURE_PLATE = MinecraftWoodBlocks.plankPressurePlateBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_PRESSURE_PLATE_BLOCK_TAG),List.of(AMARANITA_PRESSURE_PLATE_ITEM_TAG));
-		AMARANITA_DOOR_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_doors");
-		AMARANITA_DOOR_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_doors");
+		AMARANITA_DOOR_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_doors"));
+		AMARANITA_DOOR_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_doors"));
 		AMARANITA_DOOR = MinecraftWoodBlocks.plankDoorBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_DOOR_BLOCK_TAG),List.of(AMARANITA_DOOR_ITEM_TAG));
-		AMARANITA_TRAPDOOR_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_trapdoors");
-		AMARANITA_TRAPDOOR_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_trapdoors");
+		AMARANITA_TRAPDOOR_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_trapdoors"));
+		AMARANITA_TRAPDOOR_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_trapdoors"));
 		AMARANITA_TRAPDOOR = MinecraftWoodBlocks.plankTrapdoorBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_TRAPDOOR_BLOCK_TAG),List.of(AMARANITA_TRAPDOOR_ITEM_TAG));
-		AMARANITA_WALL_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_walls");
-		AMARANITA_WALL_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_walls");
+		AMARANITA_WALL_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_walls"));
+		AMARANITA_WALL_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_walls"));
 		AMARANITA_WALL = MinecraftWoodBlocks.plankWallBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_SLAB_ITEM_TAG,
 				List.of(AMARANITA_WALL_BLOCK_TAG),List.of(AMARANITA_WALL_ITEM_TAG));
-		AMARANITA_LADDER_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_ladders");
-		AMARANITA_LADDER_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_ladders");
+		AMARANITA_LADDER_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_ladders"));
+		AMARANITA_LADDER_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_ladders"));
 		AMARANITA_LADDER = MinecraftWoodBlocks.ladderBlock(MATERIAL_NAME, AMARANITA_STICK,
 				List.of(AMARANITA_LADDER_BLOCK_TAG),List.of(AMARANITA_LADDER_ITEM_TAG), amaranitaPalette);
 		AMARANITA_STANDING_SIGN = MinecraftWoodBlocks.standingSignBlock(MATERIAL_NAME,AMARANITA, AMARANITA_PLANKS,
@@ -249,46 +262,82 @@ public class AmaranitaBlocks {
 				List.of(UVCommonBlockTags.WOODEN_CHESTS), List.of(UVCommonItemTags.WOODEN_CHESTS), amaranitaPalette);
 		AMARANITA_CHEST_BOAT = MinecraftItems.chestBoatItem(MATERIAL_NAME, AMARANITA_BOAT_TYPE, AMARANITA_BOAT,
 				UVCommonItemTags.WOODEN_CHESTS, List.of(), amaranitaPalette);
-		AMARANITA_BARREL_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_barrels");
-		AMARANITA_BARREL_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_barrels");
+		STRIPPED_AMARANITA_STEM_STAIRS = MinecraftWoodBlocks.strippedLogStairsBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM,STRIPPED_AMARANITA_STEM,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_STEM_STAIRS = MinecraftWoodBlocks.endStemStairsBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_STEM_STAIRS,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		STRIPPED_AMARANITA_STEM_SLAB = MinecraftWoodBlocks.strippedLogSlabBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, STRIPPED_AMARANITA_STEM,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_STEM_SLAB = MinecraftWoodBlocks.endStemSlabBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_STEM_STAIRS,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of( BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		STRIPPED_AMARANITA_STEM_WALL = MinecraftWoodBlocks.strippedLogWallBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, STRIPPED_AMARANITA_STEM,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(BlockTags.WALLS, BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_STEM_WALL = MinecraftWoodBlocks.endStemWallBlock(MATERIAL_NAME, EndBlocks.AMARANITA_STEM, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_STEM_STAIRS,
+				AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(BlockTags.WALLS, BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		STRIPPED_AMARANITA_HYPHAE_STAIRS = MinecraftWoodBlocks.strippedLogStairsBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of(AMARANITA_STRIPPED_HYPHAE_ITEM_TAG));
+		AMARANITA_HYPHAE_STAIRS = MinecraftWoodBlocks.endHyphaeStairsBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE_STAIRS,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		STRIPPED_AMARANITA_HYPHAE_SLAB = MinecraftWoodBlocks.strippedLogSlabBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_HYPHAE_SLAB = MinecraftWoodBlocks.endHyphaeSlabBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE_STAIRS,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		STRIPPED_AMARANITA_HYPHAE_WALL = MinecraftWoodBlocks.strippedLogWallBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.WALLS, BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_HYPHAE_WALL = MinecraftWoodBlocks.endHyphaeWallBlock(MATERIAL_NAME, EndBlocks.AMARANITA_HYPHAE, STRIPPED_AMARANITA_HYPHAE_STAIRS,
+				AMARANITA_STRIPPED_HYPHAE_ITEM_TAG, List.of(BlockTags.WALLS, BlockTags.MINEABLE_WITH_AXE),
+				List.of());
+		AMARANITA_BARREL_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_barrels"));
+		AMARANITA_BARREL_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_barrels"));
 		AMARANITA_BARREL = MinecraftWoodBlocks.barrelBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG, AMARANITA_SLAB_ITEM_TAG,
 				List.of(AMARANITA_BARREL_BLOCK_TAG,CommonPoiTags.FISHERMAN_WORKSTATION),List.of(AMARANITA_BARREL_ITEM_TAG), amaranitaPalette);
-		AMARANITA_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_torches");
-		AMARANITA_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_torches");
+		AMARANITA_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_torches"));
+		AMARANITA_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_torches"));
 		AMARANITA_WALL_TORCH = MinecraftWoodBlocks.wallTorchBlock(MATERIAL_NAME, List.of(AMARANITA_TORCH_BLOCK_TAG));
 		AMARANITA_STANDING_TORCH = MinecraftWoodBlocks.torchBlock(MATERIAL_NAME, List.of(AMARANITA_TORCH_BLOCK_TAG));
 		AMARANITA_TORCH_ITEM = MinecraftItems.torchItem(MATERIAL_NAME,AMARANITA_STANDING_TORCH,AMARANITA_WALL_TORCH,AMARANITA_STICK,
 				List.of(AMARANITA_TORCH_ITEM_TAG),amaranitaPalette);
-		AMARANITA_SOUL_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_soul_torches");
-		AMARANITA_SOUL_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_soul_torches");
+		AMARANITA_SOUL_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_soul_torches"));
+		AMARANITA_SOUL_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_soul_torches"));
 		AMARANITA_WALL_SOUL_TORCH = MinecraftWoodBlocks.wallSoulTorchBlock(MATERIAL_NAME, List.of(AMARANITA_SOUL_TORCH_BLOCK_TAG));
 		AMARANITA_STANDING_SOUL_TORCH = MinecraftWoodBlocks.soulTorchBlock(MATERIAL_NAME, List.of(AMARANITA_SOUL_TORCH_BLOCK_TAG));
 		AMARANITA_SOUL_TORCH_ITEM = MinecraftItems.soulTorchItem(MATERIAL_NAME, AMARANITA_TORCH_ITEM,AMARANITA_STANDING_SOUL_TORCH,AMARANITA_WALL_SOUL_TORCH,AMARANITA_STICK,
 				List.of(AMARANITA_SOUL_TORCH_ITEM_TAG),amaranitaPalette);
-		AMARANITA_REDSTONE_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_redstone_torches");
-		AMARANITA_REDSTONE_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_redstone_torches");
+		AMARANITA_REDSTONE_TORCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_redstone_torches"));
+		AMARANITA_REDSTONE_TORCH_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_redstone_torches"));
 		AMARANITA_WALL_REDSTONE_TORCH = MinecraftWoodBlocks.wallRedstoneTorchBlock(MATERIAL_NAME, List.of(AMARANITA_REDSTONE_TORCH_BLOCK_TAG));
 		AMARANITA_STANDING_REDSTONE_TORCH = MinecraftWoodBlocks.redstoneTorchBlock(MATERIAL_NAME, List.of(AMARANITA_REDSTONE_TORCH_BLOCK_TAG));
 		AMARANITA_REDSTONE_TORCH_ITEM = MinecraftItems.redstoneTorchItem(MATERIAL_NAME,AMARANITA_STANDING_REDSTONE_TORCH,AMARANITA_WALL_REDSTONE_TORCH,AMARANITA_STICK,
 				List.of(AMARANITA_REDSTONE_TORCH_ITEM_TAG),amaranitaPalette);
-		AMARANITA_WORKBENCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_workbenches");
-		AMARANITA_WORKBENCH_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_workbenches");
+		AMARANITA_WORKBENCH_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_workbenches"));
+		AMARANITA_WORKBENCH_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_workbenches"));
 		AMARANITA_WORKBENCH = MinecraftWoodBlocks.craftingTableBlock(MATERIAL_NAME,AMARANITA_PLANKS,
 				List.of(AMARANITA_WORKBENCH_BLOCK_TAG),List.of(AMARANITA_WORKBENCH_ITEM_TAG), amaranitaPalette);
-		AMARANITA_CAMPFIRE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_campfires");
-		AMARANITA_CAMPFIRE_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_campfires");
+		AMARANITA_CAMPFIRE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_campfires"));
+		AMARANITA_CAMPFIRE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_campfires"));
 		AMARANITA_CAMPFIRE = MinecraftWoodBlocks.campfireBlock(MATERIAL_NAME,AMARANITA_STEMS_ITEM_TAG,AMARANITA_STICK,
 				List.of(BlockTags.CAMPFIRES),List.of(UpgradedVanillaTags.CAMPFIRE_ITEM_TAG), amaranitaPalette);
-		AMARANITA_SOUL_CAMPFIRE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_soul_campfires");
-		AMARANITA_SOUL_CAMPFIRE_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_soul_campfires");
+		AMARANITA_SOUL_CAMPFIRE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_soul_campfires"));
+		AMARANITA_SOUL_CAMPFIRE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_soul_campfires"));
 		AMARANITA_SOUL_CAMPFIRE = MinecraftWoodBlocks.soulCampfireBlock(MATERIAL_NAME, AMARANITA_CAMPFIRE, AMARANITA_STEMS_ITEM_TAG,AMARANITA_STICK,
 				List.of(BlockTags.CAMPFIRES),List.of(UpgradedVanillaTags.CAMPFIRE_ITEM_TAG), amaranitaPalette);
-		AMARANITA_BOOKSHELF_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_bookshelves");
-		AMARANITA_BOOKSHELF_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_bookshelves");
+		AMARANITA_BOOKSHELF_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_bookshelves"));
+		AMARANITA_BOOKSHELF_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_bookshelves"));
 		AMARANITA_BOOKSHELF = MinecraftWoodBlocks.bookshelfBlock(MATERIAL_NAME,AMARANITA_PLANKS, AMARANITA_PLANKS_ITEM_TAG,
 				List.of(AMARANITA_BOOKSHELF_BLOCK_TAG),List.of(AMARANITA_BOOKSHELF_ITEM_TAG), amaranitaPalette);
-		AMARANITA_LECTERN_BLOCK_TAG = TagKeyHelper.createBlockTagKey(MATERIAL_NAME+"_lecterns");
-		AMARANITA_LECTERN_ITEM_TAG = TagKeyHelper.createItemTagKey(MATERIAL_NAME+"_lecterns");
+		AMARANITA_LECTERN_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_lecterns"));
+		AMARANITA_LECTERN_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_lecterns"));
 		AMARANITA_LECTERN = MinecraftWoodBlocks.lecternBlock(MATERIAL_NAME, AMARANITA_PLANKS,AMARANITA_SLAB, UpgradedVanillaTags.BOOKSHELVES_ITEM_TAG, AMARANITA_SLAB_ITEM_TAG,
 				List.of(PoiTags.LIBRARIAN_WORKSTATION, AMARANITA_LECTERN_BLOCK_TAG),List.of(AMARANITA_LECTERN_ITEM_TAG), amaranitaPalette);
 		AMARANITA_RAIL = MinecraftWoodBlocks.railBlock(MATERIAL_NAME, AMARANITA_STICK,

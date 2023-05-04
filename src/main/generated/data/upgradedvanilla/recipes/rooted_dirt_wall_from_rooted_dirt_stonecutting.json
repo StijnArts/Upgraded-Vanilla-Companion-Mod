@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:rooted_dirt"
+  },
+  "result": "upgradedvanilla:rooted_dirt_wall"
+}

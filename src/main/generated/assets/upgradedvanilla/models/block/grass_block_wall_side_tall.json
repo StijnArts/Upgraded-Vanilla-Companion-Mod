@@ -1,5 +1,5 @@
 {
-  "parent": "upgradedvanilla:block/wall_side_tall_side_bottom_top",
+  "parent": "upgradedvanilla:block/grass_wall_side_tall_side_bottom_top",
   "textures": {
     "bottom": "minecraft:block/dirt",
     "particle": "minecraft:block/dirt",

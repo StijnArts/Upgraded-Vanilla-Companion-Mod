@@ -1,0 +1,10 @@
+{
+  "parent": "upgradedvanilla:block/glass/glass_stairs_outer",
+  "textures": {
+    "bottom": "minecraft:block/red_stained_glass",
+    "front": "minecraft:block/red_stained_glass_slab_side",
+    "particle": "minecraft:block/red_stained_glass",
+    "side": "minecraft:block/red_stained_glass_stair_side",
+    "top": "minecraft:block/red_stained_glass_stair_small"
+  }
+}

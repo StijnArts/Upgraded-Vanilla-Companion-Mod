@@ -1,6 +1,6 @@
 package drai.dev.upgradedvanilla.blocks.dirt;
 
-import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
+import drai.dev.upgradedvanilla.modules.minecraft.soil.grass.*;
 import net.minecraft.core.*;
 import net.minecraft.sounds.*;
 import net.minecraft.world.*;
@@ -21,7 +21,7 @@ public class BaseDirtSlab extends SlabBlock {
 			return InteractionResult.PASS;
 		} else {
 			if (!world.isClientSide) {
-				world.setBlockAndUpdate(pos, (BlockState) Path.PATH_SLAB.defaultBlockState().setValue(SlabBlock.TYPE, (SlabType)state.getValue(SlabBlock.TYPE)));
+				world.setBlockAndUpdate(pos, (BlockState) Mycelium.Path.PATH_SLAB.defaultBlockState().setValue(SlabBlock.TYPE, (SlabType)state.getValue(SlabBlock.TYPE)));
 				player.getMainHandItem().hurtAndBreak(1, player, (p) -> {
 					p.broadcastBreakEvent(hand);
 				});

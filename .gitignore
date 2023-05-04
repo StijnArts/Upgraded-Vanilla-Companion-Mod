@@ -4,3 +4,12 @@
 
 /run/saves/
 /run/resourcepacks/
+/run/logs/
+/run/.fabric/
+/run/.mixin.out/
+/run/crash-reports/
+/run/data/
+/run/defaultconfigs/
+/run/localconfigs/
+/run/schematics/
+/run/screenshots/

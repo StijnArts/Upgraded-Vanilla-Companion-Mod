@@ -1,5 +1,6 @@
 package drai.dev.upgradedvanilla.modules.minecraft.stone.stone;
 
+import drai.dev.upgradedvanilla.*;
 import drai.dev.upgradedvanilla.helpers.*;
 import drai.dev.upgradedvanilla.modules.minecraft.stone.*;
 import drai.dev.upgradedvanilla.tag.*;
@@ -24,9 +25,9 @@ public class Deepslate {
 	public static Block DEEPSLATE_OBSERVER;
 	public static Block DEEPSLATE_STAIRS;
 	private static void registerTags(){
-		DEEPSLATE_SLABS_ITEM_TAG = TagKeyHelper.createItemTagKey("deepslate_slabs");
-		DEEPSLATE_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems("deepslate_blocks", List.of(new ResourceLocation("minecraft", "deepslate")));
-		COBBLED_DEEPSLATE_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems("cobbled_deepslate_blocks", List.of(new ResourceLocation("minecraft", "cobbled_deepslate")));
+		DEEPSLATE_SLABS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,"deepslate_slabs"));
+		DEEPSLATE_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"deepslate_blocks"), List.of(new ResourceLocation("minecraft", "deepslate")));
+		COBBLED_DEEPSLATE_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"cobbled_deepslate_blocks"), List.of(new ResourceLocation("minecraft", "cobbled_deepslate")));
 	}
 
 	public  static void register(){

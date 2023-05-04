@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amaranita_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "betterend:amaranita_stem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:amaranita_stem_slab_from_amaranita_stem_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amaranita_stem",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:amaranita_stem_slab_from_amaranita_stem_stonecutting"
+    ]
+  }
+}

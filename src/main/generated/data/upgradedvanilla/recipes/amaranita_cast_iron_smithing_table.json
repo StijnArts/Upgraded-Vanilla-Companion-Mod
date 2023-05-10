@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "P": {
-      "tag": "upgradedvanilla:amaranita_slabs"
+      "tag": "upgradedvanilla:amaranita_planks"
     },
     "S": {
-      "tag": "c:iron_ingots"
+      "item": "createdeco:cast_iron_ingot"
     }
   },
   "pattern": [
@@ -14,6 +14,6 @@
     "PP"
   ],
   "result": {
-    "item": "upgradedvanilla:amaranita_smithing_table"
+    "item": "upgradedvanilla:amaranita_cast_iron_smithing_table"
   }
 }

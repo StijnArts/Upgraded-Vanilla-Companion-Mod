@@ -17,7 +17,8 @@
     "upgradedvanilla:amaranita_composter",
     "upgradedvanilla:amaranita_cartography_table",
     "upgradedvanilla:amaranita_fletching_table",
-    "upgradedvanilla:amaranita_smithing_table",
+    "upgradedvanilla:amaranita_iron_smithing_table",
+    "upgradedvanilla:amaranita_cast_iron_smithing_table",
     {
       "id": "#upgradedvanilla:amaranita_stems",
       "required": false

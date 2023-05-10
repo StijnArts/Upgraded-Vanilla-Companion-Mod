@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "upgradedvanilla:amaranita_smithing_table"
+    "upgradedvanilla:amaranita_iron_smithing_table",
+    "upgradedvanilla:amaranita_cast_iron_smithing_table"
   ]
 }

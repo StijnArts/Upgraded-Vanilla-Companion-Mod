@@ -165,7 +165,6 @@ public class AmaranitaBlocks {
 	public static Block AMARANITA_COMPOSTER;
 	public static Block AMARANITA_CARTOGRAPHY_TABLE;
 	public static Block AMARANITA_FLETCHING_TABLE;
-	public static Block AMARANITA_SMITHING_TABLE;
 	public static Block AMARANITA_STEM_STAIRS;
 	public static Block AMARANITA_STEM_SLAB;
 	public static Block AMARANITA_STEM_WALL;
@@ -356,8 +355,6 @@ public class AmaranitaBlocks {
 				List.of(PoiTags.CARTOGRAPHER_WORKSTATION, BlockTags.MINEABLE_WITH_AXE),List.of(), amaranitaPalette);
 		AMARANITA_FLETCHING_TABLE = MinecraftWoodBlocks.fletchingTableBlock(MATERIAL_NAME, AMARANITA_PLANKS,AMARANITA_SLAB_ITEM_TAG,
 				List.of(PoiTags.FLETCHER_WORKSTATION, BlockTags.MINEABLE_WITH_AXE),List.of(), amaranitaPalette);
-		AMARANITA_SMITHING_TABLE = MinecraftWoodBlocks.smithingTableBlock(MATERIAL_NAME, AMARANITA_PLANKS,AMARANITA_SLAB_ITEM_TAG,
-				List.of(PoiTags.ARMORER_WORKSTATION, BlockTags.MINEABLE_WITH_AXE),List.of(), amaranitaPalette);
 
 		//LAST
 		registerTags();

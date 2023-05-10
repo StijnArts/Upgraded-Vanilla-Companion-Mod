@@ -1,4 +1,4 @@
-// 1.19.2	2023-05-10T19:45:00.224101	Tags for minecraft:block
+// 1.19.2	2023-05-10T20:54:19.1261466	Tags for minecraft:block
 3c29ac8b94b0298f735906562a554cab64954901 data\minecraft\tags\blocks\rails.json
 bdcf0af9a1fd7f2bf8290e59a45fba5084daff35 data\upgradedvanilla\tags\blocks\amaranita_lecterns.json
 46e8aaf6f6fa671bcba71f336e98374e7559674d data\c\tags\blocks\gold_ores.json
@@ -9,7 +9,7 @@ fc8d4801813f0a7461c1fac69d91da273d033faf data\minecraft\tags\blocks\fence_gates.
 0171c35044244a5d2cb97db2a2c30ef65aaa36d8 data\minecraft\tags\blocks\campfires.json
 6bdd1810f5b9529907b166b6d683addb75e21793 data\c\tags\blocks\workstation\mason.json
 7941568625faae003879f9dd576d909870f31034 data\minecraft\tags\blocks\mineable\hoe.json
-a4cd522405e365f105f8ea43bb3f34e7209899ef data\c\tags\blocks\workstation\armorer.json
+0593c0798642ef2e5958347060816d74b628fd25 data\c\tags\blocks\workstation\armorer.json
 5e0bcfa3fba4598d6b1355f5961c59c0a5f1eb34 data\upgradedvanilla\tags\blocks\stripped_amaranita_hyphae.json
 28bb2900e93477f938355c6942d214ecbbc1fd14 data\c\tags\blocks\stained_glass.json
 40fc1e990d96908fbb53c93702a35892b469f700 data\c\tags\blocks\coal_ores.json
@@ -44,7 +44,7 @@ f707a0081a5c2b9be3924d3f15613ea5a74eb2f3 data\c\tags\blocks\stripped_logs.json
 222ef5459f5560ce299b39b0674155262ac65492 data\minecraft\tags\blocks\planks.json
 a96c7bb115ff1de292b8e1eb447c8b55f4e2c4f8 data\minecraft\tags\blocks\mineable\shovel.json
 d44b15be60c7df365e151b0dd82bcfe5e2e35e4c data\minecraft\tags\blocks\logs.json
-105d6fd407c3d13b84158d4cd973593eefaa2890 data\minecraft\tags\blocks\mineable\axe.json
+7b3029c01c9a8fb93e37b542874bde009caeb9ee data\minecraft\tags\blocks\mineable\axe.json
 54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\farmersdelight\tags\blocks\mineable\knife.json
 1fb7f714a997df1a3074bda8e2fd4d722ef8fab8 data\minecraft\tags\blocks\climbable.json
 75b8a13d7b10bd88e71a2fed6979d3a30bbc789a data\c\tags\blocks\emerald_ores.json

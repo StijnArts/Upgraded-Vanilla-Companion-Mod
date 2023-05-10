@@ -23,7 +23,6 @@ public class Deepslate {
 	public static Block DEEPSLATE_DISPENSER;
 	public static Block DEEPSLATE_DROPPER;
 	public static Block DEEPSLATE_OBSERVER;
-	public static Block DEEPSLATE_STAIRS;
 	private static void registerTags(){
 		DEEPSLATE_SLABS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,"deepslate_slabs"));
 		DEEPSLATE_BLOCKS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"deepslate_blocks"), List.of(new ResourceLocation("minecraft", "deepslate")));

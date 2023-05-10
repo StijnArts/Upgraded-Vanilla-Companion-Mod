@@ -10,7 +10,9 @@ import org.betterx.betterend.registry.*;
 
 import java.util.*;
 
+import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.AMARANITA_PLANKS;
 import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.AMARANITA_PLANKS_ITEM_TAG;
+import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.AMARANITA_SLAB_ITEM_TAG;
 import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.AMARANITA_STEMS_ITEM_TAG;
 import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.AMARANITA_STICK;
 import static drai.dev.upgradedvanilla.modules.betterend.amaranita.AmaranitaBlocks.MATERIAL_NAME;
@@ -22,7 +24,7 @@ public class AmaranitaCombinationBlocks {
 	public static Block AMARANITA_SMOKER;
 	public static Block AMARANITA_STONECUTTER;
 	public static Block AMARANITA_TRIPWIRE_HOOK;
-
+	public static Block AMARANITA_SMITHING_TABLE;
 	public static Block AMARANITA_BED;
 
 	public static void registerTags(){
@@ -43,5 +45,7 @@ public class AmaranitaCombinationBlocks {
 				AMARANITA_PLANKS_ITEM_TAG, List.of(),List.of(UpgradedVanillaTags.TRIPWIRE_HOOK_ITEMS), amaranitaPalette);
 		AMARANITA_STONECUTTER = MinecraftWoodBlocks.stonecutterSet(MATERIAL_NAME, AMARANITA_STEMS_ITEM_TAG,
 				List.of(PoiTags.MASON_WORKSTATION, BlockTags.MINEABLE_WITH_PICKAXE),List.of(), amaranitaPalette);
+		AMARANITA_SMITHING_TABLE = MinecraftWoodBlocks.smithingTableSet(MATERIAL_NAME, AMARANITA_PLANKS_ITEM_TAG,
+				List.of(PoiTags.ARMORER_WORKSTATION, BlockTags.MINEABLE_WITH_AXE),List.of(), amaranitaPalette);
 	}
 }

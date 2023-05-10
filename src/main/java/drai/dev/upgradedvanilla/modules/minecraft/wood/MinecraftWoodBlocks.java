@@ -8,6 +8,7 @@ import java.util.function.*;
 
 import javax.imageio.*;
 
+import com.github.talrey.createdeco.*;
 import com.nhoryzon.mc.farmersdelight.recipe.*;
 import com.simibubi.create.foundation.data.recipe.*;
 
@@ -2203,23 +2204,38 @@ public class MinecraftWoodBlocks {
 		return returnBlock;
 	}
 
-	public static Block smithingTableBlock(String material, Block plankBlock, TagKey<Item> plankBlocks, List<TagKey<Block>> blockTags, List<TagKey<Item>> itemTags, File out) {
-		Block returnBlock = BlockHandler.registerBlockWithRecipe(material + "_smithing_table", StringUtil.capitalizeWord(material) + " Smithing Table",
+	public static Block smithingTableSet(String woodMaterial, TagKey<Item> plankBlocks, List<TagKey<Block>> blockTags, List<TagKey<Item>> itemTags, File out){
+		smithingTableBlock(woodMaterial, "iron", Items.IRON_INGOT, plankBlocks,
+				blockTags, itemTags, out);
+		return smithingTableBlock(woodMaterial, "cast_iron", Registration.CAST_IRON_INGOT.asStack().getItem(), plankBlocks,
+				blockTags, itemTags, out);
+	}
+
+	public static Block smithingTableBlock(String material, String metalMaterial, Item ingot, TagKey<Item> plankBlocks, List<TagKey<Block>> blockTags, List<TagKey<Item>> itemTags, File out) {
+		String sourceCapitalized = "";
+		for (String segment : material.split("_")) {
+			sourceCapitalized = sourceCapitalized + " " + StringUtil.capitalizeWord(segment);
+		}
+		String metalSourceCapitalized = "";
+		for (String segment : metalMaterial.split("_")) {
+			sourceCapitalized = sourceCapitalized + " " + StringUtil.capitalizeWord(segment);
+		}
+		Block returnBlock = BlockHandler.registerBlockWithRecipe(material +"_"+ metalMaterial + "_smithing_table", sourceCapitalized.trim() + " " + metalSourceCapitalized.trim() + "Smithing Table",
 				UpgradedVanilla.ID, new SmithingTableBlock(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)), CreativeModeTab.TAB_DECORATIONS,
 				(blockModelGenerators, block) -> {
 					TextureMapping textureMapping = new TextureMapping()
-							.put(TextureSlot.DOWN, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_bottom"))
-							.put(TextureSlot.EAST, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_side"))
-							.put(TextureSlot.NORTH, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_front"))
-							.put(TextureSlot.PARTICLE, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_front"))
-							.put(TextureSlot.SOUTH, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_front"))
-							.put(TextureSlot.UP, new ResourceLocation("minecraft", "block/smithing_table_top"))
-							.put(TextureSlot.WEST, new ResourceLocation(UpgradedVanilla.ID, "block/"+material + "_smithing_table_side"));
+							.put(TextureSlot.DOWN, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_bottom"))
+							.put(TextureSlot.EAST, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_side"))
+							.put(TextureSlot.NORTH, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_front"))
+							.put(TextureSlot.PARTICLE, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_front"))
+							.put(TextureSlot.SOUTH, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_front"))
+							.put(TextureSlot.UP, new ResourceLocation(UpgradedVanilla.ID, "block/"+metalMaterial+"_smithing_table_top"))
+							.put(TextureSlot.WEST, new ResourceLocation(UpgradedVanilla.ID, "block/"+material +"_"+ metalMaterial + "_smithing_table_side"));
 					ResourceLocation resourceLocation = UpgradedVanillaModelTemplates.CRAFTING_TABLE_LIKE.create((Block) block, textureMapping, blockModelGenerators.modelOutput);
 					blockModelGenerators.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock((Block) block, resourceLocation));
 				},
 				((finishedRecipeConsumer, item) -> {
-					ShapedRecipeBuilder.shaped(item, 1).define('P', plankBlocks).define('S', UVCommonItemTags.IRON_INGOTS)
+					ShapedRecipeBuilder.shaped(item, 1).define('P', plankBlocks).define('S', ingot)
 							.pattern("SS")
 							.pattern("PP")
 							.pattern("PP")
@@ -2231,18 +2247,31 @@ public class MinecraftWoodBlocks {
 		TextureHelper.addTexture(() -> {
 			try {
 				File mangrovePalette = RelativeFileHelper.getTemplateData("\\wood\\Palletes\\mangrove_pallete.png");
+				File metalPalette = RelativeFileHelper.getTemplateData("\\metal\\pallete\\"+metalMaterial+"_pallete.png");
 				File smithingTableSideTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_side.png");
 				File smithingTableFrontTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_front.png");
 				File smithingTableBottomTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_bottom.png");
-				BufferedImage smithingTableSideTexture = TextureHelper.swapColors("block\\" + material + "_smithing_table_side", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableSideTextureLocation), mangrovePalette, out);
+
+				File smithingTableTopTextureLocation = RelativeFileHelper.getTemplateData("\\metal\\textures\\smithing_table_top.png");
+				TextureHelper.swapColors("block\\" + metalMaterial + "_smithing_table_top", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableTopTextureLocation), TextureHelper.metalPresetPalette, metalPalette);
+
+				File smithingTableSideMetalPart =  RelativeFileHelper.getTemplateData("\\metal\\textures\\MATERIAL_smithing_table_side.png");
+				BufferedImage smithingTableSideMetal = TextureHelper.swapColors("block\\" + material +"_"+ metalMaterial + "_smithing_table_side", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableSideMetalPart), TextureHelper.metalPresetPalette, metalPalette);
+
+				BufferedImage smithingTableSideTexture = TextureHelper.swapColors("block\\" + material +"_"+ metalMaterial + "_smithing_table_side", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableSideTextureLocation), mangrovePalette, out);
+				smithingTableSideTexture = TextureHelper.overlayTexture(smithingTableSideTexture,smithingTableSideMetal,0,0, "block\\" + material +"_"+ metalMaterial + "_smithing_table_side", "block", UpgradedVanilla.ID);
 				File smithingTableSideOverlayLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_side.png");
-				TextureHelper.overlayTexture(smithingTableSideTexture, ImageIO.read(smithingTableSideOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_side", "block", UpgradedVanilla.ID);
-				BufferedImage smithingTableFrontTexture =TextureHelper.swapColors("block\\" + material + "_smithing_table_front", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableFrontTextureLocation), mangrovePalette, out);
+				TextureHelper.overlayTexture(smithingTableSideTexture, ImageIO.read(smithingTableSideOverlayLocation), 0, 0, "block\\" + material +"_"+ metalMaterial + "_smithing_table_side", "block", UpgradedVanilla.ID);
+
+				BufferedImage smithingTableFrontTexture = TextureHelper.swapColors("block\\" + material +"_"+ metalMaterial + "_smithing_table_front", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableFrontTextureLocation), mangrovePalette, out);
+				smithingTableFrontTexture = TextureHelper.overlayTexture(smithingTableFrontTexture,smithingTableSideMetal,0,0, "block\\" + material +"_"+ metalMaterial + "_smithing_table_front", "block", UpgradedVanilla.ID);
 				File smithingTableFrontOverlayLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_front.png");
-				TextureHelper.overlayTexture(smithingTableFrontTexture, ImageIO.read(smithingTableFrontOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_front", "block", UpgradedVanilla.ID);
-				BufferedImage smithingTableBottomTexture =TextureHelper.swapColors("block\\" + material + "_smithing_table_bottom", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableBottomTextureLocation), mangrovePalette, out);
-				File smithingTableBottomOverlayLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_bottom.png");
-				TextureHelper.overlayTexture(smithingTableBottomTexture, ImageIO.read(smithingTableBottomOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_bottom", "block", UpgradedVanilla.ID);
+				TextureHelper.overlayTexture(smithingTableFrontTexture, ImageIO.read(smithingTableFrontOverlayLocation), 0, 0, "block\\" + material +"_"+ metalMaterial + "_smithing_table_front", "block", UpgradedVanilla.ID);
+
+				File smithingTableBottomMetalPart =  RelativeFileHelper.getTemplateData("\\metal\\textures\\MATERIAL_smithing_table_bottom.png");
+				BufferedImage smithingTableBottomMetal = TextureHelper.swapColors("block\\" + material +"_"+ metalMaterial + "_smithing_table_bottom", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableBottomMetalPart), TextureHelper.metalPresetPalette, metalPalette);
+				BufferedImage smithingTableBottomTexture =TextureHelper.swapColors("block\\" + material +"_"+ metalMaterial + "_smithing_table_bottom", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableBottomTextureLocation), mangrovePalette, out);
+				TextureHelper.overlayTexture(smithingTableBottomTexture,smithingTableBottomMetal,0,0, "block\\" + material +"_"+ metalMaterial + "_smithing_table_bottom", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}

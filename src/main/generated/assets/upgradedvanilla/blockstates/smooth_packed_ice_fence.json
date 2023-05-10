@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "upgradedvanilla:block/smooth_packed_ice_fence_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "upgradedvanilla:block/smooth_packed_ice_fence_side",
+        "uvlock": true
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "upgradedvanilla:block/smooth_packed_ice_fence_side",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "upgradedvanilla:block/smooth_packed_ice_fence_side",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "upgradedvanilla:block/smooth_packed_ice_fence_side",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

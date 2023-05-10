@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:orange_brick_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:orange_brick_slabs"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:orange_brick_fence_gate"
+  }
+}

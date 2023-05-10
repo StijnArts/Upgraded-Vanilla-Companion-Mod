@@ -176,6 +176,8 @@ public class UVCommonBlockTags {
 			PLATINUM_ORES = TagKeyHelper.createCommonBlockTagKey("platinum_ores");
 			PLUTONIUM_BLOCKS = TagKeyHelper.createCommonBlockTagKey("plutonium_blocks");
 			POLLEN = TagKeyHelper.createCommonBlockTagKey("pollen");
+			STRIPPED_LOGS = TagKeyHelper.createCommonBlockTagKey("stripped_logs");
+			STRIPPED_WOOD = TagKeyHelper.createCommonBlockTagKey("stripped_wood");
 			PREHISTORIC_CALAMITES_LOGS = TagKeyHelper.createCommonBlockTagKey("prehistoric_calamites_logs");
 			PREHISTORIC_DARKWOOD_LOGS = TagKeyHelper.createCommonBlockTagKey("prehistoric_darkwood_logs");
 			PREHISTORIC_LEPIDODENDRALES_LOGS = TagKeyHelper.createCommonBlockTagKey("prehistoric_lepidodendrales_logs");
@@ -267,6 +269,8 @@ public class UVCommonBlockTags {
 		}
 	}
 
+	public static TagKey<Block> STRIPPED_LOGS;
+	public static TagKey<Block> STRIPPED_WOOD;
 	public static TagKey<Block> ADAMANTITE_BLOCKS;
 	public static TagKey<Block> ADAMANTITE_ORES;
 	public static TagKey<Block> AETHERIUM_BLOCKS;

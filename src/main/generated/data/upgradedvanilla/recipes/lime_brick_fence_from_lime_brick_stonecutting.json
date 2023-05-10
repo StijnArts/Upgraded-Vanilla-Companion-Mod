@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:lime_brick"
+  },
+  "result": "upgradedvanilla:lime_brick_fence"
+}

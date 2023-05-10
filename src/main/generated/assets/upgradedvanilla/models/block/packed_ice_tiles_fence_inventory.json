@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "upgradedvanilla:block/packed_ice_tiles"
+  }
+}

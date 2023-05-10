@@ -18,6 +18,7 @@ public class CombinationRegistry {
 	private static void initializeSourceMods() {
 		sourceMods.add(new SourceMod("minecraft"));
 		sourceMods.add(new SourceMod("betterend"));
+		sourceMods.add(new SourceMod("createdeco"));
 	}
 
 	private static boolean allSourceModsHaveBeenLoaded() {

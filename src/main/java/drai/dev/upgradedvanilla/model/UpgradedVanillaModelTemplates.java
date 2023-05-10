@@ -19,6 +19,7 @@ public class UpgradedVanillaModelTemplates {
 	public static TextureSlot LEG = TextureSlot.create("leg");
 	public static TextureSlot HOOK = TextureSlot.create("hook");
 	public static TextureSlot OVERLAY = TextureSlot.create("overlay");
+	public static TextureSlot BODY = TextureSlot.create("body");
 	public static final BooleanProperty MAP = BooleanProperty.create("map");
 	public static final ModelTemplate WALL_POST_SIDE_BOTTOM_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/wall_post_side_bottom_top")),
 			Optional.of("_post"),TextureSlot.SIDE,TextureSlot.PARTICLE, TextureSlot.TOP, TextureSlot.BOTTOM);
@@ -166,4 +167,16 @@ public class UpgradedVanillaModelTemplates {
 			Optional.of(""), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);
 	public static final ModelTemplate GLASS_SLAB_TOP = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/glass/glass_slab_top")),
 			Optional.of("_top"), TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);
+	public static final ModelTemplate LIGHTNING_ROD = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/lightning_rod")),
+			Optional.of(""), TextureSlot.TEXTURE, TextureSlot.PARTICLE);
+	public static final ModelTemplate LIGHTNING_ROD_ON = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/lightning_rod_on")),
+			Optional.of("_on"), TextureSlot.TEXTURE, TextureSlot.PARTICLE);
+	public static final ModelTemplate CHAIN = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/chain")),
+			Optional.of(""), TextureSlot.ALL, TextureSlot.PARTICLE);
+	public static final ModelTemplate HOPPER = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/hopper")),
+			Optional.of(""), TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.INSIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate HOPPER_SIDE = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/hopper_side")),
+			Optional.of("_side"), TextureSlot.TOP, TextureSlot.SIDE, TextureSlot.INSIDE, TextureSlot.PARTICLE);
+	public static final ModelTemplate ANVIL = new ModelTemplate(Optional.of(new ResourceLocation("upgradedvanilla","block/template_anvil")),
+			Optional.of(""), TextureSlot.TOP, BODY, TextureSlot.PARTICLE);
 }

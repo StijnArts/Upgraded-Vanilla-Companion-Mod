@@ -36,10 +36,13 @@ public class UpgradedVanillaTags {
 	public static boolean initialized = false;
 	public static TagKey<Block> MINEABLE_KNIFE;
 	public static TagKey<Block> WINDMILL_SAILS;
+	public static TagKey<Item> BRICK_ITEM_TAG;
+	public static TagKey<Item> HOPPERS;
 	public static void register(){
 		if(!initialized){
 			UVCommonItemTags.register();
 			UVCommonBlockTags.register();
+			HOPPERS = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"hopper"), List.of(new ResourceLocation("minecraft:hopper")));
 			MINEABLE_KNIFE = TagKeyHelper.createBlockTagKey(new ResourceLocation("farmersdelight","mineable/knife"));
 			WINDMILL_SAILS = TagKeyHelper.createBlockTagKey(new ResourceLocation("create","windmill_sails"));
 			DIRT_BLOCKS = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"dirt_blocks"));
@@ -70,6 +73,13 @@ public class UpgradedVanillaTags {
 			STONE_PRESSURE_PLATE_ITEMS = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"stone_pressure_plates"), List.of(new ResourceLocation("minecraft:stone_pressure_plate")));
 			STICKS = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"sticks"), List.of(new ResourceLocation("minecraft:stick")));
 			TRIPWIRE_HOOK_ITEMS = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"tripwire_hooks"), List.of(new ResourceLocation("minecraft:tripwire_hook")));
+			BRICK_ITEM_TAG = TagKeyHelper.createItemTagKeyWithItems(new ResourceLocation(UpgradedVanilla.ID,"brick_items"), List.of(new ResourceLocation("minecraft:brick"),
+					new ResourceLocation("createdeco:scarlet_brick"),
+					new ResourceLocation("createdeco:worn_brick"),
+					new ResourceLocation("createdeco:blue_brick"),
+					new ResourceLocation("createdeco:dusk_brick"),
+					new ResourceLocation("createdeco:pearl_brick"),
+					new ResourceLocation("createdeco:dean_brick")));
 			initialized = true;
 		}
 	}

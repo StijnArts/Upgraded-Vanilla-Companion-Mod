@@ -40,6 +40,8 @@ public class BlockEntityTypeMixin<T extends BlockEntity> {
 			info.setReturnValue(true);
 		} else if (BlockEntityType.BLAST_FURNACE.equals(that) && (state.getBlock() instanceof BlastFurnaceBlock)){
 			info.setReturnValue(true);
+		} else if (BlockEntityType.HOPPER.equals(that) && (state.getBlock() instanceof HopperBlock)){
+			info.setReturnValue(true);
 		}
 	}
 }

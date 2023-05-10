@@ -1,0 +1,8 @@
+{
+  "parent": "upgradedvanilla:block/template_anvil",
+  "textures": {
+    "body": "upgradedvanilla:block/iron_anvil",
+    "particle": "upgradedvanilla:block/iron_anvil",
+    "top": "upgradedvanilla:block/damaged_iron_anvil_top"
+  }
+}

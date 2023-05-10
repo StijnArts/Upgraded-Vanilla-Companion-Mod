@@ -14,8 +14,9 @@ import java.util.*;
 
 public class TextureHelper {
 
-	public static File woodPresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\BasePalette.png");
-	public static File stonePresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\stonePalette.png");
+	public static File woodPresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\BasePalette.png");
+	public static File stonePresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\stonePalette.png");
+	public static File metalPresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Metal\\Pallete\\cast_ironPallete.png");
 	public static ArrayList<Runnable> requiredTextures = new ArrayList<>();
 
 	public static void addTexture(Runnable runnable){

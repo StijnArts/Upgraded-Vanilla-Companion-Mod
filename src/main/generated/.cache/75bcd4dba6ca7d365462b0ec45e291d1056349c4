@@ -1,28 +1,28 @@
-// 1.19.2	2023-05-04T12:39:06.6701	Tags for minecraft:block
+// 1.19.2	2023-05-09T21:38:04.0018296	Tags for minecraft:block
 3c29ac8b94b0298f735906562a554cab64954901 data\minecraft\tags\blocks\rails.json
-46e8aaf6f6fa671bcba71f336e98374e7559674d data\c\tags\blocks\gold_ores.json
 bdcf0af9a1fd7f2bf8290e59a45fba5084daff35 data\upgradedvanilla\tags\blocks\amaranita_lecterns.json
+46e8aaf6f6fa671bcba71f336e98374e7559674d data\c\tags\blocks\gold_ores.json
 a4b59981d496fe0fc08b07d0d871440bb036f621 data\minecraft\tags\blocks\wooden_trapdoors.json
-a3747c0ce8894ebdc44e35199c79171878969090 data\minecraft\tags\blocks\fence_gates.json
+fc8d4801813f0a7461c1fac69d91da273d033faf data\minecraft\tags\blocks\fence_gates.json
 3ea292ff1b908fdadbab3167144ba735f78dcd0c data\upgradedvanilla\tags\blocks\workbenches.json
 2755c2b78f5024875feb6d991ebb7cb028d98ba2 data\upgradedvanilla\tags\blocks\amaranita_pressure_plates.json
 0171c35044244a5d2cb97db2a2c30ef65aaa36d8 data\minecraft\tags\blocks\campfires.json
 6bdd1810f5b9529907b166b6d683addb75e21793 data\c\tags\blocks\workstation\mason.json
 7941568625faae003879f9dd576d909870f31034 data\minecraft\tags\blocks\mineable\hoe.json
 a4cd522405e365f105f8ea43bb3f34e7209899ef data\c\tags\blocks\workstation\armorer.json
-28bb2900e93477f938355c6942d214ecbbc1fd14 data\c\tags\blocks\stained_glass.json
 5e0bcfa3fba4598d6b1355f5961c59c0a5f1eb34 data\upgradedvanilla\tags\blocks\stripped_amaranita_hyphae.json
+28bb2900e93477f938355c6942d214ecbbc1fd14 data\c\tags\blocks\stained_glass.json
 40fc1e990d96908fbb53c93702a35892b469f700 data\c\tags\blocks\coal_ores.json
 59ee9d90e86bf9c34db5bc0c161a1e49b525a374 data\upgradedvanilla\tags\blocks\amaranita_slabs.json
 4bd6c574ae50c2323890586ea73cf05f516c1823 data\minecraft\tags\blocks\wooden_slabs.json
-5f3dedc30e065efb4255105b0cd205a54b228e34 data\upgradedvanilla\tags\blocks\calcite_bricks.json
 e558ae77e06a86545b016e73591cb00b27a87e68 data\minecraft\tags\blocks\standing_signs.json
+5f3dedc30e065efb4255105b0cd205a54b228e34 data\upgradedvanilla\tags\blocks\calcite_bricks.json
 ea50bd0101328f56bb0648f061755d67dcd24a2d data\minecraft\tags\blocks\beds.json
 52e9a38744a04b6fdf4256891ad3270762519da0 data\upgradedvanilla\tags\blocks\amaranita_trapdoors.json
 2f897387c1dc8fc4168fde7e7171a82843e7868b data\upgradedvanilla\tags\blocks\cobbled_calcite_blocks.json
 917a3e9dde28fbec3aadf37480bba651c1f07971 data\c\tags\blocks\workbench.json
-1e8386bdf5d7d3d4d02344b9eec38c98ae350759 data\minecraft\tags\blocks\fences.json
 f707a0081a5c2b9be3924d3f15613ea5a74eb2f3 data\upgradedvanilla\tags\blocks\stripped_amaranita_stems.json
+329c68f85b2d0f06ce4cbdc9c640a86c160d181a data\minecraft\tags\blocks\fences.json
 54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\minecraft\tags\blocks\dampens_vibrations.json
 8460189a010b7537447b101761591aff60df7971 data\upgradedvanilla\tags\blocks\amaranita_walls.json
 435d75751fb49ebc6812719c63abd2f59f7d940c data\c\tags\blocks\workstation\fletcher.json
@@ -33,7 +33,9 @@ bdcf0af9a1fd7f2bf8290e59a45fba5084daff35 data\c\tags\blocks\workstation\libraria
 1fb7f714a997df1a3074bda8e2fd4d722ef8fab8 data\upgradedvanilla\tags\blocks\wooden_ladders.json
 7b351af4215f9c8539b63ed8fec194d27281d41c data\c\tags\blocks\wooden_chests.json
 73faa28a27da4ccfcdf640c95736ae002cdb8fc4 data\upgradedvanilla\tags\blocks\wooden_walls.json
+019eee163360f337842538fbaac8f364aecaf4ba data\minecraft\tags\blocks\anvil.json
 5648c605e1ffd83fa5678602b4a93423e2e9a2fe data\upgradedvanilla\tags\blocks\amaranita_stems.json
+f707a0081a5c2b9be3924d3f15613ea5a74eb2f3 data\c\tags\blocks\stripped_logs.json
 20471585fa644edc944239274771d01064d46996 data\upgradedvanilla\tags\blocks\podzol_replaceable.json
 5c22519153a96a9e921ae60df3972547f1429a27 data\c\tags\blocks\barrel.json
 3026ca876e98888d2e2c91ac455d526091abac39 data\upgradedvanilla\tags\blocks\redstone_torches.json
@@ -42,8 +44,8 @@ bdcf0af9a1fd7f2bf8290e59a45fba5084daff35 data\c\tags\blocks\workstation\libraria
 222ef5459f5560ce299b39b0674155262ac65492 data\minecraft\tags\blocks\planks.json
 a96c7bb115ff1de292b8e1eb447c8b55f4e2c4f8 data\minecraft\tags\blocks\mineable\shovel.json
 d44b15be60c7df365e151b0dd82bcfe5e2e35e4c data\minecraft\tags\blocks\logs.json
-54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\farmersdelight\tags\blocks\mineable\knife.json
 105d6fd407c3d13b84158d4cd973593eefaa2890 data\minecraft\tags\blocks\mineable\axe.json
+54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\farmersdelight\tags\blocks\mineable\knife.json
 1fb7f714a997df1a3074bda8e2fd4d722ef8fab8 data\minecraft\tags\blocks\climbable.json
 75b8a13d7b10bd88e71a2fed6979d3a30bbc789a data\c\tags\blocks\emerald_ores.json
 f87cb19b4aaceafbaa1a5e77a837a26bcbf129fe data\upgradedvanilla\tags\blocks\amaranita_soul_torches.json
@@ -51,11 +53,12 @@ f87cb19b4aaceafbaa1a5e77a837a26bcbf129fe data\upgradedvanilla\tags\blocks\amaran
 54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\minecraft\tags\blocks\wool.json
 637f938126d3c59ed712c2f2b96d3ed1d495a137 data\c\tags\blocks\glass_blocks.json
 5af1db598a2e4488c099042b47ac91c9d7bd22f5 data\minecraft\tags\blocks\wooden_buttons.json
+5e0bcfa3fba4598d6b1355f5961c59c0a5f1eb34 data\c\tags\blocks\stripped_wood.json
 1316581d21cf0ee7f9eb2035fe39c71664bad4e2 data\upgradedvanilla\tags\blocks\amaranita_doors.json
 79e4f3f25a8998ee47734b494480c1a5d6b732e6 data\c\tags\blocks\workstation\cartorgrapher.json
 b6b71eb3a9c94de1d234ea614a3eec1d34b70acd data\c\tags\blocks\quartz_ores.json
 e679620b5c49b605d3dcdeaf93a7711acbca8e86 data\upgradedvanilla\tags\blocks\amaranita_hyphae.json
-7dc11a7c40e8916a38f256b168f7fb4efb022787 data\minecraft\tags\blocks\mineable\pickaxe.json
+32bdd8d0cd6d3ffae091ce3cb80b819fad042c23 data\minecraft\tags\blocks\mineable\pickaxe.json
 a5bcfde5152639968e5656f454d5eb95b59649d8 data\upgradedvanilla\tags\blocks\amaranita_fences.json
 d44b15be60c7df365e151b0dd82bcfe5e2e35e4c data\minecraft\tags\blocks\logs_that_burn.json
 33239bebbfcf15b257e45677a57752a8285714e5 data\upgradedvanilla\tags\blocks\amaranita_buttons.json
@@ -74,8 +77,8 @@ d7bf4b176a4f7f09175b0839c33b3f4ad7a25f65 data\minecraft\tags\blocks\wooden_press
 212f0cabb296a978d50a85beabbe081fcfbc74a7 data\upgradedvanilla\tags\blocks\amaranita_stairs.json
 4eb2522f51e2a8ab189efddc1fec671d34488471 data\upgradedvanilla\tags\blocks\mossy_cobbled_calcite_blocks.json
 ee0dafcbda18f3628e76626ea4a1772c5393588c data\upgradedvanilla\tags\blocks\amaranita_ladders.json
-54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\minecraft\tags\blocks\occludes_vibration_signals.json
 92e016c01db7ade029ca9759e679df80cd1ba232 data\upgradedvanilla\tags\blocks\amaranita_planks.json
+54c8f2dada6cad60bc45cf884389fd2e8b5c792e data\minecraft\tags\blocks\occludes_vibration_signals.json
 66a9b2560aaf9b8024f37351898da97803c77df4 data\upgradedvanilla\tags\blocks\torches.json
 c6c4822e050f26d4bbe1e32088817433e83ad706 data\c\tags\blocks\bookshelves.json
 375d051257c54273244aa9fe21484cade2872311 data\upgradedvanilla\tags\blocks\amaranita_fence_gates.json
@@ -84,6 +87,6 @@ c3b4c073031aa88f9349d38c2aeed90a007bf9b8 data\c\tags\blocks\diamond_ores.json
 d70f5a8164e7843ca976a44107ac8dd810330968 data\c\tags\blocks\lapis_ores.json
 9d00538b8eb70e9f58cebf949b306c590b5c9865 data\minecraft\tags\blocks\wooden_stairs.json
 b13b4bcca5d7772ec0efb212a214a41dbb5a2362 data\c\tags\blocks\workstation\fisherman.json
-51fa7ec4e4cb73cc8e4ba0e0d5586503edf30030 data\minecraft\tags\blocks\walls.json
+12040cdf171ccf9076586f5c43cc61f5c7e3128e data\minecraft\tags\blocks\walls.json
 7707244bfb3ea402df117c851b9c8ef5b0716140 data\minecraft\tags\blocks\wooden_fences.json
 d169500a39d6343f581ae2c8f7f7bc7ec915a13b data\minecraft\tags\blocks\wooden_doors.json

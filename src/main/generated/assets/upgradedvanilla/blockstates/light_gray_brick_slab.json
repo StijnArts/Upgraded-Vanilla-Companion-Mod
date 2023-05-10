@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/light_gray_brick_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/light_gray_brick"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/light_gray_brick_slab_top"
+    }
+  }
+}

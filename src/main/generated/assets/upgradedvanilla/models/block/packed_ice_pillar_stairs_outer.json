@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "upgradedvanilla:block/packed_ice_pillar_top",
+    "side": "upgradedvanilla:block/packed_ice_pillar_side",
+    "top": "upgradedvanilla:block/packed_ice_pillar_top"
+  }
+}

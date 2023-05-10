@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:cracked_packed_ice_brick_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cracked_packed_ice_brick_slabs"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:cracked_packed_ice_bricks_fence_gate"
+  }
+}

@@ -4,7 +4,7 @@
   "package": "drai.dev.upgradedvanilla.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BetterEndBlocksMixin",
+    "registration.BetterEndBlocksMixin",
     "BlockEntityTypeMixin",
     "DynamicBlockEntityTypeMixin",
     "WrittenBookItemMixin",
@@ -21,7 +21,9 @@
     "SmithingTableMixin",
     "SpreadableBlockMixin",
     "PlantBlockMixin",
-    "TreeDecoratorGeneratorMixin"
+    "TreeDecoratorGeneratorMixin",
+    "LightningBoltMixin",
+    "AnvilBlockMixin"
   ],
   "client": [
   ],

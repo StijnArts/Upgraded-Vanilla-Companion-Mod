@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "upgradedvanilla:block/chiseled_packed_ice_bricks"
+  }
+}

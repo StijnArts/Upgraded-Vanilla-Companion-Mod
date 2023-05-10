@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "upgradedvanilla:magenta_brick"
+  },
+  "result": "upgradedvanilla:magenta_brick_slab"
+}

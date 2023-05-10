@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:cracked_packed_ice_tiles"
+  },
+  "result": "upgradedvanilla:cracked_packed_ice_tiles_trapdoor"
+}

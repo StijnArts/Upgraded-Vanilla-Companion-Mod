@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:packed_ice_tile_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:packed_ice_tile_slabs"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "upgradedvanilla:packed_ice_tiles_fence"
+  }
+}

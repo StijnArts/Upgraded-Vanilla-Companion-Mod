@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/hopper",
+  "textures": {
+    "inside": "upgradedvanilla:block/iron_hopper_inside",
+    "particle": "upgradedvanilla:block/iron_hopper_outside",
+    "side": "upgradedvanilla:block/iron_hopper_outside",
+    "top": "upgradedvanilla:block/iron_hopper_top"
+  }
+}

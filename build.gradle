@@ -82,7 +82,7 @@ dependencies {
 	modImplementation "curse.maven:enderscape-536638:4104666"
 	modImplementation "curse.maven:cinderscapes-391429:4033440"
 	modImplementation "curse.maven:moreslabsmorestairs-644005:4455641"
-//	modImplementation "curse.maven:wunderreich-601579:4046763"
+	modImplementation "curse.maven:createdeco-739872:4519296"
 
 	// Library mods
 	modImplementation "curse.maven:bclib-495191:4393099"

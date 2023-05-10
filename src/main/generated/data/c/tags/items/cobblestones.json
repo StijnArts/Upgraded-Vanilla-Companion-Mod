@@ -3,6 +3,13 @@
   "values": [
     "upgradedvanilla:cobbled_calcite",
     "upgradedvanilla:mossy_cobbled_calcite",
-    "upgradedvanilla:smooth_calcite_slab"
+    "upgradedvanilla:smooth_calcite_slab",
+    "upgradedvanilla:smooth_packed_ice_slab",
+    "upgradedvanilla:packed_ice_bricks_slab",
+    "upgradedvanilla:cracked_packed_ice_bricks_slab",
+    "upgradedvanilla:packed_ice_tiles_slab",
+    "upgradedvanilla:cracked_packed_ice_tiles_slab",
+    "upgradedvanilla:chiseled_packed_ice_bricks_slab",
+    "upgradedvanilla:packed_ice_pillar_slab"
   ]
 }

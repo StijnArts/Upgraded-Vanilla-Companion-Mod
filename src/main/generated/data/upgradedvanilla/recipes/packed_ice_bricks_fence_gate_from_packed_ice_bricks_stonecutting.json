@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:packed_ice_bricks"
+  },
+  "result": "upgradedvanilla:packed_ice_bricks_fence_gate"
+}

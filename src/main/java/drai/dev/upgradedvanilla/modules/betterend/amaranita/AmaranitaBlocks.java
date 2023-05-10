@@ -181,10 +181,10 @@ public class AmaranitaBlocks {
 
 	public static void register(){
 		registerStrippableLists();
-		amaranitaPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\AmaranitaPallete.png");
+		amaranitaPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\AmaranitaPallete.png");
 		AMARANITA_STRIPPED_STEMS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
 		AMARANITA_STRIPPED_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
-		STRIPPED_AMARANITA_STEM = MinecraftWoodBlocks.strippedStemBlock(MATERIAL_NAME, logBlocks, List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG),
+		STRIPPED_AMARANITA_STEM = MinecraftWoodBlocks.strippedStemBlock(MATERIAL_NAME, logBlocks, List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG, UVCommonBlockTags.STRIPPED_LOGS),
 				List.of(AMARANITA_STRIPPED_STEMS_ITEM_TAG));
 		AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_hyphae"));
 		AMARANITA_STRIPPED_HYPHAE_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID, "stripped_"+MATERIAL_NAME+"_hyphae"));
@@ -198,7 +198,7 @@ public class AmaranitaBlocks {
 		AMARANITA_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKeyWithCompositeTagsAndItems(
 				new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_stems"), List.of(AMARANITA_STRIPPED_STEMS_ITEM_TAG,AMARANITA_HYPHAE_ITEM_TAG,AMARANITA_STRIPPED_HYPHAE_ITEM_TAG),
 				List.of(new ResourceLocation("betterend","amaranita_stem")));
-		STRIPPED_AMARANITA_HYPHAE = MinecraftWoodBlocks.strippedHyphaeBlock(MATERIAL_NAME, woodBlocks, AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG),
+		STRIPPED_AMARANITA_HYPHAE = MinecraftWoodBlocks.strippedHyphaeBlock(MATERIAL_NAME, woodBlocks, AMARANITA_STRIPPED_STEMS_ITEM_TAG, List.of(AMARANITA_STRIPPED_HYPHAE_BLOCK_TAG, UVCommonBlockTags.STRIPPED_WOOD),
 				List.of(AMARANITA_STRIPPED_HYPHAE_ITEM_TAG));
 
 		AMARANITA_PLANKS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,MATERIAL_NAME+"_planks"));

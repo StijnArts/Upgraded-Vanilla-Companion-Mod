@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "upgradedvanilla:block/packed_ice_bricks",
+    "side": "upgradedvanilla:block/packed_ice_bricks",
+    "top": "upgradedvanilla:block/packed_ice_bricks"
+  }
+}

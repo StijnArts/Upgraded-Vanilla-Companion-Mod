@@ -222,7 +222,7 @@ public class Calcite {
 	}
 	public  static void register(){
 		registerTags();
-		calcitePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\calcitePalette.png");
+		calcitePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\calcitePalette.png");
 		registerMinecraftBlocks();
 	}
 

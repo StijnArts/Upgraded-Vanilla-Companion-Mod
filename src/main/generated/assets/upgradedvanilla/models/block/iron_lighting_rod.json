@@ -1,0 +1,7 @@
+{
+  "parent": "upgradedvanilla:block/lightning_rod",
+  "textures": {
+    "particle": "upgradedvanilla:block/iron_lighting_rod",
+    "texture": "upgradedvanilla:block/iron_lighting_rod"
+  }
+}

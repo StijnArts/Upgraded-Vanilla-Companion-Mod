@@ -1,7 +1,10 @@
 package drai.dev.upgradedvanilla.modules.minecraft;
 
+import drai.dev.upgradedvanilla.modules.minecraft.brick.*;
 import drai.dev.upgradedvanilla.modules.minecraft.concrete.*;
 import drai.dev.upgradedvanilla.modules.minecraft.glass.*;
+import drai.dev.upgradedvanilla.modules.minecraft.metal.*;
+import drai.dev.upgradedvanilla.modules.minecraft.quartz.*;
 import drai.dev.upgradedvanilla.modules.minecraft.resourceblocks.*;
 import drai.dev.upgradedvanilla.modules.minecraft.sand.*;
 import drai.dev.upgradedvanilla.modules.minecraft.soil.*;
@@ -25,6 +28,9 @@ public class Minecraft {
 		ConcreteTypes.register();
 		TerracottaTypes.register();
 		GlassTypes.register();
+		QuartzTypes.register();
+		BrickTypes.register();
+		MetalTypes.register();
 		CombinationRegistry.getSourceMod("minecraft").setInitialized();
 		CombinationRegistry.registerCombinationBlocks();
 	}

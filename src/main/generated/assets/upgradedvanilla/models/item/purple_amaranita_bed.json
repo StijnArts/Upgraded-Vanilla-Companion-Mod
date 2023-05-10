@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "upgradedvanilla:block/purple_amaranita_bed"
-  }
-}

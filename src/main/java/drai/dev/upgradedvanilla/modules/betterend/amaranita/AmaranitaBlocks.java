@@ -181,7 +181,7 @@ public class AmaranitaBlocks {
 
 	public static void register(){
 		registerStrippableLists();
-		amaranitaPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\wood\\Palletes\\AmaranitaPallete.png");
+		amaranitaPalette = RelativeFileHelper.getTemplateData("\\wood\\Palletes\\amaranita_pallete.png");
 		AMARANITA_STRIPPED_STEMS_BLOCK_TAG = TagKeyHelper.createBlockTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
 		AMARANITA_STRIPPED_STEMS_ITEM_TAG = TagKeyHelper.createItemTagKey(new ResourceLocation(UpgradedVanilla.ID,"stripped_"+MATERIAL_NAME+"_stems"));
 		STRIPPED_AMARANITA_STEM = MinecraftWoodBlocks.strippedStemBlock(MATERIAL_NAME, logBlocks, List.of(AMARANITA_STRIPPED_STEMS_BLOCK_TAG, UVCommonBlockTags.STRIPPED_LOGS),

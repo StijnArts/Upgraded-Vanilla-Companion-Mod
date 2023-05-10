@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/smoker",
-  "textures": {
-    "bottom": "upgradedvanilla:block/amaranita_stone_smoker_bottom",
-    "front": "upgradedvanilla:block/amaranita_stone_smoker_front",
-    "side": "upgradedvanilla:block/amaranita_stone_smoker_side",
-    "top": "upgradedvanilla:block/amaranita_stone_smoker_top"
-  }
-}

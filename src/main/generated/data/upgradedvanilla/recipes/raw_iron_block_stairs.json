@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "P": {
-      "tag": "upgradedvanilla:iron_blocks"
+      "tag": "upgradedvanilla:raw_iron_blocks"
     }
   },
   "pattern": [

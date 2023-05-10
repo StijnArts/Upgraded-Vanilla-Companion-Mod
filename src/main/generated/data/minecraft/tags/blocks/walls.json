@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "upgradedvanilla:stripped_amaranita_stem_wall",
-    "upgradedvanilla:amaranita_stem_wall",
-    "upgradedvanilla:stripped_amaranita_hyphae_wall",
-    "upgradedvanilla:amaranita_hyphae_wall",
     "upgradedvanilla:calcite_wall",
     "upgradedvanilla:cobbled_calcite_wall",
     "upgradedvanilla:mossy_cobbled_calcite_wall",
@@ -55,6 +51,10 @@
     "upgradedvanilla:iron_block_wall",
     "upgradedvanilla:raw_iron_block_wall",
     "upgradedvanilla:cut_iron_wall",
+    "upgradedvanilla:stripped_amaranita_stem_wall",
+    "upgradedvanilla:amaranita_stem_wall",
+    "upgradedvanilla:stripped_amaranita_hyphae_wall",
+    "upgradedvanilla:amaranita_hyphae_wall",
     {
       "id": "#upgradedvanilla:amaranita_walls",
       "required": false

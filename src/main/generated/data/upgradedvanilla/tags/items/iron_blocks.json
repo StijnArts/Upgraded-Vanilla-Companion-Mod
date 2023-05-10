@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:iron_block",
-    "minecraft:raw_iron_block",
-    "upgradedvanilla:raw_iron_block_stairs"
+    "minecraft:iron_block"
   ]
 }

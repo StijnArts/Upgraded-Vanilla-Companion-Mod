@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "upgradedvanilla:amaranita_rail",
-    "upgradedvanilla:amaranita_powered_rail",
-    "upgradedvanilla:amaranita_activator_rail",
-    "upgradedvanilla:amaranita_detector_rail",
     "upgradedvanilla:deepslate_furnace",
     "upgradedvanilla:deepslate_blast_furnace",
     "upgradedvanilla:deepslate_dispenser",
@@ -332,11 +328,9 @@
     "upgradedvanilla:iron_anvil",
     "upgradedvanilla:chipped_iron_anvil",
     "upgradedvanilla:damaged_iron_anvil",
-    "upgradedvanilla:amaranita_deepslate_grindstone",
-    "upgradedvanilla:amaranita_stone_grindstone",
-    "upgradedvanilla:amaranita_deepslate_smoker",
-    "upgradedvanilla:amaranita_stone_smoker",
-    "upgradedvanilla:amaranita_deepslate_stonecutter",
-    "upgradedvanilla:amaranita_stone_stonecutter"
+    "upgradedvanilla:amaranita_rail",
+    "upgradedvanilla:amaranita_powered_rail",
+    "upgradedvanilla:amaranita_activator_rail",
+    "upgradedvanilla:amaranita_detector_rail"
   ]
 }

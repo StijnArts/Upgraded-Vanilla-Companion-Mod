@@ -14,9 +14,9 @@ import java.util.*;
 
 public class TextureHelper {
 
-	public static File woodPresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\wood\\Palletes\\BasePalette.png");
-	public static File stonePresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\stonePalette.png");
-	public static File metalPresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Pallete\\cast_ironPallete.png");
+	public static File woodPresetPalette = RelativeFileHelper.getTemplateData("/wood/Palletes/base_palette.png");
+	public static File stonePresetPalette = RelativeFileHelper.getTemplateData("/stone/palletes/stone_palette.png");
+	public static File metalPresetPalette = RelativeFileHelper.getTemplateData("/metal/Pallete/cast_iron_pallete.png");
 	public static ArrayList<Runnable> requiredTextures = new ArrayList<>();
 
 	public static void addTexture(Runnable runnable){
@@ -351,9 +351,9 @@ public class TextureHelper {
 	}
 
 	private static void saveImage(BufferedImage image, String outputLocation, String outputDir, String id) throws IOException {
-		String fileOutputLocation = "C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\"+ id +"\\textures\\" + outputLocation + ".png";
-		File outputFile = new File(fileOutputLocation);
-		Files.createDirectories(new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\"+ id +"\\textures\\"+ outputDir).toPath());
+		File outputFile = RelativeFileHelper.getAssetLocation("/"+id +"/textures/" + outputLocation + ".png");
+		File dir = RelativeFileHelper.getAssetLocation("/"+id +"/textures/"+ outputDir);
+		Files.createDirectories(dir.toPath());
 		ImageIO.write(image, "png", outputFile);
 	}
 

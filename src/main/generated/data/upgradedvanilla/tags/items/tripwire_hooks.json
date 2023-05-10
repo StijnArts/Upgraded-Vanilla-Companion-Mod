@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:tripwire_hook",
-    "upgradedvanilla:amaranita_deepslate_tripwire_hook",
-    "upgradedvanilla:amaranita_stone_tripwire_hook"
+    "minecraft:tripwire_hook"
   ]
 }

@@ -32,7 +32,7 @@ public class Deepslate {
 
 	public  static void register(){
 		registerTags();
-			deepslatePalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\deepslatePalette.png");
+			deepslatePalette = RelativeFileHelper.getTemplateData("/stone/palletes/deepslate_palette.png");
 			DEEPSLATE_FURNACE = MinecraftStoneBlocks.furnaceBlock(MATERIAL_NAME, Blocks.COBBLED_DEEPSLATE, COBBLED_DEEPSLATE_BLOCKS_ITEM_TAG,
 					List.of(BlockTags.MINEABLE_WITH_PICKAXE),
 					List.of(UVCommonItemTags.FURNACES),

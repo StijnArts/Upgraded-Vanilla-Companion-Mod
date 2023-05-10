@@ -1,8 +1,0 @@
-{
-  "parent": "upgradedvanilla:block/lever_on",
-  "textures": {
-    "base": "minecraft:block/cobblestone",
-    "lever": "upgradedvanilla:block/amaranita_stone_lever",
-    "particle": "minecraft:block/cobblestone"
-  }
-}

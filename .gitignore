@@ -1,7 +1,7 @@
 /.gradle
 /.idea
 /build
-
+/run
 /run/saves/
 /run/resourcepacks/
 /run/logs/

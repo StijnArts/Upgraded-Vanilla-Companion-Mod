@@ -109,10 +109,10 @@ public class MinecraftBrickBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(() -> {
 			try {
-				File brickBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(brickBlock).getPath()+".png");
+				//RelativeFileHelper.getAssetLocation("
+				File brickBrickTexture = RelativeFileHelper.getAssetLocation("\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(brickBlock).getPath()+".png");
 				TextureHelper.flipTexture(ImageIO.read(brickBrickTexture), "block\\" + material+"_flipped", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
-				System.out.println("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(brickBlock).getPath()+".png");
 				throw new RuntimeException(e);
 			}
 		});

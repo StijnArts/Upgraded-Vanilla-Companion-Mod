@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "upgradedvanilla:iron_blocks"
+            "tag": "upgradedvanilla:raw_iron_blocks"
           }
         ]
       },

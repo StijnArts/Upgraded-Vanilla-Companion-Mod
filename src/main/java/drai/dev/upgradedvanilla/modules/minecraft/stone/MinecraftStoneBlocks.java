@@ -76,8 +76,8 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File cobbledStoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
-				File moss = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\mossy_cobblestone.png");
+				File cobbledStoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+				File moss = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\mossy_cobblestone.png");
 				TextureHelper.overlayTexture(ImageIO.read(cobbledStoneTexture),ImageIO.read(moss), 0, 0, "block\\" + "mossy_cobbled_"+material, "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -103,12 +103,12 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID, 0.3F);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_normal.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_normal.png");
 				TextureHelper.overlayTextureLightenReverse(brickTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -133,12 +133,12 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID, 0.3F);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\chiseled_stone_bricks_light.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\chiseled_stone_bricks_light.png");
 				TextureHelper.overlayTextureLightenReverse(brickTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\chiseled_stone_brick_shade.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\chiseled_stone_brick_shade.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -164,14 +164,14 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID, 0.3F);
-				File stoneTilesBurnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_linear_burn.png");
+				File stoneTilesBurnLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_linear_burn.png");
 				TextureHelper.overlayTextureBurnReverse(brickTexture, ImageIO.read(stoneTilesBurnLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
-				File stoneTilesDarkenLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_darken.png");
+				File stoneTilesDarkenLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_darken.png");
 				TextureHelper.overlayTextureDarken(brickTexture, ImageIO.read(stoneTilesDarkenLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_multiply.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_multiply.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -195,12 +195,12 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + "polished_"+material+"_bricks", "block", UpgradedVanilla.ID, 1.0F);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_normal.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_normal.png");
 				TextureHelper.overlayTextureLightenReverse(ImageIO.read(stoneTexture), ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + "polished_"+material+"_bricks", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\" + "polished_"+material+"_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -220,8 +220,8 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
-				File cracks = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
+				File cracks = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
 				TextureHelper.overlayTextureMultiplyReverse(ImageIO.read(stoneBrickTexture),ImageIO.read(cracks), 0, 0, "block\\" + "cracked_"+material+"_bricks", "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -246,8 +246,8 @@ public class MinecraftStoneBlocks {
 		ProcessingRecipeHelper.addWashingRecipe(returnBlock,(gen,itemLike)->gen.convert(stoneBrick,returnBlock));
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
-				File moss = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\mossy_stone_bricks.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
+				File moss = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\mossy_stone_bricks.png");
 				TextureHelper.overlayTexture(ImageIO.read(stoneBrickTexture),ImageIO.read(moss), 0, 0, "block\\" + "mossy_"+material+"_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -267,8 +267,8 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+"_bricks.png");
-				File cracks = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+"_bricks.png");
+				File cracks = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
 				TextureHelper.overlayTextureMultiplyReverse(ImageIO.read(stoneBrickTexture),ImageIO.read(cracks), 0, 0, "block\\" + "cracked_"+material+"_polished_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -293,8 +293,8 @@ public class MinecraftStoneBlocks {
 		ProcessingRecipeHelper.addWashingRecipe(returnBlock,(gen,itemLike)->gen.convert(stoneBrick,returnBlock));
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+"_bricks.png");
-				File moss = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\mossy_stone_bricks.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\polished_"+material+"_bricks.png");
+				File moss = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\mossy_stone_bricks.png");
 				TextureHelper.overlayTexture(ImageIO.read(stoneBrickTexture),ImageIO.read(moss), 0, 0, "block\\" + "mossy_"+material+"_polished_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -314,8 +314,8 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
-				File cracks = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\cracked_stone_tiles.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
+				File cracks = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\cracked_stone_tiles.png");
 				TextureHelper.overlayTextureMultiplyReverse(ImageIO.read(stoneBrickTexture),ImageIO.read(cracks), 0, 0, "block\\" + "cracked_"+material+"_tiles", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -339,8 +339,8 @@ public class MinecraftStoneBlocks {
 		ProcessingRecipeHelper.addWashingRecipe(returnBlock,(gen,itemLike)->gen.convert(stoneBrick,returnBlock));
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
-				File moss = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\mossy_stone_tiles.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
+				File moss = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\mossy_stone_tiles.png");
 				TextureHelper.overlayTexture(ImageIO.read(stoneBrickTexture),ImageIO.read(moss), 0, 0, "block\\" + "mossy_"+material+"_tiles", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -365,15 +365,15 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage smoothStoneTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + "polished_"+material, "block", UpgradedVanilla.ID, 0.3F);
-				File smoothStoneBurnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_burn.png");
+				File smoothStoneBurnLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_burn.png");
 				TextureHelper.overlayTextureColorBurn(smoothStoneTexture, ImageIO.read(smoothStoneBurnLocation), 0, 0, "block\\" + "polished_"+material, "block", UpgradedVanilla.ID,1.0F);
-				File smoothStoneShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_shading.png");
+				File smoothStoneShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_shading.png");
 				smoothStoneTexture = TextureHelper.overlayTextureBurnReverse(smoothStoneTexture, ImageIO.read(smoothStoneShadeLocation), 0, 0, "block\\" + "polished_"+material, "block", UpgradedVanilla.ID);
 
-				File smoothStoneHighlightLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_highlight.png");
+				File smoothStoneHighlightLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_highlight.png");
 				//smoothStoneTexture = TextureHelper.overlayTextureLighten(smoothStoneTexture, ImageIO.read(smoothStoneHighlightLocation),0,0,"block\\" + "polished_"+material, "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -393,12 +393,12 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage smoothStoneTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + "smooth_"+material, "block", UpgradedVanilla.ID, 0.2F);
-				File smoothStoneRimLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\smooth_stone.png");
+				File smoothStoneRimLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\smooth_stone.png");
 				BufferedImage smoothStoneRimTexture = TextureHelper.swapColors("block\\" + "smooth_"+material, "block", UpgradedVanilla.ID, ImageIO.read(smoothStoneRimLocation), TextureHelper.stonePresetPalette, out);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\smooth_stone.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\smooth_stone.png");
 				smoothStoneTexture = TextureHelper.overlayTextureLighten(smoothStoneTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + "smooth_"+material, "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smoothStoneTexture, smoothStoneRimTexture, 0, 0, "block\\" + "smooth_"+material, "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -464,10 +464,10 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File ore = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\"+mineral+"_ore.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File ore = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\"+mineral+"_ore.png");
 				BufferedImage oreTexture = TextureHelper.overlayTexture(ImageIO.read(stoneTexture),ImageIO.read(ore), 0, 0, "block\\" + material+"_"+mineral+"_ore", "block", UpgradedVanilla.ID);
-				File shade = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\"+mineral+"_ore_shade.png");
+				File shade = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\"+mineral+"_ore_shade.png");
 				TextureHelper.overlayTextureMultiplyReverse(oreTexture,ImageIO.read(shade), 0, 0, "block\\" + material+"_"+mineral+"_ore", "block", UpgradedVanilla.ID, 0.3F);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -572,10 +572,10 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File ore = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\"+mineral+"_ore.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File ore = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\"+mineral+"_ore.png");
 				BufferedImage oreTexture = TextureHelper.overlayTexture(ImageIO.read(stoneTexture),ImageIO.read(ore), 0, 0, "block\\" + material+"_"+mineral+"_ore", "block", UpgradedVanilla.ID);
-				File shade = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\"+mineral+"_ore_shade.png");
+				File shade = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\"+mineral+"_ore_shade.png");
 				TextureHelper.overlayTextureMultiplyReverse(oreTexture,ImageIO.read(shade), 0, 0, "block\\" + material+"_"+mineral+"_ore", "block", UpgradedVanilla.ID, 0.3F);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -732,12 +732,12 @@ public class MinecraftStoneBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ material+"_color.png");
 				BufferedImage smoothStoneTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + "smooth_"+material+"_slab_side", "block", UpgradedVanilla.ID, 0.2F);
-				File smoothStoneRimLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\smooth_stone_slab_side.png");
+				File smoothStoneRimLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\smooth_stone_slab_side.png");
 				BufferedImage smoothStoneRimTexture = TextureHelper.swapColors("block\\" + "smooth_"+material+"_slab_side", "block", UpgradedVanilla.ID, ImageIO.read(smoothStoneRimLocation), TextureHelper.stonePresetPalette, out);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\smooth_stone_slab_side.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\smooth_stone_slab_side.png");
 				smoothStoneTexture = TextureHelper.overlayTextureLighten(smoothStoneTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + "smooth_"+material+"_slab_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smoothStoneTexture, smoothStoneRimTexture, 0, 0, "block\\" + "smooth_"+material+"_slab_side", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -826,8 +826,7 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-						"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 				TextureHelper.flipTexture(ImageIO.read(stoneBrickTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -889,8 +888,7 @@ public class MinecraftStoneBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-						"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 				TextureHelper.flipTexture(ImageIO.read(stoneBrickTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1063,8 +1061,7 @@ public class MinecraftStoneBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
-			File stoneTileTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-					"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+			File stoneTileTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 
 			try {
 				TextureHelper.flipTexture(ImageIO.read(stoneTileTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
@@ -1300,8 +1297,7 @@ public class MinecraftStoneBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
-			File stoneTileTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-					"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+			File stoneTileTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 
 			try {
 				TextureHelper.flipTexture(ImageIO.read(stoneTileTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
@@ -1536,8 +1532,7 @@ public class MinecraftStoneBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
-			File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-					"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+			File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 
 			try {
 				TextureHelper.flipTexture(ImageIO.read(stoneBrickTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
@@ -1773,8 +1768,7 @@ public class MinecraftStoneBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
-			File CobbledStoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-					"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+			File CobbledStoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 
 			try {
 				TextureHelper.flipTexture(ImageIO.read(CobbledStoneTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
@@ -2014,8 +2008,7 @@ public class MinecraftStoneBlocks {
 				BlockLoot::dropSelf,
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
-			File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-					"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
+			File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+Registry.BLOCK.getKey(stoneBlock).getPath()+".png");
 
 			try {
 				TextureHelper.flipTexture(ImageIO.read(stoneBrickTexture), "block\\" + Registry.BLOCK.getKey(stoneBlock).getPath()+"_flipped", "block", UpgradedVanilla.ID);
@@ -2146,27 +2139,27 @@ public class MinecraftStoneBlocks {
 				blockTags, itemTags);
 
 		TextureHelper.addTexture(() -> {
-			File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
-			File furnaceFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\furnace_front.png");
-			File furnaceFrontOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\furnace_front_on.png");
-			File furnaceTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\furnace_top.png");
-			File furnaceSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\furnace_side.png");
+			File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+			File furnaceFrontTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\furnace_front.png");
+			File furnaceFrontOnTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\furnace_front_on.png");
+			File furnaceTopTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\furnace_top.png");
+			File furnaceSideTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\furnace_side.png");
 			try {
 				BufferedImage furnaceFrontTexture = TextureHelper.swapColors("block\\" + material + "_furnace_front", "block", UpgradedVanilla.ID, ImageIO.read(furnaceFrontTextureLocation), TextureHelper.stonePresetPalette, out);
-				File furnaceFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\furnace_front.png");
+				File furnaceFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\furnace_front.png");
 				TextureHelper.overlayTexture(furnaceFrontTexture, ImageIO.read(furnaceFrontOverlayLocation), 0, 0, "block\\" + material + "_furnace_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage furnaceFrontOnTexture =TextureHelper.swapColors("block\\" + material + "_furnace_front_on", "block", UpgradedVanilla.ID, ImageIO.read(furnaceFrontOnTextureLocation), TextureHelper.stonePresetPalette, out);
-				File furnaceFrontOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\furnace_front_on.png");
+				File furnaceFrontOnOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\furnace_front_on.png");
 				TextureHelper.overlayTexture(furnaceFrontOnTexture, ImageIO.read(furnaceFrontOnOverlayLocation), 0, 0, "block\\" + material + "_furnace_front_on", "block", UpgradedVanilla.ID);
 
 				BufferedImage furnaceTopTexture =TextureHelper.swapColors("block\\" + material + "_furnace_top", "block", UpgradedVanilla.ID, ImageIO.read(furnaceTopTextureLocation), TextureHelper.stonePresetPalette, out);
-				File furnaceFrontTopMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\furnace_top.png");
+				File furnaceFrontTopMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\furnace_top.png");
 				BufferedImage furnaceTopStoneTexture = TextureHelper.maskImage(ImageIO.read(furnaceFrontTopMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + material + "_furnace_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(furnaceTopTexture, furnaceTopStoneTexture, 0, 0, "block\\" + material + "_furnace_top", "block", UpgradedVanilla.ID);
 
 				BufferedImage furnaceSideTexture =TextureHelper.swapColors("block\\" + material + "_furnace_side", "block", UpgradedVanilla.ID, ImageIO.read(furnaceSideTextureLocation), TextureHelper.stonePresetPalette, out);
-				File furnaceFrontSideMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\furnace_side.png");
+				File furnaceFrontSideMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\furnace_side.png");
 				BufferedImage furnaceSideStoneTexture = TextureHelper.maskImage(ImageIO.read(furnaceFrontSideMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + material + "_furnace_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(furnaceSideTexture, furnaceSideStoneTexture, 0, 0, "block\\" + material + "_furnace_side", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -2214,19 +2207,19 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
-				File dispenserFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\dispenser_front.png");
-				File dispenserFrontVerticalTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\dispenser_front_vertical.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+				File dispenserFrontTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\dispenser_front.png");
+				File dispenserFrontVerticalTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\dispenser_front_vertical.png");
 
 				BufferedImage dispenserFrontTexture = TextureHelper.swapColors("block\\" + material + "_dispenser_front", "block", UpgradedVanilla.ID, ImageIO.read(dispenserFrontTextureLocation), TextureHelper.stonePresetPalette, out);
-				File dispenserFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\dispenser_front.png");
+				File dispenserFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\dispenser_front.png");
 				TextureHelper.overlayTextureDarken(dispenserFrontTexture, ImageIO.read(dispenserFrontOverlayLocation), 0, 0, "block\\" + material + "_dispenser_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage dispenserFrontVerticalTexture =TextureHelper.swapColors("block\\" + material + "_dispenser_front_vertical", "block", UpgradedVanilla.ID, ImageIO.read(dispenserFrontVerticalTextureLocation), TextureHelper.stonePresetPalette, out);
-				File dispenserFrontVerticalMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\dispenser_front_vertical.png");
+				File dispenserFrontVerticalMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\dispenser_front_vertical.png");
 				BufferedImage dispenserFrontVerticalMaskedTexture = TextureHelper.maskImage(ImageIO.read(dispenserFrontVerticalMaskLocation),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_dispenser_front_vertical", "block", UpgradedVanilla.ID);
 				dispenserFrontVerticalTexture = TextureHelper.overlayTexture(dispenserFrontVerticalTexture, dispenserFrontVerticalMaskedTexture, 0, 0, "block\\" + material + "_dispenser_front_vertical", "block", UpgradedVanilla.ID);
-				File dispenserFrontVerticalOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\dispenser_front_vertical.png");
+				File dispenserFrontVerticalOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\dispenser_front_vertical.png");
 				TextureHelper.overlayTextureDarken(dispenserFrontVerticalTexture, ImageIO.read(dispenserFrontVerticalOverlayLocation), 0, 0, "block\\" + material + "_dispenser_front_vertical", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2273,18 +2266,18 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
-				File dropperFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\dropper_front.png");
-				File dropperFrontVerticalTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\dropper_front_vertical.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+				File dropperFrontTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\dropper_front.png");
+				File dropperFrontVerticalTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\dropper_front_vertical.png");
 				BufferedImage dropperFrontTexture = TextureHelper.swapColors("block\\" + material + "_dropper_front", "block", UpgradedVanilla.ID, ImageIO.read(dropperFrontTextureLocation), TextureHelper.stonePresetPalette, out);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\dropper_front.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\dropper_front.png");
 				TextureHelper.overlayTextureDarken(dropperFrontTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + material + "_dropper_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage dropperFrontVerticalTexture =TextureHelper.swapColors("block\\" + material + "_dropper_front_vertical", "block", UpgradedVanilla.ID, ImageIO.read(dropperFrontVerticalTextureLocation), TextureHelper.stonePresetPalette, out);
-				File dropperFrontVerticalMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\dropper_front_vertical.png");
+				File dropperFrontVerticalMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\dropper_front_vertical.png");
 				BufferedImage dropperFrontVerticalMaskedTexture = TextureHelper.maskImage(ImageIO.read(dropperFrontVerticalMaskLocation),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_dropper_front_vertical", "block", UpgradedVanilla.ID);
 				dropperFrontVerticalTexture = TextureHelper.overlayTexture(dropperFrontVerticalTexture, dropperFrontVerticalMaskedTexture, 0, 0, "block\\" + material + "_dropper_front_vertical", "block", UpgradedVanilla.ID);
-				File dropperFrontVerticalOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\dropper_front_vertical.png");
+				File dropperFrontVerticalOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\dropper_front_vertical.png");
 				TextureHelper.overlayTextureDarken(dropperFrontVerticalTexture, ImageIO.read(dropperFrontVerticalOverlayLocation), 0, 0, "block\\" + material + "_dropper_front_vertical", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2324,44 +2317,44 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(stone).getPath()+".png");
-				File blast_furnaceFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\blast_furnace_front.png");
-				File blast_furnaceFrontOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\blast_furnace_front_on.png");
-				File blast_furnaceTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\blast_furnace_top.png");
-				File blast_furnaceSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\blast_furnace_side.png");
-				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\blast_furnace_front_on.png.mcmeta"),
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(stone).getPath()+".png");
+				File blast_furnaceFrontTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\blast_furnace_front.png");
+				File blast_furnaceFrontOnTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\blast_furnace_front_on.png");
+				File blast_furnaceTopTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\blast_furnace_top.png");
+				File blast_furnaceSideTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\blast_furnace_side.png");
+				FileUtils.copyFile(new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\blast_furnace_front_on.png.mcmeta"),
+						new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\create-fabric-addon-template-1.19\\" +
 								"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\" + material + "_blast_furnace_front_on.png.mcmeta"));
 
 				BufferedImage blast_furnaceFront_onTexture = TextureHelper.swapColors("block\\" + material + "_blast_furnace_front_on", "block", UpgradedVanilla.ID, ImageIO.read(blast_furnaceFrontOnTextureLocation), TextureHelper.stonePresetPalette, out);
-				File blast_furnaceFront_onMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front_on_shade.png");
+				File blast_furnaceFront_onMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front_on_shade.png");
 				BufferedImage blast_furnaceStoneFront_onTexture = TextureHelper.maskImage(ImageIO.read(blast_furnaceFront_onMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_blast_furnace_front_on", "block", UpgradedVanilla.ID);
-				File blast_furnaceFront_onShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front_on_shade.png");
+				File blast_furnaceFront_onShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front_on_shade.png");
 				blast_furnaceStoneFront_onTexture= TextureHelper.overlayTextureMultiply(blast_furnaceStoneFront_onTexture, ImageIO.read(blast_furnaceFront_onShadeLocation), 0, 0, "block\\" + material + "_blast_furnace_front_on", "block", UpgradedVanilla.ID);
 				blast_furnaceFront_onTexture = TextureHelper.overlayTexture(blast_furnaceFront_onTexture, blast_furnaceStoneFront_onTexture, 0, 0, "block\\" + material + "_blast_furnace_front_on", "block", UpgradedVanilla.ID);
-				File blast_furnaceFront_onOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front_on.png");
+				File blast_furnaceFront_onOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front_on.png");
 				TextureHelper.overlayTexture(blast_furnaceFront_onTexture, ImageIO.read(blast_furnaceFront_onOverlayLocation), 0, 0, "block\\" + material + "_blast_furnace_front_on", "block", UpgradedVanilla.ID);
 
 				BufferedImage blast_furnaceFrontTexture = TextureHelper.swapColors("block\\" + material + "_blast_furnace_front", "block", UpgradedVanilla.ID, ImageIO.read(blast_furnaceFrontTextureLocation), TextureHelper.stonePresetPalette, out);
-				File blast_furnaceFrontMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front_shade.png");
+				File blast_furnaceFrontMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front_shade.png");
 				BufferedImage blast_furnaceStoneFrontTexture = TextureHelper.maskImage(ImageIO.read(blast_furnaceFrontMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_blast_furnace_front", "block", UpgradedVanilla.ID);
-				File blast_furnaceFrontShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front_shade.png");
+				File blast_furnaceFrontShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front_shade.png");
 				blast_furnaceStoneFrontTexture= TextureHelper.overlayTextureMultiply(blast_furnaceStoneFrontTexture, ImageIO.read(blast_furnaceFrontShadeLocation), 0, 0, "block\\" + material + "_blast_furnace_front", "block", UpgradedVanilla.ID);
 				blast_furnaceFrontTexture = TextureHelper.overlayTexture(blast_furnaceFrontTexture, blast_furnaceStoneFrontTexture, 0, 0, "block\\" + material + "_blast_furnace_front", "block", UpgradedVanilla.ID);
-				File blast_furnaceFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_front.png");
+				File blast_furnaceFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_front.png");
 				TextureHelper.overlayTexture(blast_furnaceFrontTexture, ImageIO.read(blast_furnaceFrontOverlayLocation), 0, 0, "block\\" + material + "_blast_furnace_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage blast_furnaceSideTexture = TextureHelper.swapColors("block\\" + material + "_blast_furnace_side", "block", UpgradedVanilla.ID, ImageIO.read(blast_furnaceSideTextureLocation), TextureHelper.stonePresetPalette, out);
-				File blast_furnaceSideMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_side_shade.png");
+				File blast_furnaceSideMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_side_shade.png");
 				BufferedImage blast_furnaceStoneSideTexture = TextureHelper.maskImage(ImageIO.read(blast_furnaceSideMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_blast_furnace_side", "block", UpgradedVanilla.ID);
-				File blast_furnaceSideShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_side_shade.png");
+				File blast_furnaceSideShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_side_shade.png");
 				blast_furnaceStoneSideTexture= TextureHelper.overlayTextureMultiply(blast_furnaceStoneSideTexture, ImageIO.read(blast_furnaceSideShadeLocation), 0, 0, "block\\" + material + "_blast_furnace_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(blast_furnaceSideTexture, blast_furnaceStoneSideTexture, 0, 0, "block\\" + material + "_blast_furnace_side", "block", UpgradedVanilla.ID);
 
 				BufferedImage blast_furnaceTopTexture = TextureHelper.swapColors("block\\" + material + "_blast_furnace_top", "block", UpgradedVanilla.ID, ImageIO.read(blast_furnaceTopTextureLocation), TextureHelper.stonePresetPalette, out);
-				File blast_furnaceTopMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_top_shade.png");
+				File blast_furnaceTopMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_top_shade.png");
 				BufferedImage blast_furnaceStoneTopTexture = TextureHelper.maskImage(ImageIO.read(blast_furnaceTopMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_blast_furnace_top", "block", UpgradedVanilla.ID);
-				File blast_furnaceTopShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\blast_furnace_top_shade.png");
+				File blast_furnaceTopShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\blast_furnace_top_shade.png");
 				blast_furnaceStoneTopTexture= TextureHelper.overlayTextureMultiply(blast_furnaceStoneTopTexture, ImageIO.read(blast_furnaceTopShadeLocation), 0, 0, "block\\" + material + "_blast_furnace_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(blast_furnaceTopTexture, blast_furnaceStoneTopTexture, 0, 0, "block\\" + material + "_blast_furnace_top", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -2405,50 +2398,50 @@ public class MinecraftStoneBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(stone).getPath()+".png");
-				File observerFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\observer_front.png");
-				File observerBackOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\observer_back_on.png");
-				File observerBackTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\observer_back.png");
-				File observerTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\observer_top.png");
-				File observerSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\observer_side.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\"+ Registry.BLOCK.getKey(stone).getPath()+".png");
+				File observerFrontTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\observer_front.png");
+				File observerBackOnTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\observer_back_on.png");
+				File observerBackTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\observer_back.png");
+				File observerTopTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\observer_top.png");
+				File observerSideTextureLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Textures\\block\\observer_side.png");
 				BufferedImage observerBackOnTexture = TextureHelper.swapColors("block\\" + material + "_observer_back_on", "block", UpgradedVanilla.ID, ImageIO.read(observerBackOnTextureLocation), TextureHelper.stonePresetPalette, out);
-				File observerBack_onMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\observer_back_on.png");
+				File observerBack_onMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\observer_back_on.png");
 				BufferedImage observerStoneBack_onTexture = TextureHelper.maskImage(ImageIO.read(observerBack_onMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_observer_back_on", "block", UpgradedVanilla.ID);
-				File observerBack_onShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_back_on_shade.png");
+				File observerBack_onShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_back_on_shade.png");
 				observerStoneBack_onTexture= TextureHelper.overlayTextureDarken(observerStoneBack_onTexture, ImageIO.read(observerBack_onShadeLocation), 0, 0, "block\\" + material + "_observer_back_on", "block", UpgradedVanilla.ID);
 				observerBackOnTexture = TextureHelper.overlayTexture(observerBackOnTexture, observerStoneBack_onTexture, 0, 0, "block\\" + material + "_observer_back_on", "block", UpgradedVanilla.ID);
-				File observerBack_onOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_back_on.png");
+				File observerBack_onOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_back_on.png");
 				TextureHelper.overlayTexture(observerBackOnTexture, ImageIO.read(observerBack_onOverlayLocation), 0, 0, "block\\" + material + "_observer_back_on", "block", UpgradedVanilla.ID);
 
 				BufferedImage observerFrontTexture = TextureHelper.swapColors("block\\" + material + "_observer_front", "block", UpgradedVanilla.ID, ImageIO.read(observerFrontTextureLocation), TextureHelper.stonePresetPalette, out);
-				File observerFrontMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\observer_front.png");
+				File observerFrontMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\observer_front.png");
 				BufferedImage observerStoneFrontTexture = TextureHelper.maskImage(ImageIO.read(observerFrontMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_observer_front", "block", UpgradedVanilla.ID);
-				File observerFrontShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_front_shade.png");
+				File observerFrontShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_front_shade.png");
 				observerStoneFrontTexture= TextureHelper.overlayTextureDarken(observerStoneFrontTexture, ImageIO.read(observerFrontShadeLocation), 0, 0, "block\\" + material + "_observer_front", "block", UpgradedVanilla.ID);
 				observerFrontTexture = TextureHelper.overlayTexture(observerFrontTexture, observerStoneFrontTexture, 0, 0, "block\\" + material + "_observer_front", "block", UpgradedVanilla.ID);
-				File observerFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_front.png");
+				File observerFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_front.png");
 				TextureHelper.overlayTexture(observerFrontTexture, ImageIO.read(observerFrontOverlayLocation), 0, 0, "block\\" + material + "_observer_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage observerSideTexture = TextureHelper.swapColors("block\\" + material + "_observer_side", "block", UpgradedVanilla.ID, ImageIO.read(observerSideTextureLocation), TextureHelper.stonePresetPalette, out);
-				File observerSideMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\observer_side.png");
+				File observerSideMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\observer_side.png");
 				BufferedImage observerStoneSideTexture = TextureHelper.maskImage(ImageIO.read(observerSideMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_observer_side", "block", UpgradedVanilla.ID);
-				File observerSideShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_side_shade.png");
+				File observerSideShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_side_shade.png");
 				observerStoneSideTexture= TextureHelper.overlayTextureDarken(observerStoneSideTexture, ImageIO.read(observerSideShadeLocation), 0, 0, "block\\" + material + "_observer_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(observerSideTexture, observerStoneSideTexture, 0, 0, "block\\" + material + "_observer_side", "block", UpgradedVanilla.ID);
 
 				BufferedImage observerBackTexture = TextureHelper.swapColors("block\\" + material + "_observer_back", "block", UpgradedVanilla.ID, ImageIO.read(observerBackTextureLocation), TextureHelper.stonePresetPalette, out);
-				File observerBackMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\observer_back.png");
+				File observerBackMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\observer_back.png");
 				BufferedImage observerStoneBackTexture = TextureHelper.maskImage(ImageIO.read(observerBackMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_observer_back", "block", UpgradedVanilla.ID);
-				File observerBackShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_back_shade.png");
+				File observerBackShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_back_shade.png");
 				observerStoneBackTexture= TextureHelper.overlayTextureDarken(observerStoneBackTexture, ImageIO.read(observerBackShadeLocation), 0, 0, "block\\" + material + "_observer_back", "block", UpgradedVanilla.ID);
 				observerBackTexture = TextureHelper.overlayTexture(observerBackTexture, observerStoneBackTexture, 0, 0, "block\\" + material + "_observer_back", "block", UpgradedVanilla.ID);
-				File observerBackOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_back.png");
+				File observerBackOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_back.png");
 				TextureHelper.overlayTexture(observerBackTexture, ImageIO.read(observerBackOverlayLocation), 0, 0, "block\\" + material + "_observer_back", "block", UpgradedVanilla.ID);
 
 				BufferedImage observerTopTexture = TextureHelper.swapColors("block\\" + material + "_observer_top", "block", UpgradedVanilla.ID, ImageIO.read(observerTopTextureLocation), TextureHelper.stonePresetPalette, out);
-				File observerTopMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\observer_top.png");
+				File observerTopMaskLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Masks\\observer_top.png");
 				BufferedImage observerStoneTopTexture = TextureHelper.maskImage(ImageIO.read(observerTopMaskLocation), ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_observer_top", "block", UpgradedVanilla.ID);
-				File observerTopShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\observer_top_shade.png");
+				File observerTopShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\observer_top_shade.png");
 				observerStoneTopTexture= TextureHelper.overlayTextureDarken(observerStoneTopTexture, ImageIO.read(observerTopShadeLocation), 0, 0, "block\\" + material + "_observer_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(observerTopTexture, observerStoneTopTexture, 0, 0, "block\\" + material + "_observer_top", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {

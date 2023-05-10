@@ -14,9 +14,9 @@ import java.util.*;
 
 public class TextureHelper {
 
-	public static File woodPresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\BasePalette.png");
-	public static File stonePresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\stonePalette.png");
-	public static File metalPresetPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Pallete\\cast_ironPallete.png");
+	public static File woodPresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\wood\\Palletes\\BasePalette.png");
+	public static File stonePresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\stonePalette.png");
+	public static File metalPresetPalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Pallete\\cast_ironPallete.png");
 	public static ArrayList<Runnable> requiredTextures = new ArrayList<>();
 
 	public static void addTexture(Runnable runnable){
@@ -351,11 +351,9 @@ public class TextureHelper {
 	}
 
 	private static void saveImage(BufferedImage image, String outputLocation, String outputDir, String id) throws IOException {
-		String fileOutputLocation = "C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-				"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\"+ id +"\\textures\\" + outputLocation + ".png";
+		String fileOutputLocation = "C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\"+ id +"\\textures\\" + outputLocation + ".png";
 		File outputFile = new File(fileOutputLocation);
-		Files.createDirectories(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
-				"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\"+ id +"\\textures\\"+ outputDir).toPath());
+		Files.createDirectories(new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\"+ id +"\\textures\\"+ outputDir).toPath());
 		ImageIO.write(image, "png", outputFile);
 	}
 

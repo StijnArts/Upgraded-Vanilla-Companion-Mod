@@ -13,9 +13,10 @@ import java.io.*;
 import java.util.*;
 
 public class Iron {
-	public static File palette = new File(Iron.class
-			.getClassLoader().getResource("template data\\Metal\\Pallete\\ironPallete.png").toString());
-	//public static File palette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Pallete\\ironPallete.png");
+	//public static File palette = new File(Iron.class
+	//		.getClassLoader().getResource("templatedata\\Metal\\Pallete\\ironPallete.png").toString());
+	//public static File palette = new File(new ResourceLocation(UpgradedVanilla.ID, "templatedata/metal/pallete/ironpallete").toDebugFileName()+".png");
+	public static File palette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Pallete\\ironPallete.png");
 	private static final String MATERIAL_NAME = "iron";
 	public static TagKey<Item> IRON_SLABS_ITEM_TAG;
 	public static TagKey<Item> IRON_BLOCKS_ITEM_TAG;
@@ -52,6 +53,7 @@ public class Iron {
 	}
 	public  static void register(){
 		registerTags();
+		//System.out.println(palette);
 		IRON_STAIRS = MinecraftStoneBlocks.stoneStairsBlock(MATERIAL_NAME, Blocks.IRON_BLOCK, IRON_BLOCKS_ITEM_TAG,
 				List.of(BlockTags.MINEABLE_WITH_PICKAXE),List.of());
 		IRON_SLAB = MinecraftStoneBlocks.stoneSlabBlock(MATERIAL_NAME, Blocks.IRON_BLOCK, IRON_BLOCKS_ITEM_TAG,

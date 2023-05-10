@@ -51,15 +51,15 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\" + material + ".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\" + material + "_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\" + material + ".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\" + material + "_color.png");
 				BufferedImage smoothStoneTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor), ImageIO.read(stoneTexture), 0, 0, "block\\" + "smooth_" + material, "block", UpgradedVanilla.ID, 0.3F);
-				//File smoothStoneBurnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_burn.png");
+				//File smoothStoneBurnLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_burn.png");
 				//TextureHelper.overlayTextureColorBurn(smoothStoneTexture, ImageIO.read(smoothStoneBurnLocation), 0, 0, "block\\" + "smooth_"+material, "block", UpgradedVanilla.ID,1.0F);
-				File smoothStoneShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_shading.png");
+				File smoothStoneShadeLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_shading.png");
 				//TextureHelper.overlayTextureBurnReverse(smoothStoneTexture, ImageIO.read(smoothStoneShadeLocation), 0, 0, "block\\" + "smooth_"+material, "block", UpgradedVanilla.ID);
 
-				File smoothStoneHighlightLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\polished_stone_highlight.png");
+				File smoothStoneHighlightLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\polished_stone_highlight.png");
 				//TextureHelper.overlayTextureLighten(smoothStoneTexture, ImageIO.read(smoothStoneHighlightLocation),0,0,"block\\" + "smooth_"+material, "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -87,12 +87,12 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID, 0.3F);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_normal.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_normal.png");
 				TextureHelper.overlayTextureLightenReverse(brickTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\stone_bricks_multiply.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\" + material + "_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -122,12 +122,12 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\" + material + ".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\" + material + "_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\" + material + ".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\" + material + "_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor), ImageIO.read(stoneTexture), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID, 0.3F);
-				File dropperFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\chiseled_stone_bricks_light.png");
+				File dropperFrontOverlayLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\chiseled_stone_bricks_light.png");
 				TextureHelper.overlayTextureLightenReverse(brickTexture, ImageIO.read(dropperFrontOverlayLocation), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\chiseled_stone_brick_shade.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\chiseled_stone_brick_shade.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\chiseled_" + material + "_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -156,14 +156,14 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File quartzTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+".png");
-				File quartzColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+"_color.png");
+				File quartzTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+".png");
+				File quartzColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+"_color.png");
 				BufferedImage brickTexture = TextureHelper.overlayTexture(ImageIO.read(quartzColor),ImageIO.read(quartzTexture), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID, 0.3F);
-				File stoneTilesBurnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_linear_burn.png");
+				File stoneTilesBurnLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_linear_burn.png");
 				TextureHelper.overlayTextureBurnReverse(brickTexture, ImageIO.read(stoneTilesBurnLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
-				File stoneTilesDarkenLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_darken.png");
+				File stoneTilesDarkenLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_darken.png");
 				TextureHelper.overlayTextureDarken(brickTexture, ImageIO.read(stoneTilesDarkenLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
-				File dropperFrontMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\deepslate_tiles_multiply.png");
+				File dropperFrontMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\deepslate_tiles_multiply.png");
 				TextureHelper.overlayTextureMultiplyReverse(brickTexture, ImageIO.read(dropperFrontMultiplyLocation), 0, 0, "block\\" + material + "_tiles", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -187,8 +187,8 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
-				File cracks = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_bricks.png");
+				File cracks = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\cracked_stone_bricks.png");
 				TextureHelper.overlayTextureMultiplyReverse(ImageIO.read(stoneBrickTexture),ImageIO.read(cracks), 0, 0, "block\\" + "cracked_"+material+"_bricks", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -213,8 +213,8 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneBrickTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
-				File cracks = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\cracked_stone_tiles.png");
+				File stoneBrickTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\"+material+"_tiles.png");
+				File cracks = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Overlays\\block\\cracked_stone_tiles.png");
 				TextureHelper.overlayTextureMultiplyReverse(ImageIO.read(stoneBrickTexture),ImageIO.read(cracks), 0, 0, "block\\" + "cracked_"+material+"_tiles", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -243,18 +243,18 @@ public class MinecraftQuartzBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+".png");
-				File stoneColor = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Palletes\\"+ material+"_color.png");
+				File stoneTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+".png");
+				File stoneColor = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Palletes\\"+ material+"_color.png");
 				BufferedImage base = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_pillar_side", "block", UpgradedVanilla.ID, 0.15F);
 				BufferedImage pillarSideTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_pillar_side", "block", UpgradedVanilla.ID, 0.15F);
-				File pillarSideMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Overlays\\block\\quartz_pillar.png");
+				File pillarSideMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Overlays\\block\\quartz_pillar.png");
 				BufferedImage multiply = TextureHelper.overlayTextureMultiply(pillarSideTexture, ImageIO.read(pillarSideMultiplyLocation), 0, 0, "block\\" + material + "_pillar_side", "block", UpgradedVanilla.ID);
 				multiply = TextureHelper.maskImage(ImageIO.read(pillarSideMultiplyLocation),multiply, 0, 0, "block\\" + material + "_pillar_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(base,multiply, 0, 0, "block\\" + material + "_pillar_side", "block", UpgradedVanilla.ID, 0.15F);
 
 				BufferedImage baseTop = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_pillar_top", "block", UpgradedVanilla.ID, 0.15F);
 				BufferedImage pillarTopTexture = TextureHelper.overlayTexture(ImageIO.read(stoneColor),ImageIO.read(stoneTexture), 0, 0, "block\\" + material + "_pillar_top", "block", UpgradedVanilla.ID, 0.15F);
-				File pillarTopMultiplyLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Quartz\\Overlays\\block\\quartz_pillar_top.png");
+				File pillarTopMultiplyLocation = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Quartz\\Overlays\\block\\quartz_pillar_top.png");
 				BufferedImage multiplyTop = TextureHelper.overlayTextureMultiply(pillarTopTexture, ImageIO.read(pillarTopMultiplyLocation), 0, 0, "block\\" + material + "_pillar_top", "block", UpgradedVanilla.ID);
 				multiplyTop = TextureHelper.maskImage(ImageIO.read(pillarTopMultiplyLocation),multiplyTop, 0, 0, "block\\" + material + "_pillar_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(baseTop,multiplyTop, 0, 0, "block\\" + material + "_pillar_top", "block", UpgradedVanilla.ID, 0.15F);

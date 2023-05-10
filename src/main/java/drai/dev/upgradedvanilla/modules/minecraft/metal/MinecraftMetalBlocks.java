@@ -50,7 +50,7 @@ public class MinecraftMetalBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File tileTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\cut_copper.png");
+				File tileTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\cut_copper.png");
 				TextureHelper.swapColors("block\\" + "cut_"+material, "block", UpgradedVanilla.ID,ImageIO.read(tileTexture),TextureHelper.metalPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -87,7 +87,7 @@ public class MinecraftMetalBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File tileTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\lightning_rod.png");
+				File tileTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\lightning_rod.png");
 				TextureHelper.swapColors("block\\" + material+"_lighting_rod", "block", UpgradedVanilla.ID,ImageIO.read(tileTexture),TextureHelper.metalPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -123,9 +123,9 @@ public class MinecraftMetalBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File tileTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\chain.png");
+				File tileTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\chain.png");
 				TextureHelper.swapColors("block\\" + material+"_chain", "block", UpgradedVanilla.ID,ImageIO.read(tileTexture),TextureHelper.metalPresetPalette,out);
-				File itemTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\item\\chain.png");
+				File itemTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\item\\chain.png");
 				TextureHelper.swapColors("item\\" + material+"_chain", "item", UpgradedVanilla.ID,ImageIO.read(itemTexture),TextureHelper.metalPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -165,13 +165,13 @@ public class MinecraftMetalBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File insideHopperTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\hopper_inside.png");
+				File insideHopperTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\hopper_inside.png");
 				TextureHelper.swapColors("block\\" + material+"_hopper_inside", "block", UpgradedVanilla.ID,ImageIO.read(insideHopperTexture),TextureHelper.metalPresetPalette,out);
-				File outsideHopperTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\hopper_outside.png");
+				File outsideHopperTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\hopper_outside.png");
 				TextureHelper.swapColors("block\\" + material+"_hopper_outside", "block", UpgradedVanilla.ID,ImageIO.read(outsideHopperTexture),TextureHelper.metalPresetPalette,out);
-				File topHopperTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\hopper_top.png");
+				File topHopperTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\hopper_top.png");
 				TextureHelper.swapColors("block\\" + material+"_hopper_top", "block", UpgradedVanilla.ID,ImageIO.read(topHopperTexture),TextureHelper.metalPresetPalette,out);
-				File itemHopperTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\item\\hopper.png");
+				File itemHopperTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\item\\hopper.png");
 				TextureHelper.swapColors("item\\" + material+"_hopper", "item", UpgradedVanilla.ID,ImageIO.read(itemHopperTexture),TextureHelper.metalPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -232,13 +232,13 @@ public class MinecraftMetalBlocks {
 		AnvilRegistry.putAnvils(material, (AnvilBlock) anvil, (AnvilBlock) chippedAnvil, (AnvilBlock) damagedAnvil);
 		TextureHelper.addTexture(() -> {
 			try {
-				File anvilTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\anvil.png");
+				File anvilTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\anvil.png");
 				TextureHelper.swapColors("block\\" + material+"_anvil", "block", UpgradedVanilla.ID,ImageIO.read(anvilTexture),TextureHelper.metalPresetPalette,out);
-				File anvilTopTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\anvil_top.png");
+				File anvilTopTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\anvil_top.png");
 				TextureHelper.swapColors("block\\" + material+"_anvil_top", "block", UpgradedVanilla.ID,ImageIO.read(anvilTopTexture),TextureHelper.metalPresetPalette,out);
-				File chippedAnvilTopTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\chipped_anvil_top.png");
+				File chippedAnvilTopTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\chipped_anvil_top.png");
 				TextureHelper.swapColors("block\\" + "chipped_"+material+"_anvil_top", "block", UpgradedVanilla.ID,ImageIO.read(chippedAnvilTopTexture),TextureHelper.metalPresetPalette,out);
-				File damagedAnvilTopTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Textures\\damaged_anvil_top.png");
+				File damagedAnvilTopTexture = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Metal\\Textures\\damaged_anvil_top.png");
 				TextureHelper.swapColors("block\\" + "damaged_"+material+"_anvil_top", "block", UpgradedVanilla.ID,ImageIO.read(damagedAnvilTopTexture),TextureHelper.metalPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);

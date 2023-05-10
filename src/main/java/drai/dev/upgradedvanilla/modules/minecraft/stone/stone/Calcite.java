@@ -222,7 +222,7 @@ public class Calcite {
 	}
 	public  static void register(){
 		registerTags();
-		calcitePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\calcitePalette.png");
+		calcitePalette = new File("C:\\Users\\stijn\\Desktop\\Upgraded-Vanilla-Companion-Mod\\src\\main\\resources\\templatedata\\Stone\\Palletes\\calcitePalette.png");
 		registerMinecraftBlocks();
 	}
 

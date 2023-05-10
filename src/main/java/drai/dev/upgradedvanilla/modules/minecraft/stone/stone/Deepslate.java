@@ -32,7 +32,7 @@ public class Deepslate {
 
 	public  static void register(){
 		registerTags();
-			deepslatePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\deepslatePalette.png");
+			deepslatePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\deepslatePalette.png");
 			DEEPSLATE_FURNACE = MinecraftStoneBlocks.furnaceBlock(MATERIAL_NAME, Blocks.COBBLED_DEEPSLATE, COBBLED_DEEPSLATE_BLOCKS_ITEM_TAG,
 					List.of(BlockTags.MINEABLE_WITH_PICKAXE),
 					List.of(UVCommonItemTags.FURNACES),

@@ -81,7 +81,7 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
+				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
 				TextureHelper.swapColors("block\\"+material+"_planks", "block", UpgradedVanilla.ID,ImageIO.read(plankTextureLocation), TextureHelper.woodPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -106,7 +106,7 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
+				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
 				TextureHelper.swapColors("block\\"+material+"_planks", "block", UpgradedVanilla.ID, ImageIO.read(plankTextureLocation), TextureHelper.woodPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -131,7 +131,7 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
+				File plankTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_planks.png");
 				TextureHelper.swapColors("block\\"+material+"_planks", "block", UpgradedVanilla.ID, ImageIO.read(plankTextureLocation), TextureHelper.woodPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -948,7 +948,7 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_ladder.png");
+				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_ladder.png");
 				TextureHelper.swapColors("block\\"+material+"_ladder", "block", UpgradedVanilla.ID, ImageIO.read(ladderTextureLocation), TextureHelper.woodPresetPalette,out);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -966,10 +966,10 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\sign\\MATERIAL.png");
+				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\sign\\MATERIAL.png");
 				BufferedImage signTexture = TextureHelper.swapColors("entity\\signs\\"+material, "entity\\signs", "minecraft",
 						ImageIO.read(ladderTextureLocation), TextureHelper.woodPresetPalette,out);
-				File logTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\signs\\"+material+".png");
+				File logTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\signs\\"+material+".png");
 				TextureHelper.overlayTexture(signTexture,ImageIO.read(logTextureLocation), 0,16,"entity\\signs\\"+material, "entity\\signs","minecraft");
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1007,18 +1007,18 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File chestEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest.png");
-				File chestLeftEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest_left.png");
-				File chestRightEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest_right.png");
+				File chestEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest.png");
+				File chestLeftEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest_left.png");
+				File chestRightEntityTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\chest\\MATERIAL_chest_right.png");
 				BufferedImage chestTexture = TextureHelper.swapColors("entity\\chest\\"+material+"_chest", "entity\\chest", UpgradedVanilla.ID,
 						ImageIO.read(chestEntityTextureLocation), TextureHelper.woodPresetPalette,out);
 				BufferedImage chestLeftTexture = TextureHelper.swapColors("entity\\chest\\"+material+"_chest_left", "entity\\chest", UpgradedVanilla.ID,
 						ImageIO.read(chestLeftEntityTextureLocation), TextureHelper.woodPresetPalette,out);
 				BufferedImage chestRightTexture = TextureHelper.swapColors("entity\\chest\\"+material+"_chest_right", "entity\\chest", UpgradedVanilla.ID,
 						ImageIO.read(chestRightEntityTextureLocation), TextureHelper.woodPresetPalette,out);
-				File chestOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest.png");
-				File chestLeftOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest_left.png");
-				File chestRightOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest_right.png");
+				File chestOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest.png");
+				File chestLeftOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest_left.png");
+				File chestRightOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\chest\\MATERIAL_chest_right.png");
 				TextureHelper.overlayTexture(chestTexture,ImageIO.read(chestOverlayLocation), 0,0,"entity\\chest\\"+material+"_chest", "entity\\chest", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(chestLeftTexture,ImageIO.read(chestLeftOverlayLocation), 0,0,"entity\\chest\\"+material+"_chest_left", "entity\\chest", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(chestRightTexture,ImageIO.read(chestRightOverlayLocation), 0,0,"entity\\chest\\"+material+"_chest_right", "entity\\chest", UpgradedVanilla.ID);
@@ -1054,10 +1054,10 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File barrelTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_top.png");
-				File barrelTopOpenTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_top_open.png");
-				File barrelSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_side.png");
-				File barrelBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_bottom.png");
+				File barrelTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_top.png");
+				File barrelTopOpenTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_top_open.png");
+				File barrelSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_side.png");
+				File barrelBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_barrel_bottom.png");
 				BufferedImage barrelTopTexture = TextureHelper.swapColors("block\\"+material+"_barrel_top", "block", UpgradedVanilla.ID,
 						ImageIO.read(barrelTopTextureLocation), TextureHelper.woodPresetPalette, out);
 				BufferedImage barrelTopOpenTexture = TextureHelper.swapColors("block\\"+material+"_barrel_top_open", "block", UpgradedVanilla.ID,
@@ -1066,8 +1066,8 @@ public class MinecraftWoodBlocks {
 						ImageIO.read(barrelSideTextureLocation), TextureHelper.woodPresetPalette, out);
 				BufferedImage barrelBottomTexture = TextureHelper.swapColors("block\\"+material+"_barrel_bottom", "block", UpgradedVanilla.ID,
 						ImageIO.read(barrelBottomTextureLocation), TextureHelper.woodPresetPalette, out);
-				File barrelTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_barrel_top.png");
-				File barrelSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_barrel_side.png");
+				File barrelTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_barrel_top.png");
+				File barrelSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_barrel_side.png");
 				TextureHelper.overlayTexture(barrelTopTexture,ImageIO.read(barrelTopOverlayLocation), 0,0,"block\\"+material+"_barrel_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(barrelSideTexture,ImageIO.read(barrelSideOverlayLocation), 0,0,"block\\"+material+"_barrel_side", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -1122,11 +1122,11 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_lever.png");
+				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_lever.png");
 				BufferedImage leverTexture = TextureHelper.swapColors("block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID, ImageIO.read(leverTextureLocation), TextureHelper.woodPresetPalette,out);
-				File leverStonePart = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\MATERIAL_lever.png");
+				File leverStonePart = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\MATERIAL_lever.png");
 				BufferedImage leverStonePartTexture = TextureHelper.swapColors("block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID, ImageIO.read(leverStonePart), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
 				TextureHelper.overlayTexture(leverTexture,
 						leverStonePartTexture, 0,0,"block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -1222,17 +1222,17 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File craftingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_front.png");
-				File craftingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_side.png");
-				File craftingTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_top.png");
+				File craftingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_front.png");
+				File craftingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_side.png");
+				File craftingTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_crafting_table_top.png");
 				BufferedImage craftingTableFrontTexture = TextureHelper.swapColors("block\\"+material+"_crafting_table_front", "block", UpgradedVanilla.ID, ImageIO.read(craftingTableFrontTextureLocation), TextureHelper.woodPresetPalette,out);
-				File craftingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_front.png");
+				File craftingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_front.png");
 				TextureHelper.overlayTexture(craftingTableFrontTexture,ImageIO.read(craftingTableFrontOverlayLocation), 0,0,"block\\"+material +"_crafting_table_front", "block", UpgradedVanilla.ID);
 				BufferedImage craftingTableSideTexture = TextureHelper.swapColors("block\\"+material+"_crafting_table_side", "block", UpgradedVanilla.ID, ImageIO.read(craftingTableSideTextureLocation), TextureHelper.woodPresetPalette,out);
-				File craftingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_side.png");
+				File craftingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_side.png");
 				TextureHelper.overlayTexture(craftingTableSideTexture,ImageIO.read(craftingTableSideOverlayLocation), 0,0,"block\\"+material +"_crafting_table_side", "block", UpgradedVanilla.ID);
 				BufferedImage craftingTableTopTexture = TextureHelper.swapColors("block\\"+material+"_crafting_table_top", "block", UpgradedVanilla.ID, ImageIO.read(craftingTableTopTextureLocation), TextureHelper.woodPresetPalette,out);
-				File craftingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_top.png");
+				File craftingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_crafting_table_top.png");
 				TextureHelper.overlayTexture(craftingTableTopTexture,ImageIO.read(craftingTableTopOverlayLocation), 0,0,"block\\"+material +"_crafting_table_top", "block", UpgradedVanilla.ID);
 
 			} catch (IOException e) {
@@ -1272,20 +1272,20 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File campfireLogTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log.png");
-				File campfireLogLitTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log_lit.png");
-				File campfireItemTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_campfire.png");
-				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log_lit.png.mcmeta"),
+				File campfireLogTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log.png");
+				File campfireLogLitTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log_lit.png");
+				File campfireItemTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_campfire.png");
+				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_campfire_log_lit.png.mcmeta"),
 						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
 								"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\" + material + "_campfire_log_lit.png.mcmeta"));
 				BufferedImage campfireLogTexture = TextureHelper.swapColors("block\\"+material+"_campfire_log", "block", UpgradedVanilla.ID, ImageIO.read(campfireLogTextureLocation), TextureHelper.woodPresetPalette,out);
-				File campfireLogOverLayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_campfire_log.png");
+				File campfireLogOverLayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_campfire_log.png");
 				TextureHelper.overlayTexture(campfireLogTexture,ImageIO.read(campfireLogOverLayLocation), 0,0,"block\\"+material +"_campfire_log", "block", UpgradedVanilla.ID);
 				BufferedImage campfireLogLitTexture = TextureHelper.swapColors("block\\"+material+"_campfire_log_lit", "block", UpgradedVanilla.ID, ImageIO.read(campfireLogLitTextureLocation), TextureHelper.woodPresetPalette,out);
-				File campfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_campfire_log_lit.png");
+				File campfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_campfire_log_lit.png");
 				TextureHelper.overlayTexture(campfireLogLitTexture,ImageIO.read(campfireLogLitOverlayLocation), 0,0,"block\\"+material +"_campfire_log_lit", "block", UpgradedVanilla.ID);
 				BufferedImage craftingTableTopTexture = TextureHelper.swapColors("block\\"+material+"_campfire", "block", UpgradedVanilla.ID, ImageIO.read(campfireItemTextureLocation), TextureHelper.woodPresetPalette,out);
-				File craftingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_campfire.png");
+				File craftingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_campfire.png");
 				TextureHelper.overlayTexture(craftingTableTopTexture,ImageIO.read(craftingTableTopOverlayLocation), 0,0,"block\\"+material +"_campfire", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1325,16 +1325,16 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File soulCampfireLogLitTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_campfire_log_lit.png");
-				File soulCampfireItemTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_soul_campfire.png");
-				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_campfire_log_lit.png.mcmeta"),
+				File soulCampfireLogLitTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_campfire_log_lit.png");
+				File soulCampfireItemTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_soul_campfire.png");
+				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_campfire_log_lit.png.mcmeta"),
 						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
 								"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\" + material + "_soul_campfire_log_lit.png.mcmeta"));
 				BufferedImage soulCampfireLogLitTexture = TextureHelper.swapColors("block\\"+material+"_soul_campfire_log_lit", "block", UpgradedVanilla.ID, ImageIO.read(soulCampfireLogLitTextureLocation), TextureHelper.woodPresetPalette,out);
-				File soulCampfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_soul_campfire_log_lit.png");
+				File soulCampfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_soul_campfire_log_lit.png");
 				TextureHelper.overlayTexture(soulCampfireLogLitTexture,ImageIO.read(soulCampfireLogLitOverlayLocation), 0,0,"block\\"+material +"_soul_campfire_log_lit", "block", UpgradedVanilla.ID);
 				BufferedImage campfireItemTexture = TextureHelper.swapColors("block\\"+material+"_soul_campfire", "block", UpgradedVanilla.ID, ImageIO.read(soulCampfireItemTextureLocation), TextureHelper.woodPresetPalette,out);
-				File soulCampfireItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_soul_campfire.png");
+				File soulCampfireItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_soul_campfire.png");
 				TextureHelper.overlayTexture(campfireItemTexture,ImageIO.read(soulCampfireItemOverlayLocation), 0,0,"block\\"+material +"_soul_campfire", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1367,9 +1367,9 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File bookshelfTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_bookshelf.png");
+				File bookshelfTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_bookshelf.png");
 				BufferedImage bookshelfTexture = TextureHelper.swapColors("block\\"+material+"_bookshelf", "block", UpgradedVanilla.ID, ImageIO.read(bookshelfTextureLocation), TextureHelper.woodPresetPalette,out);
-				File bookshelfOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_bookshelf.png");
+				File bookshelfOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_bookshelf.png");
 				TextureHelper.overlayTexture(bookshelfTexture,ImageIO.read(bookshelfOverlayLocation), 0,0,"block\\"+material +"_bookshelf", "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1411,17 +1411,17 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File lecternSidesTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_sides.png");
-				File lecternBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_base.png");
-				File lecternFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_front.png");
-				File lecternTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_top.png");
+				File lecternSidesTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_sides.png");
+				File lecternBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_base.png");
+				File lecternFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_front.png");
+				File lecternTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_lectern_top.png");
 				BufferedImage lecternSidesTexture = TextureHelper.swapColors("block\\"+material+"_lectern_sides", "block", UpgradedVanilla.ID, ImageIO.read(lecternSidesTextureLocation), TextureHelper.woodPresetPalette,out);
 				BufferedImage lecternTopTexture = TextureHelper.swapColors("block\\"+material+"_lectern_top", "block", UpgradedVanilla.ID, ImageIO.read(lecternTopTextureLocation), TextureHelper.woodPresetPalette,out);
 				BufferedImage lecternBaseTexture = TextureHelper.swapColors("block\\"+material+"_lectern_base", "block", UpgradedVanilla.ID, ImageIO.read(lecternBaseTextureLocation), TextureHelper.woodPresetPalette,out);
-				File soul_campfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_lectern_base.png");
+				File soul_campfireLogLitOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_lectern_base.png");
 				TextureHelper.overlayTexture(lecternBaseTexture,ImageIO.read(soul_campfireLogLitOverlayLocation), 0,0,"block\\"+material +"_lectern_base", "block", UpgradedVanilla.ID);
 				BufferedImage lecternFrontTexture = TextureHelper.swapColors("block\\"+material+"_lectern_front", "block", UpgradedVanilla.ID, ImageIO.read(lecternFrontTextureLocation), TextureHelper.woodPresetPalette,out);
-				File lecternFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_lectern_front.png");
+				File lecternFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_lectern_front.png");
 				TextureHelper.overlayTexture(lecternFrontTexture,ImageIO.read(lecternFrontOverlayLocation), 0,0,"block\\"+material +"_lectern_front", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1457,13 +1457,13 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_rail.png");
-				File railCurveTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_rail_corner.png");
+				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_rail.png");
+				File railCurveTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_rail_corner.png");
 				BufferedImage railTexture = TextureHelper.swapColors("block\\"+material+"_rail", "block", UpgradedVanilla.ID, ImageIO.read(railTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_rail.png");
+				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_rail.png");
 				TextureHelper.overlayTexture(railTexture,ImageIO.read(railOverlayLocation), 0,0,"block\\"+material +"_rail", "block", UpgradedVanilla.ID);
 				BufferedImage railCurveTexture = TextureHelper.swapColors("block\\"+material+"_rail_corner", "block", UpgradedVanilla.ID, ImageIO.read(railCurveTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railCurveOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_rail_corner.png");
+				File railCurveOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_rail_corner.png");
 				TextureHelper.overlayTexture(railCurveTexture,ImageIO.read(railCurveOverlayLocation), 0,0,"block\\"+material +"_rail_corner", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1520,13 +1520,13 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_powered_rail.png");
-				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_powered_rail_on.png");
+				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_powered_rail.png");
+				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_powered_rail_on.png");
 				BufferedImage railTexture = TextureHelper.swapColors("block\\"+material+"_powered_rail", "block", UpgradedVanilla.ID, ImageIO.read(railTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_powered_rail.png");
+				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_powered_rail.png");
 				TextureHelper.overlayTexture(railTexture,ImageIO.read(railOverlayLocation), 0,0,"block\\"+material +"_powered_rail", "block", UpgradedVanilla.ID);
 				BufferedImage railOnTexture = TextureHelper.swapColors("block\\"+material+"_powered_rail_on", "block", UpgradedVanilla.ID, ImageIO.read(railOnTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_powered_rail_on.png");
+				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_powered_rail_on.png");
 				TextureHelper.overlayTexture(railOnTexture,ImageIO.read(railOnOverlayLocation), 0,0,"block\\"+material +"_powered_rail_on", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1583,13 +1583,13 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_activator_rail.png");
-				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_activator_rail_on.png");
+				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_activator_rail.png");
+				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_activator_rail_on.png");
 				BufferedImage railTexture = TextureHelper.swapColors("block\\"+material+"_activator_rail", "block", UpgradedVanilla.ID, ImageIO.read(railTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_activator_rail.png");
+				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_activator_rail.png");
 				TextureHelper.overlayTexture(railTexture,ImageIO.read(railOverlayLocation), 0,0,"block\\"+material +"_activator_rail", "block", UpgradedVanilla.ID);
 				BufferedImage railOnTexture = TextureHelper.swapColors("block\\"+material+"_activator_rail_on", "block", UpgradedVanilla.ID, ImageIO.read(railOnTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_activator_rail_on.png");
+				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_activator_rail_on.png");
 				TextureHelper.overlayTexture(railOnTexture,ImageIO.read(railOnOverlayLocation), 0,0,"block\\"+material +"_activator_rail_on", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1646,13 +1646,13 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(()->{
 			try {
-				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_detector_rail.png");
-				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_detector_rail_on.png");
+				File railTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_detector_rail.png");
+				File railOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_detector_rail_on.png");
 				BufferedImage railTexture = TextureHelper.swapColors("block\\"+material+"_detector_rail", "block", UpgradedVanilla.ID, ImageIO.read(railTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_detector_rail.png");
+				File railOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_detector_rail.png");
 				TextureHelper.overlayTexture(railTexture,ImageIO.read(railOverlayLocation), 0,0,"block\\"+material +"_detector_rail", "block", UpgradedVanilla.ID);
 				BufferedImage railOnTexture = TextureHelper.swapColors("block\\"+material+"_detector_rail_on", "block", UpgradedVanilla.ID, ImageIO.read(railOnTextureLocation), TextureHelper.woodPresetPalette,out);
-				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_detector_rail_on.png");
+				File railOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_detector_rail_on.png");
 				TextureHelper.overlayTexture(railOnTexture,ImageIO.read(railOnOverlayLocation), 0,0,"block\\"+material +"_detector_rail_on", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1685,13 +1685,13 @@ public class MinecraftWoodBlocks {
 
 		TextureHelper.addTexture(()->{
 			try {
-				File bedBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\bed\\bed_base.png");
-				File bedItemBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\bed_base.png");
+				File bedBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\bed\\bed_base.png");
+				File bedItemBaseTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\bed_base.png");
 				BufferedImage bedTexture = TextureHelper.swapColors("entity\\bed\\"+color.getName()+"_"+material+"_bed", "entity\\bed", UpgradedVanilla.ID, ImageIO.read(bedBaseTextureLocation), TextureHelper.woodPresetPalette,out);
-				File bedOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\bed\\"+color.getName()+".png");
+				File bedOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\bed\\"+color.getName()+".png");
 				TextureHelper.overlayTexture(bedTexture,ImageIO.read(bedOverlayLocation), 0,0,"entity\\bed\\"+color.getName()+"_"+material+"_bed", "entity\\bed", UpgradedVanilla.ID);
 				BufferedImage bedItemTexture = TextureHelper.swapColors("block\\"+color.getName()+"_"+material+"_bed", "block", UpgradedVanilla.ID, ImageIO.read(bedItemBaseTextureLocation), TextureHelper.woodPresetPalette,out);
-				File bedItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\item\\bed\\"+color.getName()+".png");
+				File bedItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\item\\bed\\"+color.getName()+".png");
 				TextureHelper.overlayTexture(bedItemTexture,ImageIO.read(bedItemOverlayLocation), 0,0,"block\\"+color.getName()+"_"+material+"_bed", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1742,19 +1742,19 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File beehiveFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_front.png");
-				File beehiveEndTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_end.png");
-				File beehiveSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_side.png");
-				File beehiveFrontHoneyTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_front_honey.png");
+				File beehiveFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_front.png");
+				File beehiveEndTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_end.png");
+				File beehiveSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_side.png");
+				File beehiveFrontHoneyTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_beehive_front_honey.png");
 				BufferedImage beehiveFrontTexture = TextureHelper.swapColors("block\\" + material + "_beehive_front", "block", UpgradedVanilla.ID, ImageIO.read(beehiveFrontTextureLocation), TextureHelper.woodPresetPalette, out);
-				File beehiveFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_front.png");
+				File beehiveFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_front.png");
 				TextureHelper.overlayTexture(beehiveFrontTexture, ImageIO.read(beehiveFrontOverlayLocation), 0, 0, "block\\" + material + "_beehive_front", "block", UpgradedVanilla.ID);
 				BufferedImage beehiveEndTexture = TextureHelper.swapColors("block\\" + material + "_beehive_end", "block", UpgradedVanilla.ID, ImageIO.read(beehiveEndTextureLocation), TextureHelper.woodPresetPalette, out);
 				BufferedImage beehiveSideTexture = TextureHelper.swapColors("block\\" + material + "_beehive_side", "block", UpgradedVanilla.ID, ImageIO.read(beehiveSideTextureLocation), TextureHelper.woodPresetPalette, out);
-				File beehiveSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_side.png");
+				File beehiveSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_side.png");
 				TextureHelper.overlayTexture(beehiveSideTexture, ImageIO.read(beehiveSideOverlayLocation), 0, 0, "block\\" + material + "_beehive_side", "block", UpgradedVanilla.ID);
 				BufferedImage beehiveFrontHoneyTexture = TextureHelper.swapColors("block\\" + material + "_beehive_front_honey", "block", UpgradedVanilla.ID, ImageIO.read(beehiveFrontHoneyTextureLocation), TextureHelper.woodPresetPalette, out);
-				File beehiveFrontHoneyOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_front_honey.png");
+				File beehiveFrontHoneyOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_beehive_front_honey.png");
 				TextureHelper.overlayTexture(beehiveFrontHoneyTexture, ImageIO.read(beehiveFrontHoneyOverlayLocation), 0, 0, "block\\" + material + "_beehive_front_honey", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1782,11 +1782,11 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File composterFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_side.png");
-				File composterEndTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_top.png");
-				File composterSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_bottom.png");
+				File composterFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_side.png");
+				File composterEndTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_top.png");
+				File composterSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_composter_bottom.png");
 				BufferedImage composterFrontTexture = TextureHelper.swapColors("block\\" + material + "_composter_side", "block", UpgradedVanilla.ID, ImageIO.read(composterFrontTextureLocation), TextureHelper.woodPresetPalette, out);
-				File composterFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_composter_side.png");
+				File composterFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_composter_side.png");
 				TextureHelper.overlayTexture(composterFrontTexture, ImageIO.read(composterFrontOverlayLocation), 0, 0, "block\\" + material + "_composter_side", "block", UpgradedVanilla.ID);
 				TextureHelper.swapColors("block\\" + material + "_composter_top", "block", UpgradedVanilla.ID, ImageIO.read(composterEndTextureLocation), TextureHelper.woodPresetPalette, out);
 				TextureHelper.swapColors("block\\" + material + "_composter_bottom", "block", UpgradedVanilla.ID, ImageIO.read(composterSideTextureLocation), TextureHelper.woodPresetPalette, out);
@@ -1859,10 +1859,10 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File grindstonePivotTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_grindstone_pivot.png");
-				File grindstoneSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_grindstone_side.png");
-				File grindstoneRoundTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_grindstone_round.png");
-				File stonePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png");
+				File grindstonePivotTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_grindstone_pivot.png");
+				File grindstoneSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_grindstone_side.png");
+				File grindstoneRoundTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_grindstone_round.png");
+				File stonePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png");
 				TextureHelper.swapColors("block\\" + woodMaterial + "_grindstone_pivot", "block", UpgradedVanilla.ID, ImageIO.read(grindstonePivotTextureLocation), TextureHelper.woodPresetPalette, out);
 				TextureHelper.swapColors("block\\" + stoneMaterial + "_grindstone_round", "block", UpgradedVanilla.ID, ImageIO.read(grindstoneRoundTextureLocation), TextureHelper.stonePresetPalette, stonePalette);
 				TextureHelper.swapColors("block\\" + stoneMaterial + "_grindstone_side", "block", UpgradedVanilla.ID, ImageIO.read(grindstoneSideTextureLocation), TextureHelper.stonePresetPalette, stonePalette);
@@ -1901,20 +1901,20 @@ public class MinecraftWoodBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File darkOakPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\DarkOakPalette.png");
-				File cartographyTableSide1TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side1.png");
-				File cartographyTableSide2TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side2.png");
-				File cartographyTableSide3TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side3.png");
-				File cartographyTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_top.png");
+				File darkOakPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\DarkOakPalette.png");
+				File cartographyTableSide1TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side1.png");
+				File cartographyTableSide2TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side2.png");
+				File cartographyTableSide3TextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_side3.png");
+				File cartographyTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_cartography_table_top.png");
 				BufferedImage cartographyTableSide1Texture = TextureHelper.swapColors("block\\" + material + "_cartography_table_side1", "block", UpgradedVanilla.ID, ImageIO.read(cartographyTableSide1TextureLocation), darkOakPalette, out);
-				File cartographyTableSide1OverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_side1.png");
+				File cartographyTableSide1OverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_side1.png");
 				TextureHelper.overlayTexture(cartographyTableSide1Texture, ImageIO.read(cartographyTableSide1OverlayLocation), 0, 0, "block\\" + material + "_cartography_table_side1", "block", UpgradedVanilla.ID);
 				BufferedImage cartographyTableSide2Texture =TextureHelper.swapColors("block\\" + material + "_cartography_table_side2", "block", UpgradedVanilla.ID, ImageIO.read(cartographyTableSide2TextureLocation), darkOakPalette, out);
-				File cartographyTableSide2OverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_side2.png");
+				File cartographyTableSide2OverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_side2.png");
 				TextureHelper.overlayTexture(cartographyTableSide2Texture, ImageIO.read(cartographyTableSide2OverlayLocation), 0, 0, "block\\" + material + "_cartography_table_side2", "block", UpgradedVanilla.ID);
 				TextureHelper.swapColors("block\\" + material + "_cartography_table_side3", "block", UpgradedVanilla.ID, ImageIO.read(cartographyTableSide3TextureLocation), darkOakPalette, out);
 				BufferedImage cartographyTableTopTexture =TextureHelper.swapColors("block\\" + material + "_cartography_table_top", "block", UpgradedVanilla.ID, ImageIO.read(cartographyTableTopTextureLocation), darkOakPalette, out);
-				File cartographyTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_top.png");
+				File cartographyTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_cartography_table_top.png");
 				TextureHelper.overlayTexture(cartographyTableTopTexture, ImageIO.read(cartographyTableTopOverlayLocation), 0, 0, "block\\" + material + "_cartography_table_top", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1951,18 +1951,18 @@ public class MinecraftWoodBlocks {
 
 		TextureHelper.addTexture(() -> {
 			try {
-				File birchPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\BirchPallete.png");
-				File fletchingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_side.png");
-				File fletchingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_front.png");
-				File fletchingTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_top.png");
+				File birchPalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\BirchPallete.png");
+				File fletchingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_side.png");
+				File fletchingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_front.png");
+				File fletchingTableTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_fletching_table_top.png");
 				BufferedImage fletchingTableSideTexture = TextureHelper.swapColors("block\\" + material + "_fletching_table_side", "block", UpgradedVanilla.ID, ImageIO.read(fletchingTableSideTextureLocation), birchPalette, out);
-				File fletchingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_side.png");
+				File fletchingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_side.png");
 				TextureHelper.overlayTexture(fletchingTableSideTexture, ImageIO.read(fletchingTableSideOverlayLocation), 0, 0, "block\\" + material + "_fletching_table_side", "block", UpgradedVanilla.ID);
 				BufferedImage fletchingTableFrontTexture =TextureHelper.swapColors("block\\" + material + "_fletching_table_front", "block", UpgradedVanilla.ID, ImageIO.read(fletchingTableFrontTextureLocation), birchPalette, out);
-				File fletchingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_front.png");
+				File fletchingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_front.png");
 				TextureHelper.overlayTexture(fletchingTableFrontTexture, ImageIO.read(fletchingTableFrontOverlayLocation), 0, 0, "block\\" + material + "_fletching_table_front", "block", UpgradedVanilla.ID);
 				BufferedImage fletchingTableTopTexture =TextureHelper.swapColors("block\\" + material + "_fletching_table_top", "block", UpgradedVanilla.ID, ImageIO.read(fletchingTableTopTextureLocation), birchPalette, out);
-				File fletchingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_top.png");
+				File fletchingTableTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_fletching_table_top.png");
 				TextureHelper.overlayTexture(fletchingTableTopTexture, ImageIO.read(fletchingTableTopOverlayLocation), 0, 0, "block\\" + material + "_fletching_table_top", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2011,11 +2011,11 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(() -> {
 			try {
-				File tripwireHookTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_tripwire_hook.png");
-				File tripwireHookStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_tripwire_hook.png");
+				File tripwireHookTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_tripwire_hook.png");
+				File tripwireHookStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_tripwire_hook.png");
 				BufferedImage tripwireHookTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID, ImageIO.read(tripwireHookTextureLocation), TextureHelper.woodPresetPalette, out);
 				BufferedImage tripwireHookStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID, ImageIO.read(tripwireHookStoneTextureLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
 				TextureHelper.overlayTexture(tripwireHookTexture, tripwireHookStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2063,36 +2063,36 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
-				File smokerSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_side.png");
-				File smokerFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front.png");
-				File smokerFrontOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front_on.png");
-				File smokerTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_bottom.png");
-				File smokerBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_bottom.png");
-				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front_on.png.mcmeta"),
+				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+				File smokerSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_side.png");
+				File smokerFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front.png");
+				File smokerFrontOnTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front_on.png");
+				File smokerTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_bottom.png");
+				File smokerBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_bottom.png");
+				FileUtils.copyFile(new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smoker_front_on.png.mcmeta"),
 						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\" +
 								"create-fabric-addon-template-1.19\\src\\main\\resources\\assets\\upgradedvanilla\\textures\\block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on.png.mcmeta"));
 
 				BufferedImage smokerSideTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID, ImageIO.read(smokerSideTextureLocation), TextureHelper.woodPresetPalette, out);
-				File smokerSideStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\smoker_side.png");
+				File smokerSideStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\smoker_side.png");
 				BufferedImage smokerSideRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID, ImageIO.read(smokerSideStoneTextureLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
-				File smokerSideStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_smoker_side.png");
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+				File smokerSideStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_smoker_side.png");
 				BufferedImage stonecutterSideStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerSideStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
-				File smokerSideStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_side.png");
+				File smokerSideStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_side.png");
 				stonecutterSideStoneTexture = TextureHelper.overlayTextureDarken(stonecutterSideStoneTexture, ImageIO.read(smokerSideStoneOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID);
 				stonecutterSideStoneTexture = TextureHelper.overlayTexture(stonecutterSideStoneTexture, smokerSideRimStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smokerSideTexture, stonecutterSideStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID);
 
 				BufferedImage smokerFrontTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontTextureLocation), TextureHelper.woodPresetPalette, out);
-				File smokerFrontStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_smoker_front.png");
+				File smokerFrontStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_smoker_front.png");
 				BufferedImage smokerFrontRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontStoneTextureLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
-				File smokerFrontStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_smoker_front.png");
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+				File smokerFrontStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_smoker_front.png");
 				BufferedImage stonecutterFrontStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerFrontStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_front", "block", UpgradedVanilla.ID);
-				File smokerFrontStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_front.png");
-				File smokerFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smoker_front.png");
-				File smokerFrontStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_front_shading.png");
+				File smokerFrontStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_front.png");
+				File smokerFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smoker_front.png");
+				File smokerFrontStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_front_shading.png");
 				stonecutterFrontStoneTexture = TextureHelper.overlayTextureDarken(stonecutterFrontStoneTexture, ImageIO.read(smokerFrontStoneOverlayShadeLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID);
 				stonecutterFrontStoneTexture = TextureHelper.overlayTexture(stonecutterFrontStoneTexture, ImageIO.read(smokerFrontStoneOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID);
 				stonecutterFrontStoneTexture = TextureHelper.overlayTexture(stonecutterFrontStoneTexture, ImageIO.read(smokerFrontOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID);
@@ -2100,33 +2100,33 @@ public class MinecraftWoodBlocks {
 				TextureHelper.overlayTexture(smokerFrontTexture, stonecutterFrontStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID);
 
 				BufferedImage smokerFrontOnTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontOnTextureLocation), TextureHelper.woodPresetPalette, out);
-				File smokerFrontOnStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_smoker_front_on.png");
+				File smokerFrontOnStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_smoker_front_on.png");
 				BufferedImage smokerFrontOnRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontOnStoneTextureLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
-				File smokerFrontOnStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_smoker_front_on.png");
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+				File smokerFrontOnStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_smoker_front_on.png");
 				BufferedImage stonecutterFrontOnStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerFrontOnStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_front_on", "block", UpgradedVanilla.ID);
 				stonecutterFrontOnStoneTexture = TextureHelper.overlayTexture(stonecutterFrontOnStoneTexture, smokerFrontOnRimStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID);
-				File smokerFrontOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smoker_front_on.png");
+				File smokerFrontOnOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smoker_front_on.png");
 				BufferedImage smokerOnTexture = TextureHelper.overlayTexture(smokerFrontOnTexture, stonecutterFrontOnStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smokerOnTexture, ImageIO.read(smokerFrontOnOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID);
 
 				BufferedImage smokerTopTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID, ImageIO.read(smokerTopTextureLocation), TextureHelper.woodPresetPalette, out);
-				File smokerTopStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\smoker_top.png");
+				File smokerTopStoneTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\smoker_top.png");
 				BufferedImage smokerTopRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID, ImageIO.read(smokerTopStoneTextureLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
-				File smokerTopStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_smoker_top.png");
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+				File smokerTopStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_smoker_top.png");
 				BufferedImage stonecutterTopStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerTopStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
-				File smokerTopStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_top.png");
-				File smokerTopStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_top_shade.png");
+				File smokerTopStoneOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_top.png");
+				File smokerTopStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_top_shade.png");
 				stonecutterTopStoneTexture = TextureHelper.overlayTexture(stonecutterTopStoneTexture, smokerTopRimStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID);
 				stonecutterTopStoneTexture = TextureHelper.overlayTextureDarken(stonecutterTopStoneTexture, ImageIO.read(smokerTopStoneOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID);
 				stonecutterTopStoneTexture = TextureHelper.overlayTextureDarken(stonecutterTopStoneTexture, ImageIO.read(smokerTopStoneOverlayShadeLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smokerTopTexture, stonecutterTopStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID);
 
 				BufferedImage smokerBottomTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_bottom", "block", UpgradedVanilla.ID, ImageIO.read(smokerBottomTextureLocation), TextureHelper.woodPresetPalette, out);
-				File smokerBottomStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_smoker_bottom.png");
+				File smokerBottomStoneMaskLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_smoker_bottom.png");
 				BufferedImage stonecutterBottomStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerBottomStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
-				File smokerBottomStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_smoker_bottom.png");
+				File smokerBottomStoneOverlayShadeLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_smoker_bottom.png");
 				stonecutterBottomStoneTexture = TextureHelper.overlayTextureDarken(stonecutterBottomStoneTexture, ImageIO.read(smokerBottomStoneOverlayShadeLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_bottom", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(smokerBottomTexture, stonecutterBottomStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_bottom", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -2169,34 +2169,34 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(() -> {
 			try {
-				File sprucePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\SprucePallete.png");
-				File stonecutterSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_side.png");
-				File stonecutterTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_top.png");
+				File sprucePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\SprucePallete.png");
+				File stonecutterSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_side.png");
+				File stonecutterTopTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_top.png");
 				BufferedImage stonecutterSideTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterSideTextureLocation), sprucePalette, out);
-				File stonecutterSideMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_stonecutter_side.png");
-				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+".png");
-				File stonecutterSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_stonecutter_side.png");
-				File stonecutterSideSwapLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_stonecutter_side.png");
+				File stonecutterSideMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_stonecutter_side.png");
+				File stoneTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+".png");
+				File stonecutterSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_stonecutter_side.png");
+				File stonecutterSideSwapLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_stonecutter_side.png");
 				BufferedImage stonecutterSideStoneTexture = TextureHelper.maskImage(ImageIO.read(stonecutterSideMask),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 				stonecutterSideStoneTexture = TextureHelper.overlayTextureDarken(stonecutterSideStoneTexture, ImageIO.read(stonecutterSideOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 				BufferedImage stonecutterSideRimTexture = TextureHelper.swapColors("block\\" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterSideSwapLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
 				stonecutterSideStoneTexture = TextureHelper.overlayTexture(stonecutterSideStoneTexture,stonecutterSideRimTexture, 0, 0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 
 				TextureHelper.overlayTexture(stonecutterSideTexture, stonecutterSideStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 
 				BufferedImage stonecutterTopTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterTopTextureLocation), sprucePalette, out);
-				File stonecutterTopMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_stonecutter_top.png");
-				File stonecutterTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Overlays\\block\\stone_stonecutter_top.png");
+				File stonecutterTopMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_stonecutter_top.png");
+				File stonecutterTopOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Overlays\\block\\stone_stonecutter_top.png");
 				BufferedImage stonecutterTopStoneTexture = TextureHelper.maskImage(ImageIO.read(stonecutterTopMask),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
 				stonecutterTopStoneTexture = TextureHelper.overlayTextureDarken(stonecutterTopStoneTexture, ImageIO.read(stonecutterTopOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
 				TextureHelper.overlayTexture(stonecutterTopTexture, stonecutterTopStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
 
-				File stonecutterBottomMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Masks\\stone_stonecutter_bottom.png");
-				File stonecutterBottomOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Textures\\block\\stone_stonecutter_bottom.png");
+				File stonecutterBottomMask = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Masks\\stone_stonecutter_bottom.png");
+				File stonecutterBottomOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Textures\\block\\stone_stonecutter_bottom.png");
 				BufferedImage stonecutterBottomStoneTexture = TextureHelper.maskImage(ImageIO.read(stonecutterBottomMask),ImageIO.read(stoneTexture), 0,0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 				BufferedImage stonecutterBottomRimTexture = TextureHelper.swapColors("block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterBottomOverlayLocation), TextureHelper.stonePresetPalette,
-						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
 				TextureHelper.overlayTexture(stonecutterBottomRimTexture,stonecutterBottomStoneTexture, 0, 0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 
 			} catch (IOException e) {
@@ -2233,18 +2233,18 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File mangrovePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\Palletes\\MangrovePallete.png");
-				File smithingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_side.png");
-				File smithingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_front.png");
-				File smithingTableBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_bottom.png");
+				File mangrovePalette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\Palletes\\MangrovePallete.png");
+				File smithingTableSideTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_side.png");
+				File smithingTableFrontTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_front.png");
+				File smithingTableBottomTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_smithing_table_bottom.png");
 				BufferedImage smithingTableSideTexture = TextureHelper.swapColors("block\\" + material + "_smithing_table_side", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableSideTextureLocation), mangrovePalette, out);
-				File smithingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_side.png");
+				File smithingTableSideOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_side.png");
 				TextureHelper.overlayTexture(smithingTableSideTexture, ImageIO.read(smithingTableSideOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_side", "block", UpgradedVanilla.ID);
 				BufferedImage smithingTableFrontTexture =TextureHelper.swapColors("block\\" + material + "_smithing_table_front", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableFrontTextureLocation), mangrovePalette, out);
-				File smithingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_front.png");
+				File smithingTableFrontOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_front.png");
 				TextureHelper.overlayTexture(smithingTableFrontTexture, ImageIO.read(smithingTableFrontOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_front", "block", UpgradedVanilla.ID);
 				BufferedImage smithingTableBottomTexture =TextureHelper.swapColors("block\\" + material + "_smithing_table_bottom", "block", UpgradedVanilla.ID, ImageIO.read(smithingTableBottomTextureLocation), mangrovePalette, out);
-				File smithingTableBottomOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_bottom.png");
+				File smithingTableBottomOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_smithing_table_bottom.png");
 				TextureHelper.overlayTexture(smithingTableBottomTexture, ImageIO.read(smithingTableBottomOverlayLocation), 0, 0, "block\\" + material + "_smithing_table_bottom", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);

@@ -15,7 +15,7 @@ import java.util.*;
 public class Iron {
 	public static File palette = new File(Iron.class
 			.getClassLoader().getResource("template data\\Metal\\Pallete\\ironPallete.png").toString());
-	//public static File palette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\Metal\\Pallete\\ironPallete.png");
+	//public static File palette = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\Metal\\Pallete\\ironPallete.png");
 	private static final String MATERIAL_NAME = "iron";
 	public static TagKey<Item> IRON_SLABS_ITEM_TAG;
 	public static TagKey<Item> IRON_BLOCKS_ITEM_TAG;

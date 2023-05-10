@@ -52,7 +52,7 @@ public class MinecraftItems {
 				itemTags
 				);
 		TextureHelper.addTexture(()->{
-			File stickTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_stick.png");
+			File stickTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_stick.png");
 			try {
 				TextureHelper.swapColors("item\\"+material+"_stick", "item", UpgradedVanilla.ID, ImageIO.read(stickTextureLocation), TextureHelper.woodPresetPalette,out);
 			} catch (IOException e) {
@@ -103,10 +103,10 @@ public class MinecraftItems {
 		);
 		TextureHelper.addTexture(()->{
 			try {
-				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_sign.png");
+				File ladderTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_sign.png");
 				BufferedImage signTexture = TextureHelper.swapColors("item\\"+material+"_sign", "item", UpgradedVanilla.ID,
 						ImageIO.read(ladderTextureLocation), TextureHelper.woodPresetPalette,out);
-				File textTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_sign.png");
+				File textTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_sign.png");
 				TextureHelper.overlayTexture(signTexture,ImageIO.read(textTextureLocation), 0,0,"item\\"+material+"_sign", "item", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -129,8 +129,8 @@ public class MinecraftItems {
 		);
 		TextureHelper.addTexture(()->{
 			try {
-				File boatEntityTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\boat\\MATERIAL.png");
-				File boatTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_boat.png");
+				File boatEntityTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\boat\\MATERIAL.png");
+				File boatTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_boat.png");
 				TextureHelper.swapColors("entity\\boat\\"+material, "entity\\boat", UpgradedVanilla.ID,
 						ImageIO.read(boatEntityTexture), TextureHelper.woodPresetPalette,out);
 				TextureHelper.swapColors("item\\"+material+"_boat", "item", UpgradedVanilla.ID,
@@ -156,15 +156,15 @@ public class MinecraftItems {
 		);
 		TextureHelper.addTexture(()->{
 			try {
-				File boatEntityTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\entity\\chest_boat\\MATERIAL.png");
-				File boatItemTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\item\\MATERIAL_chest_boat.png");
+				File boatEntityTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\entity\\chest_boat\\MATERIAL.png");
+				File boatItemTexture = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\item\\MATERIAL_chest_boat.png");
 				BufferedImage chestBoatTexture = TextureHelper.swapColors("entity\\chest_boat\\"+material, "entity\\chest_boat", UpgradedVanilla.ID,
 						ImageIO.read(boatEntityTexture), TextureHelper.woodPresetPalette,out);
-				File chestBoatOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\entity\\chest_boat\\MATERIAL.png");
+				File chestBoatOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\entity\\chest_boat\\MATERIAL.png");
 				TextureHelper.overlayTexture(chestBoatTexture,ImageIO.read(chestBoatOverlayLocation), 0,0,"entity\\chest_boat\\"+material, "entity\\chest_boat", UpgradedVanilla.ID);
 				BufferedImage chestBoatItemTexture = TextureHelper.swapColors("item\\"+material+"_chest_boat", "item", UpgradedVanilla.ID,
 						ImageIO.read(boatItemTexture), TextureHelper.woodPresetPalette,out);
-				File chestBoatItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_chest_boat.png");
+				File chestBoatItemOverlayLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\item\\MATERIAL_chest_boat.png");
 				TextureHelper.overlayTexture(chestBoatItemTexture,ImageIO.read(chestBoatItemOverlayLocation), 0,0,"item\\"+material+"_chest_boat", "item", UpgradedVanilla.ID);
 
 			} catch (IOException e) {
@@ -195,9 +195,9 @@ public class MinecraftItems {
 				}), itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_torch.png");
+				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_torch.png");
 				BufferedImage leverTexture = TextureHelper.swapColors("block\\"+woodMaterial +"_torch", "block", UpgradedVanilla.ID, ImageIO.read(leverTextureLocation), TextureHelper.woodPresetPalette,out);
-				File leverOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_torch.png");
+				File leverOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_torch.png");
 				TextureHelper.overlayTexture(leverTexture,ImageIO.read(leverOverlay), 0,0,"block\\"+woodMaterial + "_torch", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -229,9 +229,9 @@ public class MinecraftItems {
 				}), itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_torch.png");
+				File leverTextureLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_soul_torch.png");
 				BufferedImage leverTexture = TextureHelper.swapColors("block\\"+woodMaterial +"_soul_torch", "block", UpgradedVanilla.ID, ImageIO.read(leverTextureLocation), TextureHelper.woodPresetPalette,out);
-				File leverOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_soul_torch.png");
+				File leverOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_soul_torch.png");
 				TextureHelper.overlayTexture(leverTexture,ImageIO.read(leverOverlay), 0,0,"block\\"+woodMaterial + "_soul_torch", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -267,13 +267,13 @@ public class MinecraftItems {
 				}), itemTags);
 		TextureHelper.addTexture(()->{
 			try {
-				File redstoneTorchOnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_redstone_torch.png");
-				File redstoneTorchOffLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\block\\MATERIAL_redstone_torch_off.png");
+				File redstoneTorchOnLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_redstone_torch.png");
+				File redstoneTorchOffLocation = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\block\\MATERIAL_redstone_torch_off.png");
 				BufferedImage redstoneTorchONTexture = TextureHelper.swapColors("block\\"+woodMaterial +"_redstone_torch", "block", UpgradedVanilla.ID, ImageIO.read(redstoneTorchOnLocation), TextureHelper.woodPresetPalette,out);
-				File redstoneTorchOnOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_redstone_torch.png");
+				File redstoneTorchOnOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_redstone_torch.png");
 				TextureHelper.overlayTexture(redstoneTorchONTexture,ImageIO.read(redstoneTorchOnOverlay), 0,0,"block\\"+woodMaterial + "_redstone_torch", "block", UpgradedVanilla.ID);
 				BufferedImage redstoneTorchOffTexture = TextureHelper.swapColors("block\\"+woodMaterial +"_redstone_torch_off", "block", UpgradedVanilla.ID, ImageIO.read(redstoneTorchOffLocation), TextureHelper.woodPresetPalette,out);
-				File redstoneTorchOffOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\create-fabric-addon-template-1.19\\create-fabric-addon-template-1.19\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_redstone_torch_off.png");
+				File redstoneTorchOffOverlay = new File("C:\\Users\\Stijn\\Desktop\\Upgraded Vanilla project\\template data\\wood\\assets\\textures\\overlay\\block\\MATERIAL_redstone_torch_off.png");
 				TextureHelper.overlayTexture(redstoneTorchOffTexture,ImageIO.read(redstoneTorchOffOverlay), 0,0,"block\\"+woodMaterial + "_redstone_torch_off", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
 				throw new RuntimeException(e);

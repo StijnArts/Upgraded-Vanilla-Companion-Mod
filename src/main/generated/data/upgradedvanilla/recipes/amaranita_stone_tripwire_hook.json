@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "upgradedvanilla:stone_blocks"
+    },
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "I",
+    "S",
+    "P"
+  ],
+  "result": {
+    "count": 2,
+    "item": "upgradedvanilla:amaranita_stone_tripwire_hook"
+  }
+}

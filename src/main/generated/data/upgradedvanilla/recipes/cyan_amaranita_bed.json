@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    },
+    "W": {
+      "tag": "upgradedvanilla:cyan_wool_blocks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "PPP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:cyan_amaranita_bed"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/stonecutter",
+  "textures": {
+    "bottom": "upgradedvanilla:block/stone_stonecutter_bottom",
+    "particle": "upgradedvanilla:block/stone_stonecutter_bottom",
+    "side": "upgradedvanilla:block/amaranita_stone_stonecutter_side",
+    "top": "upgradedvanilla:block/amaranita_stone_stonecutter_top"
+  }
+}

@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "registration.BetterEndBlocksMixin",
+    "registration.CreateDecoBlocksMixin",
     "BlockEntityTypeMixin",
     "DynamicBlockEntityTypeMixin",
     "WrittenBookItemMixin",

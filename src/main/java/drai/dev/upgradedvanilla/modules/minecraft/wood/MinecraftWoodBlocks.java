@@ -1126,7 +1126,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage leverTexture = TextureHelper.swapColors("block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID, ImageIO.read(leverTextureLocation), TextureHelper.woodPresetPalette,out);
 				File leverStonePart = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\MATERIAL_lever.png");
 				BufferedImage leverStonePartTexture = TextureHelper.swapColors("block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID, ImageIO.read(leverStonePart), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"_palette.png"));
 				TextureHelper.overlayTexture(leverTexture,
 						leverStonePartTexture, 0,0,"block\\"+woodMaterial + "_" + stoneMaterial +"_lever", "block", UpgradedVanilla.ID);
 			} catch (IOException e) {
@@ -1860,7 +1860,7 @@ public class MinecraftWoodBlocks {
 				File grindstonePivotTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_grindstone_pivot.png");
 				File grindstoneSideTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_grindstone_side.png");
 				File grindstoneRoundTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_grindstone_round.png");
-				File stonePalette = RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png");
+				File stonePalette = RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png");
 				TextureHelper.swapColors("block\\" + woodMaterial + "_grindstone_pivot", "block", UpgradedVanilla.ID, ImageIO.read(grindstonePivotTextureLocation), TextureHelper.woodPresetPalette, out);
 				TextureHelper.swapColors("block\\" + stoneMaterial + "_grindstone_round", "block", UpgradedVanilla.ID, ImageIO.read(grindstoneRoundTextureLocation), TextureHelper.stonePresetPalette, stonePalette);
 				TextureHelper.swapColors("block\\" + stoneMaterial + "_grindstone_side", "block", UpgradedVanilla.ID, ImageIO.read(grindstoneSideTextureLocation), TextureHelper.stonePresetPalette, stonePalette);
@@ -2013,7 +2013,7 @@ public class MinecraftWoodBlocks {
 				File tripwireHookStoneTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_tripwire_hook.png");
 				BufferedImage tripwireHookTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID, ImageIO.read(tripwireHookTextureLocation), TextureHelper.woodPresetPalette, out);
 				BufferedImage tripwireHookStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID, ImageIO.read(tripwireHookStoneTextureLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png"));
 				TextureHelper.overlayTexture(tripwireHookTexture, tripwireHookStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_tripwire_hook", "block", UpgradedVanilla.ID);
 				} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2061,7 +2061,7 @@ public class MinecraftWoodBlocks {
 				blockTags, itemTags);
 		TextureHelper.addTexture(() -> {
 			try {
-				File stoneTexture = RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
+				File stoneTexture = RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+Registry.BLOCK.getKey(cobbledStone).getPath()+".png");
 				File smokerSideTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smoker_side.png");
 				File smokerFrontTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smoker_front.png");
 				File smokerFrontOnTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_smoker_front_on.png");
@@ -2073,7 +2073,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage smokerSideTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID, ImageIO.read(smokerSideTextureLocation), TextureHelper.woodPresetPalette, out);
 				File smokerSideStoneTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\smoker_side.png");
 				BufferedImage smokerSideRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_side", "block", UpgradedVanilla.ID, ImageIO.read(smokerSideStoneTextureLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png"));
 				File smokerSideStoneMaskLocation = RelativeFileHelper.getTemplateData("\\Stone\\Masks\\stone_smoker_side.png");
 				BufferedImage stonecutterSideStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerSideStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 				File smokerSideStoneOverlayLocation = RelativeFileHelper.getTemplateData("\\Stone\\Overlays\\block\\stone_smoker_side.png");
@@ -2084,7 +2084,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage smokerFrontTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontTextureLocation), TextureHelper.woodPresetPalette, out);
 				File smokerFrontStoneTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_smoker_front.png");
 				BufferedImage smokerFrontRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontStoneTextureLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png"));
 				File smokerFrontStoneMaskLocation = RelativeFileHelper.getTemplateData("\\Stone\\Masks\\stone_smoker_front.png");
 				BufferedImage stonecutterFrontStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerFrontStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_front", "block", UpgradedVanilla.ID);
 				File smokerFrontStoneOverlayLocation = RelativeFileHelper.getTemplateData("\\Stone\\Overlays\\block\\stone_smoker_front.png");
@@ -2099,7 +2099,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage smokerFrontOnTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontOnTextureLocation), TextureHelper.woodPresetPalette, out);
 				File smokerFrontOnStoneTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_smoker_front_on.png");
 				BufferedImage smokerFrontOnRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID, ImageIO.read(smokerFrontOnStoneTextureLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png"));
 				File smokerFrontOnStoneMaskLocation = RelativeFileHelper.getTemplateData("\\Stone\\Masks\\stone_smoker_front_on.png");
 				BufferedImage stonecutterFrontOnStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerFrontOnStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_front_on", "block", UpgradedVanilla.ID);
 				stonecutterFrontOnStoneTexture = TextureHelper.overlayTexture(stonecutterFrontOnStoneTexture, smokerFrontOnRimStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_front_on", "block", UpgradedVanilla.ID);
@@ -2110,7 +2110,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage smokerTopTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID, ImageIO.read(smokerTopTextureLocation), TextureHelper.woodPresetPalette, out);
 				File smokerTopStoneTextureLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\smoker_top.png");
 				BufferedImage smokerTopRimStoneTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_smoker_top", "block", UpgradedVanilla.ID, ImageIO.read(smokerTopStoneTextureLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\stone\\palletes\\"+stoneMaterial+"_palette.png"));
 				File smokerTopStoneMaskLocation = RelativeFileHelper.getTemplateData("\\Stone\\Masks\\stone_smoker_top.png");
 				BufferedImage stonecutterTopStoneTexture = TextureHelper.maskImage(ImageIO.read(smokerTopStoneMaskLocation),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_top", "block", UpgradedVanilla.ID);
 				File smokerTopStoneOverlayLocation = RelativeFileHelper.getTemplateData("\\Stone\\Overlays\\block\\stone_smoker_top.png");
@@ -2166,7 +2166,7 @@ public class MinecraftWoodBlocks {
 		BlockRenderLayerMap.INSTANCE.putBlock(returnBlock, RenderType.cutout());
 		TextureHelper.addTexture(() -> {
 			try {
-				File sprucePalette = RelativeFileHelper.getTemplateData("\\wood\\Palletes\\SprucePallete.png");
+				File sprucePalette = RelativeFileHelper.getTemplateData("\\wood\\palletes\\spruce_pallete.png");
 				File stonecutterSideTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_side.png");
 				File stonecutterTopTextureLocation = RelativeFileHelper.getTemplateData("\\wood\\assets\\textures\\block\\MATERIAL_stonecutter_top.png");
 				BufferedImage stonecutterSideTexture = TextureHelper.swapColors("block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterSideTextureLocation), sprucePalette, out);
@@ -2177,7 +2177,7 @@ public class MinecraftWoodBlocks {
 				BufferedImage stonecutterSideStoneTexture = TextureHelper.maskImage(ImageIO.read(stonecutterSideMask),ImageIO.read(stoneTexture), 0,0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 				stonecutterSideStoneTexture = TextureHelper.overlayTextureDarken(stonecutterSideStoneTexture, ImageIO.read(stonecutterSideOverlayLocation), 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
 				BufferedImage stonecutterSideRimTexture = TextureHelper.swapColors("block\\" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterSideSwapLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"_palette.png"));
 				stonecutterSideStoneTexture = TextureHelper.overlayTexture(stonecutterSideStoneTexture,stonecutterSideRimTexture, 0, 0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 
 				TextureHelper.overlayTexture(stonecutterSideTexture, stonecutterSideStoneTexture, 0, 0, "block\\" + woodMaterial + "_" + stoneMaterial + "_stonecutter_side", "block", UpgradedVanilla.ID);
@@ -2193,7 +2193,7 @@ public class MinecraftWoodBlocks {
 				File stonecutterBottomOverlayLocation = RelativeFileHelper.getTemplateData("\\Stone\\Textures\\block\\stone_stonecutter_bottom.png");
 				BufferedImage stonecutterBottomStoneTexture = TextureHelper.maskImage(ImageIO.read(stonecutterBottomMask),ImageIO.read(stoneTexture), 0,0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 				BufferedImage stonecutterBottomRimTexture = TextureHelper.swapColors("block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID, ImageIO.read(stonecutterBottomOverlayLocation), TextureHelper.stonePresetPalette,
-						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"Palette.png"));
+						RelativeFileHelper.getTemplateData("\\Stone\\Palletes\\"+stoneMaterial+"_palette.png"));
 				TextureHelper.overlayTexture(stonecutterBottomRimTexture,stonecutterBottomStoneTexture, 0, 0, "block\\" + stoneMaterial + "_stonecutter_bottom", "block", UpgradedVanilla.ID);
 
 			} catch (IOException e) {

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:hay_slab",
+    "upgradedvanilla:hay_stairs",
+    "upgradedvanilla:hay_wall",
+    "upgradedvanilla:red_glazed_terracotta_slab",
+    "upgradedvanilla:red_glazed_terracotta_stairs",
+    "upgradedvanilla:red_glazed_terracotta_wall"
+  ]
+}

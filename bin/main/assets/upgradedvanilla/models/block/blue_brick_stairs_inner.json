@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "upgradedvanilla:block/blue_brick",
+    "side": "upgradedvanilla:block/blue_brick",
+    "top": "upgradedvanilla:block/blue_brick"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:iron_blocks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:iron_block_wall"
+  }
+}

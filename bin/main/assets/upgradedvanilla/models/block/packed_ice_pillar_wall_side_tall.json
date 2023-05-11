@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/log_wall_side_tall",
+  "textures": {
+    "bottom": "upgradedvanilla:block/packed_ice_pillar_top",
+    "particle": "upgradedvanilla:block/packed_ice_pillar_side",
+    "side": "upgradedvanilla:block/packed_ice_pillar_side",
+    "top": "upgradedvanilla:block/packed_ice_pillar_top"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    }
+  },
+  "pattern": [
+    "P P",
+    "PPP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_boat"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:brick",
+    "createdeco:scarlet_brick",
+    "createdeco:worn_brick",
+    "createdeco:blue_brick",
+    "createdeco:dusk_brick",
+    "createdeco:pearl_brick",
+    "createdeco:dean_brick",
+    "upgradedvanilla:orange_brick_item",
+    "upgradedvanilla:magenta_brick_item",
+    "upgradedvanilla:lime_brick_item",
+    "upgradedvanilla:pink_brick_item",
+    "upgradedvanilla:gray_brick_item",
+    "upgradedvanilla:light_gray_brick_item",
+    "upgradedvanilla:cyan_brick_item",
+    "upgradedvanilla:purple_brick_item",
+    "upgradedvanilla:brown_brick_item",
+    "upgradedvanilla:blue_brick_item",
+    "upgradedvanilla:green_brick_item"
+  ]
+}

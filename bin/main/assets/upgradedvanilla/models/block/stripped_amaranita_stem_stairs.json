@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "upgradedvanilla:block/stripped_amaranita_stem_top",
+    "side": "upgradedvanilla:block/stripped_amaranita_stem_side",
+    "top": "upgradedvanilla:block/stripped_amaranita_stem_top"
+  }
+}

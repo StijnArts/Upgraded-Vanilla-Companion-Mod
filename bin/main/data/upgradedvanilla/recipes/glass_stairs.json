@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:glass_blocks"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:glass_stairs"
+  }
+}

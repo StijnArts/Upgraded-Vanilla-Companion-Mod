@@ -1,0 +1,7 @@
+{
+  "parent": "upgradedvanilla:block/campfire_off",
+  "textures": {
+    "log": "upgradedvanilla:block/amaranita_campfire_log",
+    "particle": "upgradedvanilla:block/amaranita_campfire_log"
+  }
+}

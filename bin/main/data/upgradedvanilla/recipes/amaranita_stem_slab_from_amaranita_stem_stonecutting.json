@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "betterend:amaranita_stem"
+  },
+  "result": "upgradedvanilla:amaranita_stem_slab"
+}

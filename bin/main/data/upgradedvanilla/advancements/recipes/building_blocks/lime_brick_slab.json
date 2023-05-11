@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lime_brick_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:lime_brick_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:lime_brick_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_lime_brick_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:lime_brick_slab"
+    ]
+  }
+}

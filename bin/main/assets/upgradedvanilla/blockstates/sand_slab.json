@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/sand_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/sand"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/sand_slab_top"
+    }
+  }
+}

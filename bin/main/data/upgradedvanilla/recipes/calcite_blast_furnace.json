@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "upgradedvanilla:calcite_furnace"
+    },
+    "I": {
+      "tag": "c:iron_ingots"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_calcite_blocks"
+    }
+  },
+  "pattern": [
+    "III",
+    "IFI",
+    "SSS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:calcite_blast_furnace"
+  }
+}

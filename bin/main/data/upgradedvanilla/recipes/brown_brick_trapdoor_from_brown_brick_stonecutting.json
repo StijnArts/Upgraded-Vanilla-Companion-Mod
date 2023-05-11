@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:brown_brick"
+  },
+  "result": "upgradedvanilla:brown_brick_trapdoor"
+}

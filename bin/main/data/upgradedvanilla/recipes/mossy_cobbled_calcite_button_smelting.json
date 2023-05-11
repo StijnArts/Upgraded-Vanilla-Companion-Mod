@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "upgradedvanilla:cobbled_calcite_button"
+  },
+  "result": "upgradedvanilla:mossy_cobbled_calcite_button"
+}

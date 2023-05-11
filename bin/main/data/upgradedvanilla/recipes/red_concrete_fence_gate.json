@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:red_concrete_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:red_concrete_slabs"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:red_concrete_fence_gate"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:mossy_cobbled_calcite_blocks"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:mossy_cobbled_calcite_stairs"
+  }
+}

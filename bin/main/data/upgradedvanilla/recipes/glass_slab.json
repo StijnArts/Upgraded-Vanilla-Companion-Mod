@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:glass_blocks"
+    }
+  },
+  "pattern": [
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:glass_slab"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "C",
+    "S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:amaranita_torch"
+  }
+}

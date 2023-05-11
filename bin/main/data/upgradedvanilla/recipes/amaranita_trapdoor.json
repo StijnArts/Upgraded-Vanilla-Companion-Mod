@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "count": 2,
+    "item": "upgradedvanilla:amaranita_trapdoor"
+  }
+}

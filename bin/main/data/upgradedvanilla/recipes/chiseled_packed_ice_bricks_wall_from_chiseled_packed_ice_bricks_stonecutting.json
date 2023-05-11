@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:chiseled_packed_ice_bricks"
+  },
+  "result": "upgradedvanilla:chiseled_packed_ice_bricks_wall"
+}

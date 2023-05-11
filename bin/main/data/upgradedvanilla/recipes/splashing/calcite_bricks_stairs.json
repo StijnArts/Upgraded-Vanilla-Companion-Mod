@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:calcite_bricks_stairs"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:mossy_calcite_bricks_stairs"
+    }
+  ]
+}

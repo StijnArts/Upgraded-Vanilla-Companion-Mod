@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#upgradedvanilla:amaranita_pressure_plates",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:calcite_brick_blocks"
+    }
+  },
+  "pattern": [
+    "PP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:calcite_bricks_pressure_plate"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:mossy_polished_calcite_bricks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:mossy_calcite_polished_bricks_wall"
+  }
+}

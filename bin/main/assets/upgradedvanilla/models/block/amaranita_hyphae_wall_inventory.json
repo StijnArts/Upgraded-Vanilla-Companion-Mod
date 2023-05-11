@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/log_wall_inventory",
+  "textures": {
+    "bottom": "betterend:block/amaranita_hyphae_side",
+    "particle": "betterend:block/amaranita_hyphae_side",
+    "side": "betterend:block/amaranita_hyphae_side",
+    "top": "betterend:block/amaranita_hyphae_side"
+  }
+}

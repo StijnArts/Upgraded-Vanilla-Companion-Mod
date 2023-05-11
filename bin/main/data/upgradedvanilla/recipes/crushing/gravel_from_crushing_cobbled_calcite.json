@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:cobbled_calcite"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "minecraft:gravel"
+    }
+  ]
+}

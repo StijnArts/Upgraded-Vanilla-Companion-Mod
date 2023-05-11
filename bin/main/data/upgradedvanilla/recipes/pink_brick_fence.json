@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:pink_brick_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:pink_brick_slabs"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "upgradedvanilla:pink_brick_fence"
+  }
+}

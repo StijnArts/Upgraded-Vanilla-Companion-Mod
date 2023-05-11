@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:stripped_amaranita_stem"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 6,
+      "item": "upgradedvanilla:amaranita_planks"
+    }
+  ]
+}

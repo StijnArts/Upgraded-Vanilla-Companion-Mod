@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "upgradedvanilla:item/blue_brick_item"
+  }
+}

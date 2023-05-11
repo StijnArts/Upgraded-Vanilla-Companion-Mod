@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:calcite_iron_ore",
+    "upgradedvanilla:calcite_iron_ore_stairs",
+    "upgradedvanilla:calcite_iron_ore_slab",
+    "upgradedvanilla:calcite_iron_ore_wall"
+  ]
+}

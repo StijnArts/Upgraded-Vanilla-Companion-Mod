@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_calcite_logs": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:calcite_tile_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:mossy_calcite_tiles_from_moss"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_calcite_logs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:mossy_calcite_tiles_from_moss"
+    ]
+  }
+}

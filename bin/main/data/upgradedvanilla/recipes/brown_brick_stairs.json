@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:brown_brick_blocks"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:brown_brick_stairs"
+  }
+}

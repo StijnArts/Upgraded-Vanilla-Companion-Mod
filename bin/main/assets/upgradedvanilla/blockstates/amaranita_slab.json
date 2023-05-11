@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/amaranita_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/amaranita_planks"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/amaranita_slab_top"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "BBB",
+    "PPP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_bookshelf"
+  }
+}

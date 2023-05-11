@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "upgradedvanilla:calcite_diamond_ore"
+  },
+  "result": "upgradedvanilla:calcite_diamond_ore_slab"
+}

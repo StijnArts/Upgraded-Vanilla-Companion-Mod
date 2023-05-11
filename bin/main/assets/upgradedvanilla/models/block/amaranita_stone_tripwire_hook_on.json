@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/tripwire_hook_on",
+  "textures": {
+    "hook": "upgradedvanilla:block/stone_tripwire_hook",
+    "particle": "upgradedvanilla:block/amaranita_planks",
+    "wood": "upgradedvanilla:block/amaranita_planks"
+  }
+}

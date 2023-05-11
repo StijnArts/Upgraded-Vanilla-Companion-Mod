@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lever",
+    "upgradedvanilla:amaranita_deepslate_lever",
+    "upgradedvanilla:amaranita_stone_lever"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:raw_iron_blocks"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:raw_iron_block_stairs"
+  }
+}

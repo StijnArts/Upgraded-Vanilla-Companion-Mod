@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer",
+      "x": 90
+    },
+    "facing=down,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on",
+      "x": 90
+    },
+    "facing=east,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer",
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on",
+      "y": 90
+    },
+    "facing=north,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer"
+    },
+    "facing=north,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on"
+    },
+    "facing=south,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer",
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on",
+      "y": 180
+    },
+    "facing=up,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer",
+      "x": 270
+    },
+    "facing=up,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on",
+      "x": 270
+    },
+    "facing=west,powered=false": {
+      "model": "upgradedvanilla:block/calcite_observer",
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "upgradedvanilla:block/calcite_observer_on",
+      "y": 270
+    }
+  }
+}

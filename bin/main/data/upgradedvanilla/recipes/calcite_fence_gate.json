@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:calcite_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:calcite_slabs"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:calcite_fence_gate"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "upgradedvanilla:block/ladder",
+  "textures": {
+    "all": "upgradedvanilla:block/amaranita_ladder"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:cobbled_calcite"
+  },
+  "result": "upgradedvanilla:cobbled_calcite_trapdoor"
+}

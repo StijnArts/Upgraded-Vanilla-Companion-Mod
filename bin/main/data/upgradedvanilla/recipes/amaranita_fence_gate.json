@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_fence_gate"
+  }
+}

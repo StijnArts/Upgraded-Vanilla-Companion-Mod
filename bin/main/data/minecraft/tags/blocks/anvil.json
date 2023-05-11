@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:iron_anvil",
+    "upgradedvanilla:chipped_iron_anvil",
+    "upgradedvanilla:damaged_iron_anvil"
+  ]
+}

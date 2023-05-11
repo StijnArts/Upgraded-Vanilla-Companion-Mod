@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:calcite_tiles_fence"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:mossy_calcite_tiles_fence"
+    }
+  ]
+}

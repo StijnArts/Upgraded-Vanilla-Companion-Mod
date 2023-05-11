@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "upgradedvanilla:amaranita_boat"
+    },
+    "C": {
+      "tag": "c:wooden_chests"
+    }
+  },
+  "pattern": [
+    "C",
+    "B"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_chest_boat"
+  }
+}

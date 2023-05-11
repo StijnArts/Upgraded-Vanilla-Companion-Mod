@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_podzol_dirt": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:podzol_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:podzol_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_podzol_dirt",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:podzol_slab"
+    ]
+  }
+}

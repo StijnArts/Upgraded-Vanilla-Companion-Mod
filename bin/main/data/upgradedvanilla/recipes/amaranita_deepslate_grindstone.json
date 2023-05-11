@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "upgradedvanilla:deepslate_slabs"
+    },
+    "P": {
+      "tag": "upgradedvanilla:amaranita_planks"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "S#S",
+    "P P"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_deepslate_grindstone"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:chiseled_calcite_brick_blocks"
+    }
+  },
+  "pattern": [
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:chiseled_calcite_bricks_slab"
+  }
+}

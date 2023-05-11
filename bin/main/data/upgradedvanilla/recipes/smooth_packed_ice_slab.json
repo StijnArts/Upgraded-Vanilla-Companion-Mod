@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:smooth_packed_ice_blocks"
+    }
+  },
+  "pattern": [
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:smooth_packed_ice_slab"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cartography_table",
+  "textures": {
+    "down": "upgradedvanilla:block/amaranita_iron_smithing_table_bottom",
+    "east": "upgradedvanilla:block/amaranita_iron_smithing_table_side",
+    "north": "upgradedvanilla:block/amaranita_iron_smithing_table_front",
+    "particle": "upgradedvanilla:block/amaranita_iron_smithing_table_front",
+    "south": "upgradedvanilla:block/amaranita_iron_smithing_table_front",
+    "up": "upgradedvanilla:block/iron_smithing_table_top",
+    "west": "upgradedvanilla:block/amaranita_iron_smithing_table_side"
+  }
+}

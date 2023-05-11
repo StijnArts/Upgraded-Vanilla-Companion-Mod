@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": {
+      "tag": "c:redstone_dusts"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_deepslate_blocks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "SRS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:deepslate_dropper"
+  }
+}

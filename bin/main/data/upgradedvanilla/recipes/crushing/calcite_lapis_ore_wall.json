@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:calcite_lapis_ore_wall"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "upgradedvanilla:cobbled_calcite"
+    }
+  ]
+}

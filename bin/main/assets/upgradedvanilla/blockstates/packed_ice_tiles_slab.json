@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/packed_ice_tiles_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/packed_ice_tiles"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/packed_ice_tiles_slab_top"
+    }
+  }
+}

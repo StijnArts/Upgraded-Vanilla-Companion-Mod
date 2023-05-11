@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "upgradedvanilla:block/cut_iron",
+    "side": "upgradedvanilla:block/cut_iron",
+    "top": "upgradedvanilla:block/cut_iron"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "Q": {
+      "tag": "c:quartz"
+    },
+    "R": {
+      "tag": "c:redstone_dusts"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_calcite_blocks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "RRQ",
+    "SSS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:calcite_observer"
+  }
+}

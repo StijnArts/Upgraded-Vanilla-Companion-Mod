@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/stripped_amaranita_stem_slab_top"
+    }
+  }
+}

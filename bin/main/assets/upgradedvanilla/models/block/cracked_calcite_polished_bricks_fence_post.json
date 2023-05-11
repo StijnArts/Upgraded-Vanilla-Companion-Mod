@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "upgradedvanilla:block/cracked_calcite_polished_bricks"
+  }
+}

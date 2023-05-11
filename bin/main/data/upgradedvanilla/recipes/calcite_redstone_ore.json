@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": {
+      "item": "minecraft:redstone"
+    },
+    "P": {
+      "tag": "upgradedvanilla:calcite_blocks"
+    }
+  },
+  "pattern": [
+    "PMP",
+    "MPM",
+    "PMP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:calcite_redstone_ore"
+  }
+}

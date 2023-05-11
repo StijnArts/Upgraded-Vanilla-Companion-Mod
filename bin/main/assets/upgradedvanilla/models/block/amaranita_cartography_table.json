@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cartography_table",
+  "textures": {
+    "down": "upgradedvanilla:block/amaranita_planks",
+    "east": "upgradedvanilla:block/amaranita_cartography_table_side3",
+    "north": "upgradedvanilla:block/amaranita_cartography_table_side3",
+    "particle": "upgradedvanilla:block/amaranita_cartography_table_side3",
+    "south": "upgradedvanilla:block/amaranita_cartography_table_side1",
+    "up": "upgradedvanilla:block/amaranita_cartography_table_top",
+    "west": "upgradedvanilla:block/amaranita_cartography_table_side2"
+  }
+}

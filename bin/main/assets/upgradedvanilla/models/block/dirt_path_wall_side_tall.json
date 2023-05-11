@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/path_wall_side_tall",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "particle": "minecraft:block/dirt",
+    "side": "minecraft:block/dirt_path_side",
+    "top": "minecraft:block/dirt_path_top"
+  }
+}

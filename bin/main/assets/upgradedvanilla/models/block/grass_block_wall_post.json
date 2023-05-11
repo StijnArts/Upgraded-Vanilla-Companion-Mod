@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/grass_wall_post_side_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "particle": "minecraft:block/dirt",
+    "side": "minecraft:block/grass_block_side",
+    "top": "minecraft:block/grass_block_top"
+  }
+}

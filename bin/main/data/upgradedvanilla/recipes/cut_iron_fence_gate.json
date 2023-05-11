@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:cut_iron_blocks"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cut_iron_slabs"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "SPS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:cut_iron_fence_gate"
+  }
+}

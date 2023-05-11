@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_curved",
+  "textures": {
+    "rail": "upgradedvanilla:block/amaranita_rail_corner"
+  }
+}

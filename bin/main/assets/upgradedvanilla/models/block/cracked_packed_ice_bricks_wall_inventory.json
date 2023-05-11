@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "upgradedvanilla:block/cracked_packed_ice_bricks"
+  }
+}

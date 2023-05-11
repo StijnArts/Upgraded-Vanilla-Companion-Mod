@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "tag": "upgradedvanilla:stripped_amaranita_stems"
+    }
+  },
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "result": {
+    "count": 3,
+    "item": "upgradedvanilla:stripped_amaranita_hyphae"
+  }
+}

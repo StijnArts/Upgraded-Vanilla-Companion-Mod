@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "upgradedvanilla:block/amaranita_redstone_torch_off"
+    },
+    "lit=true": {
+      "model": "upgradedvanilla:block/amaranita_redstone_torch"
+    }
+  }
+}

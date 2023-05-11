@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:amaranita_slabs"
+    }
+  },
+  "pattern": [
+    "P P",
+    "P P",
+    "PPP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_composter"
+  }
+}

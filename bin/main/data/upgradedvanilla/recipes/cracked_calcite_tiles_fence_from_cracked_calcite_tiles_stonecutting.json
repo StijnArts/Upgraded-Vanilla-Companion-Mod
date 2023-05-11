@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:cracked_calcite_tiles"
+  },
+  "result": "upgradedvanilla:cracked_calcite_tiles_fence"
+}

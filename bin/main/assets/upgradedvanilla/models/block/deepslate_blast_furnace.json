@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/furnace",
+  "textures": {
+    "front": "upgradedvanilla:block/deepslate_blast_furnace_front",
+    "side": "upgradedvanilla:block/deepslate_blast_furnace_side",
+    "top": "upgradedvanilla:block/deepslate_blast_furnace_top"
+  }
+}

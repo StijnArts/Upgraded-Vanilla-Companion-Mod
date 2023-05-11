@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    "I I",
+    "ISI",
+    "IRI"
+  ],
+  "result": {
+    "count": 6,
+    "item": "upgradedvanilla:amaranita_powered_rail"
+  }
+}

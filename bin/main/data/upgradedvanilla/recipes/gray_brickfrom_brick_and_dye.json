@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "upgradedvanilla:brick_blocks"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
+  ],
+  "result": {
+    "item": "upgradedvanilla:gray_brick"
+  }
+}

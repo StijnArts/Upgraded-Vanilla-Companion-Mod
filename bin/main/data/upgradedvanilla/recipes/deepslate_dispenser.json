@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:bow"
+    },
+    "R": {
+      "tag": "c:redstone_dusts"
+    },
+    "S": {
+      "tag": "upgradedvanilla:cobbled_deepslate_blocks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SBS",
+    "SRS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:deepslate_dispenser"
+  }
+}

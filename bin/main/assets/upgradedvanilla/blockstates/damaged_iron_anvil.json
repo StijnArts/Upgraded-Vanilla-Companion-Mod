@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "upgradedvanilla:block/damaged_iron_anvil",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "upgradedvanilla:block/damaged_iron_anvil",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "upgradedvanilla:block/damaged_iron_anvil"
+    },
+    "facing=west": {
+      "model": "upgradedvanilla:block/damaged_iron_anvil",
+      "y": 90
+    }
+  }
+}

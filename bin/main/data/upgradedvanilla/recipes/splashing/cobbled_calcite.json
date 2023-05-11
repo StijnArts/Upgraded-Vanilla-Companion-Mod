@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:cobbled_calcite"
+    }
+  ],
+  "results": [
+    {
+      "item": "upgradedvanilla:mossy_cobbled_calcite"
+    }
+  ]
+}

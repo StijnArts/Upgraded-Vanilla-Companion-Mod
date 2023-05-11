@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "upgradedvanilla:block/amaranita_lectern_template",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "upgradedvanilla:block/amaranita_lectern_template"
+    },
+    "facing=south": {
+      "model": "upgradedvanilla:block/amaranita_lectern_template",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "upgradedvanilla:block/amaranita_lectern_template",
+      "y": 270
+    }
+  }
+}

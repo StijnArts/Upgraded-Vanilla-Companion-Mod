@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:torch",
+    {
+      "id": "#upgradedvanilla:amaranita_torches",
+      "required": false
+    }
+  ]
+}

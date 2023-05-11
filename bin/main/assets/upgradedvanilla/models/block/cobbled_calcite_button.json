@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "upgradedvanilla:block/cobbled_calcite_flipped"
+  }
+}

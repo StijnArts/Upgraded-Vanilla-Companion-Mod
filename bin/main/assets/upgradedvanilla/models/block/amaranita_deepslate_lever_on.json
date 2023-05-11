@@ -1,0 +1,8 @@
+{
+  "parent": "upgradedvanilla:block/lever_on",
+  "textures": {
+    "base": "minecraft:block/cobbled_deepslate",
+    "lever": "upgradedvanilla:block/amaranita_deepslate_lever",
+    "particle": "minecraft:block/cobbled_deepslate"
+  }
+}

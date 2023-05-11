@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "upgradedvanilla:block/stripped_amaranita_stem_top",
+    "side": "upgradedvanilla:block/stripped_amaranita_stem_side"
+  }
+}

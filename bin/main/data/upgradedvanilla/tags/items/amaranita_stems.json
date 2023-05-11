@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "betterend:amaranita_stem",
+    {
+      "id": "#upgradedvanilla:stripped_amaranita_stems",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:amaranita_hyphae",
+      "required": false
+    },
+    {
+      "id": "#upgradedvanilla:stripped_amaranita_hyphae",
+      "required": false
+    }
+  ]
+}

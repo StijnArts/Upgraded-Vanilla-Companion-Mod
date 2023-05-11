@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:mossy_calcite_tiles"
+    },
+    "S": {
+      "tag": "upgradedvanilla:mossy_calcite_tile_slabs"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "upgradedvanilla:mossy_calcite_tiles_fence"
+  }
+}

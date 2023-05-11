@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "tag": "upgradedvanilla:cobbled_deepslate_blocks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "SSS"
+  ],
+  "result": {
+    "item": "upgradedvanilla:deepslate_furnace"
+  }
+}

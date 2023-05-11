@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:cobbled_calcite_blocks"
+    }
+  },
+  "pattern": [
+    "PP"
+  ],
+  "result": {
+    "item": "upgradedvanilla:cobbled_calcite_pressure_plate"
+  }
+}

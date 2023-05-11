@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:mossy_calcite_tiles"
+  },
+  "result": "upgradedvanilla:mossy_calcite_tiles_wall"
+}

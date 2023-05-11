@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:dirt_slab",
+    "upgradedvanilla:dirt_stairs",
+    "upgradedvanilla:dirt_wall",
+    "upgradedvanilla:coarse_dirt_slab",
+    "upgradedvanilla:coarse_dirt_stairs",
+    "upgradedvanilla:coarse_dirt_wall",
+    "upgradedvanilla:rooted_dirt_slab",
+    "upgradedvanilla:rooted_dirt_stairs",
+    "upgradedvanilla:rooted_dirt_wall",
+    "upgradedvanilla:dirt_path_slab",
+    "upgradedvanilla:dirt_path_stairs",
+    "upgradedvanilla:dirt_path_wall",
+    "upgradedvanilla:grass_block_slab",
+    "upgradedvanilla:grass_block_stairs",
+    "upgradedvanilla:grass_block_wall",
+    "upgradedvanilla:podzol_stairs",
+    "upgradedvanilla:podzol_slab",
+    "upgradedvanilla:podzol_wall",
+    "upgradedvanilla:mycelium_slab",
+    "upgradedvanilla:mycelium_stairs",
+    "upgradedvanilla:mycelium_wall",
+    "upgradedvanilla:oak_leaf_slab",
+    "upgradedvanilla:oak_leaf_stairs",
+    "upgradedvanilla:oak_leaf_wall",
+    "upgradedvanilla:sand_slab",
+    "upgradedvanilla:sand_stairs",
+    "upgradedvanilla:red_concrete_powder_slab",
+    "upgradedvanilla:red_concrete_powder_stairs"
+  ]
+}

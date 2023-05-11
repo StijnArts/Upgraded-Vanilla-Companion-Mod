@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:amaranita_rail",
+    "upgradedvanilla:amaranita_powered_rail",
+    "upgradedvanilla:amaranita_activator_rail",
+    "upgradedvanilla:amaranita_detector_rail"
+  ]
+}

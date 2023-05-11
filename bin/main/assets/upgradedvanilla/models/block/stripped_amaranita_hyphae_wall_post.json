@@ -1,0 +1,9 @@
+{
+  "parent": "upgradedvanilla:block/log_wall_post",
+  "textures": {
+    "bottom": "upgradedvanilla:block/stripped_amaranita_hyphae_top",
+    "particle": "upgradedvanilla:block/stripped_amaranita_hyphae_side",
+    "side": "upgradedvanilla:block/stripped_amaranita_hyphae_side",
+    "top": "upgradedvanilla:block/stripped_amaranita_hyphae_top"
+  }
+}

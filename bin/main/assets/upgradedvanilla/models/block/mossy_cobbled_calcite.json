@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "upgradedvanilla:block/mossy_cobbled_calcite"
+  }
+}

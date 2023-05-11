@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "upgradedvanilla:calcite_tiles_fence_gate"
+  },
+  "result": "upgradedvanilla:mossy_calcite_tiles_fence_gate"
+}

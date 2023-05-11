@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "upgradedvanilla:block/deepslate_dropper_front",
+    "side": "upgradedvanilla:block/deepslate_furnace_side",
+    "top": "upgradedvanilla:block/deepslate_furnace_top"
+  }
+}

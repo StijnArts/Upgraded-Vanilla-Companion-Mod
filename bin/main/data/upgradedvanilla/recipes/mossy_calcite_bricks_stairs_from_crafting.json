@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "upgradedvanilla:mossy_calcite_bricks"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:mossy_calcite_bricks_stairs"
+  }
+}

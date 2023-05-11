@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "upgradedvanilla:block/stripped_amaranita_hyphae_slab"
+    },
+    "type=double": {
+      "model": "upgradedvanilla:block/stripped_amaranita_hyphae"
+    },
+    "type=top": {
+      "model": "upgradedvanilla:block/stripped_amaranita_hyphae_slab_top"
+    }
+  }
+}

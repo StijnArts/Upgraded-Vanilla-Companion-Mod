@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "upgradedvanilla:calcite_coal_ore_slab"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "upgradedvanilla:cobbled_calcite"
+    }
+  ]
+}

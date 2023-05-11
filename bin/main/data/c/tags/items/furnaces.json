@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "upgradedvanilla:deepslate_furnace",
+    "upgradedvanilla:deepslate_blast_furnace",
+    "upgradedvanilla:deepslate_dispenser",
+    "upgradedvanilla:deepslate_dropper",
+    "upgradedvanilla:deepslate_observer",
+    "upgradedvanilla:calcite_furnace",
+    "upgradedvanilla:calcite_blast_furnace",
+    "upgradedvanilla:calcite_dispenser",
+    "upgradedvanilla:calcite_dropper",
+    "upgradedvanilla:calcite_observer"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "upgradedvanilla:smooth_calcite"
+  },
+  "result": "upgradedvanilla:smooth_calcite_slab"
+}

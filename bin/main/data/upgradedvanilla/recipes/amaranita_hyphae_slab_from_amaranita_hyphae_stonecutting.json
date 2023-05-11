@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "betterend:amaranita_hyphae"
+  },
+  "result": "upgradedvanilla:amaranita_hyphae_slab"
+}

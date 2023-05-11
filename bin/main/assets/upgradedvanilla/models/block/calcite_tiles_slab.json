@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "upgradedvanilla:block/calcite_tiles",
+    "side": "upgradedvanilla:block/calcite_tiles",
+    "top": "upgradedvanilla:block/calcite_tiles"
+  }
+}

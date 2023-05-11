@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_torch",
+    {
+      "id": "#upgradedvanilla:amaranita_soul_torches",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "upgradedvanilla:packed_ice_tiles"
+  },
+  "result": "upgradedvanilla:cracked_packed_ice_tiles"
+}

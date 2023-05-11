@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "upgradedvanilla:block/amaranita_planks",
+    "east": "upgradedvanilla:block/amaranita_crafting_table_side",
+    "north": "upgradedvanilla:block/amaranita_crafting_table_front",
+    "particle": "upgradedvanilla:block/amaranita_crafting_table_front",
+    "south": "upgradedvanilla:block/amaranita_crafting_table_side",
+    "up": "upgradedvanilla:block/amaranita_crafting_table_top",
+    "west": "upgradedvanilla:block/amaranita_crafting_table_front"
+  }
+}

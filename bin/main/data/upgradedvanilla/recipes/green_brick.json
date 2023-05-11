@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "upgradedvanilla:green_brick_item"
+    }
+  },
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "result": {
+    "count": 4,
+    "item": "upgradedvanilla:green_brick"
+  }
+}

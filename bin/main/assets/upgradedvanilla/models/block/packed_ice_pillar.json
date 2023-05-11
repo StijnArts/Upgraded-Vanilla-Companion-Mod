@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "upgradedvanilla:block/packed_ice_pillar_top",
+    "side": "upgradedvanilla:block/packed_ice_pillar_side"
+  }
+}

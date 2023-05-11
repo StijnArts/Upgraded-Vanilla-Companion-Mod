@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sand_bales": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:sand_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:sand_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sand_bales",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:sand_stairs"
+    ]
+  }
+}

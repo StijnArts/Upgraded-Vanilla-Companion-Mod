@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "L": {
+      "tag": "upgradedvanilla:amaranita_stems"
+    },
+    "S": {
+      "item": "upgradedvanilla:amaranita_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "upgradedvanilla:amaranita_soul_campfire"
+  }
+}

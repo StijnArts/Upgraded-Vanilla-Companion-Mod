@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_calcite_cobbled_stone": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "upgradedvanilla:cobbled_calcite_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradedvanilla:calcite_observer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_calcite_cobbled_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradedvanilla:calcite_observer"
+    ]
+  }
+}

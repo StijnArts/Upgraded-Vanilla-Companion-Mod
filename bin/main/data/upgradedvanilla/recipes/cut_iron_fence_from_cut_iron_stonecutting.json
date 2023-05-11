@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "upgradedvanilla:cut_iron"
+  },
+  "result": "upgradedvanilla:cut_iron_fence"
+}

@@ -83,7 +83,7 @@ dependencies {
 	modImplementation "curse.maven:cinderscapes-391429:4033440"
 	modImplementation "curse.maven:moreslabsmorestairs-644005:4455641"
 	modImplementation "curse.maven:createdeco-739872:4519296"
-
+	modImplementation "curse.maven:enchantedverticalslabs-559148:4411218"
 	// Library mods
 	modImplementation "curse.maven:bclib-495191:4393099"
 	//modImplementation "com.github.quiqueck:BCLib:2.1.7"
